@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/tiger.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/tiger.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/tiger.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="计算机网络八股（持续更新中）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Computer Network">
+<meta property="og:url" content="http://example.com/2022/08/13/Computer-Network/index.html">
+<meta property="og:site_name" content="Tiger&#39; Home">
+<meta property="og:description" content="计算机网络八股（持续更新中）">
+<meta property="og:locale">
+<meta property="og:image" content="http://example.com/2022/08/13/Computer-Network/osi-7-model.png">
+<meta property="og:image" content="http://example.com/2022/08/13/Computer-Network/osi%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B2.png">
+<meta property="og:image" content="http://example.com/2022/08/13/Computer-Network/osi-model-detail.png">
+<meta property="og:image" content="http://example.com/2022/08/13/Computer-Network/tcp-ip-4-model.png">
+<meta property="og:image" content="http://example.com/2022/08/13/Computer-Network/5971-2-7I1-20220111095024771-20220111201807861.png">
+<meta property="og:image" content="http://example.com/2022/08/13/Computer-Network/application-layer-protocol.png">
+<meta property="og:image" content="http://example.com/2022/08/13/Computer-Network/transport-layer-protocol.png">
+<meta property="og:image" content="http://example.com/2022/08/13/Computer-Network/nerwork-layer-protocol.png">
+<meta property="og:image" content="http://example.com/2022/08/13/Computer-Network/network-interface-layer-protocol.png">
+<meta property="og:image" content="http://example.com/2022/08/13/Computer-Network/network-protocol-overview.png">
+<meta property="og:image" content="http://example.com/2022/08/13/Computer-Network/tcp-shakes-hands-three-times.png">
+<meta property="article:published_time" content="2022-08-13T11:49:45.000Z">
+<meta property="article:modified_time" content="2022-09-28T12:32:44.000Z">
+<meta property="article:author" content="Tiger泰航">
+<meta property="article:tag" content="Computer Network">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/08/13/Computer-Network/osi-7-model.png">
+
+<link rel="canonical" href="http://example.com/2022/08/13/Computer-Network/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-Hans'
+  };
+</script>
+
+  <title>Computer Network | Tiger' Home</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Tiger' Home</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">种自己的花，爱自己的宇宙。</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/TaihangLi" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/13/Computer-Network/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/tiger.png">
+      <meta itemprop="name" content="Tiger泰航">
+      <meta itemprop="description" content="做好自己">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tiger' Home">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Computer Network
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-08-13 19:49:45" itemprop="dateCreated datePublished" datetime="2022-08-13T19:49:45+08:00">2022-08-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-09-28 20:32:44" itemprop="dateModified" datetime="2022-09-28T20:32:44+08:00">2022-09-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Computer-Basics/" itemprop="url" rel="index"><span itemprop="name">Computer Basics</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+            <div class="post-description">计算机网络八股（持续更新中）</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="OSI-七层模型"><a href="#OSI-七层模型" class="headerlink" title="OSI 七层模型"></a>OSI 七层模型</h2><p><strong>OSI 七层模型</strong> 是国际标准化组织提出一个网络分层模型，物理层(Physical)，数据链路层(Data Link)，网络层(Network)，传输层(Transport)，会话层(Session)，表示层(Presentation)，应用层(Application)：</p>
+<p><img src="/2022/08/13/Computer-Network/osi-7-model.png" alt="OSI 七层模型"></p>
+<p>每一层都专注做一件事情，并且每一层都需要使用下一层提供的功能比如传输层需要使用网络层提供的路由和寻址功能，这样传输层才知道把数据传输到哪里去。</p>
+<p><strong>OSI 的七层体系结构概念清楚，理论也很完整，但是它比较复杂而且不实用，而且有些功能在多个层中重复出现。</strong></p>
+<p>上面这种图可能比较抽象，再来一个比较生动的图片。</p>
+<p><img src="/2022/08/13/Computer-Network/osi%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B2.png" alt="osi七层模型2"></p>
+<p><strong>既然 OSI 七层模型这么厉害，为什么干不过 TCP&#x2F;IP 四 层模型呢？</strong></p>
+<p>的确，OSI七层模型当时一直被一些大公司甚至一些国家政府支持。这样的背景下，为什么会失败呢？我觉得主要有下面几方面原因：</p>
+<ol>
+<li>OSI 的专家缺乏实际经验，他们在完成 OSI 标准时缺乏商业驱动力</li>
+<li>OSI 的协议实现起来过分复杂，而且运行效率很低</li>
+<li>OSI 制定标准的周期太长，因而使得按 OSI 标准生产的设备无法及时进入市场（20 世纪 90 年代初期，虽然整套的 OSI 国际标准都已经制定出来，但基于 TCP&#x2F;IP 的互联网已经抢先在全球相当大的范围成功运行了）</li>
+<li>OSI 的层次划分不太合理，有些功能在多个层次中重复出现。</li>
+</ol>
+<p>OSI 七层模型虽然失败了，但是却提供了很多不错的理论基础。为了更好地去了解网络分层，OSI 七层模型还是非常有必要学习的。</p>
+<p>关于 OSI 七层模型非常不错的总结图片！</p>
+<p><img src="/2022/08/13/Computer-Network/osi-model-detail.png"></p>
+<h2 id="TCP-x2F-IP-四层模型"><a href="#TCP-x2F-IP-四层模型" class="headerlink" title="TCP&#x2F;IP 四层模型"></a>TCP&#x2F;IP 四层模型</h2><p><strong>TCP&#x2F;IP 四层模型</strong> 是目前被广泛采用的一种模型,我们可以将 TCP &#x2F; IP 模型看作是 OSI 七层模型的精简版本：</p>
+<ol>
+<li>应用层</li>
+<li>传输层</li>
+<li>网络层</li>
+<li>网络接口层</li>
+</ol>
+<p>需要注意的是，我们并不能将TCP&#x2F;IP四层模型和OSI七层模型完全精确地匹配起来，不过可以简单将两者对应起来，如下图所示：</p>
+<p><img src="/2022/08/13/Computer-Network/tcp-ip-4-model.png" alt="TCP/IP 四层模型"></p>
+<h3 id="应用层（Application-layer）"><a href="#应用层（Application-layer）" class="headerlink" title="应用层（Application layer）"></a>应用层（Application layer）</h3><p><strong>应用层位于传输层之上，主要提供两个终端设备上的应用程序之间信息交换的服务，它定义了信息交换的格式，消息会交给下一层传输层来传输。</strong> 我们把应用层交互的数据单元称为报文。</p>
+<p><img src="/2022/08/13/Computer-Network/5971-2-7I1-20220111095024771-20220111201807861.png"></p>
+<p>应用层协议定义了网络通信规则，对于不同的网络应用需要不同的应用层协议。在互联网中应用层协议很多，如支持 Web 应用的 HTTP 协议，支持电子邮件的 SMTP 协议等等。</p>
+<p><img src="/2022/08/13/Computer-Network/application-layer-protocol.png" alt="应用层重要协议"></p>
+<p>应用层常见协议总结，请看这篇文章：<a href="./application-layer-protocol.md">应用层常见协议总结（应用层）</a>。</p>
+<h3 id="传输层（Transport-layer）"><a href="#传输层（Transport-layer）" class="headerlink" title="传输层（Transport layer）"></a>传输层（Transport layer）</h3><p><strong>传输层的主要任务就是负责向两台终端设备进程之间的通信提供通用的数据传输服务。</strong> 应用进程利用该服务传送应用层报文。“通用的”是指并不针对某一个特定的网络应用，而是多种应用可以使用同一个运输层服务。</p>
+<p><strong>运输层主要使用以下两种协议：</strong></p>
+<ol>
+<li><strong>传输控制协议 TCP</strong>（Transmisson Control Protocol）–提供 <strong>面向连接</strong> 的，<strong>可靠的</strong> 数据传输服务。</li>
+<li><strong>用户数据协议 UDP</strong>（User Datagram Protocol）–提供 <strong>无连接</strong> 的，尽最大努力的数据传输服务（不保证数据传输的可靠性）。</li>
+</ol>
+<p><img src="/2022/08/13/Computer-Network/transport-layer-protocol.png" alt="传输层重要协议"></p>
+<h3 id="网络层（Network-layer）"><a href="#网络层（Network-layer）" class="headerlink" title="网络层（Network layer）"></a>网络层（Network layer）</h3><p><strong>网络层负责为分组交换网上的不同主机提供通信服务。</strong> 在发送数据时，网络层把运输层产生的报文段或用户数据报封装成分组和包进行传送。在 TCP&#x2F;IP 体系结构中，由于网络层使用 IP 协议，因此分组也叫 IP 数据报，简称数据报。</p>
+<p>⚠️注意 ：<strong>不要把运输层的“用户数据报 UDP”和网络层的“IP 数据报”弄混</strong>。</p>
+<p><strong>网络层的还有一个任务就是选择合适的路由，使源主机运输层所传下来的分组，能通过网络层中的路由器找到目的主机。</strong></p>
+<p>这里强调指出，网络层中的“网络”二字已经不是我们通常谈到的具体网络，而是指计算机网络体系结构模型中第三层的名称。</p>
+<p>互联网是由大量的异构（heterogeneous）网络通过路由器（router）相互连接起来的。互联网使用的网络层协议是无连接的网际协议（Intert Prococol）和许多路由选择协议，因此互联网的网络层也叫做 <strong>网际层</strong> 或 <strong>IP 层</strong>。</p>
+<p><img src="/2022/08/13/Computer-Network/nerwork-layer-protocol.png" alt="网络层重要协议"></p>
+<p><strong>网络层常见协议</strong> ：</p>
+<ul>
+<li><strong>IP:网际协议</strong> ：网际协议 IP 是TCP&#x2F;IP协议中最重要的协议之一，也是网络层最重要的协议之一，IP协议的作用包括寻址规约、定义数据包的格式等等，是网络层信息传输的主力协议。目前IP协议主要分为两种，一种是过去的IPv4，另一种是较新的IPv6，目前这两种协议都在使用，但后者已经被提议来取代前者。</li>
+<li><strong>ARP 协议</strong> ：ARP协议，全称地址解析协议（Address Resolution Protocol），它解决的是网络层地址和链路层地址之间的转换问题。因为一个IP数据报在物理上传输的过程中，总是需要知道下一跳（物理上的下一个目的地）该去往何处，但IP地址属于逻辑地址，而MAC地址才是物理地址，ARP协议解决了IP地址转MAC地址的一些问题。</li>
+<li><strong>NAT:网络地址转换协议</strong> ：NAT协议（Network Address Translation）的应用场景如同它的名称——网络地址转换，应用于内部网到外部网的地址转换过程中。具体地说，在一个小的子网（局域网，LAN）内，各主机使用的是同一个LAN下的IP地址，但在该LAN以外，在广域网（WAN）中，需要一个统一的IP地址来标识该LAN在整个Internet上的位置。</li>
+<li>……</li>
+</ul>
+<h3 id="网络接口层（Network-interface-layer）"><a href="#网络接口层（Network-interface-layer）" class="headerlink" title="网络接口层（Network interface layer）"></a>网络接口层（Network interface layer）</h3><p>我们可以把网络接口层看作是数据链路层和物理层的合体。</p>
+<ol>
+<li>数据链路层(data link layer)通常简称为链路层（ 两台主机之间的数据传输，总是在一段一段的链路上传送的）。<strong>数据链路层的作用是将网络层交下来的 IP 数据报组装成帧，在两个相邻节点间的链路上传送帧。每一帧包括数据和必要的控制信息（如同步信息，地址信息，差错控制等）。</strong></li>
+<li><strong>物理层的作用是实现相邻计算机节点之间比特流的透明传送，尽可能屏蔽掉具体传输介质和物理设备的差异</strong></li>
+</ol>
+<p><img src="/2022/08/13/Computer-Network/network-interface-layer-protocol.png" alt="网络接口层重要协议"></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>简单总结一下每一层包含的协议和核心技术:</p>
+<p><img src="/2022/08/13/Computer-Network/network-protocol-overview.png" alt="TCP/IP 各层协议概览"></p>
+<p><strong>应用层协议</strong> :</p>
+<ul>
+<li>HTTP 协议（超文本传输协议，网页浏览常用的协议）</li>
+<li>DHCP 协议（动态主机配置）</li>
+<li>DNS 系统原理（域名系统）</li>
+<li>FTP 协议（文件传输协议）</li>
+<li>Telnet协议（远程登陆协议）</li>
+<li>电子邮件协议等（SMTP、POP3、IMAP）</li>
+<li>……</li>
+</ul>
+<p><strong>传输层协议</strong> :</p>
+<ul>
+<li>TCP 协议<ul>
+<li>报文段结构</li>
+<li>可靠数据传输</li>
+<li>流量控制</li>
+<li>拥塞控制</li>
+</ul>
+</li>
+<li>UDP 协议<ul>
+<li>报文段结构</li>
+<li>RDT（可靠数据传输协议）</li>
+</ul>
+</li>
+</ul>
+<p><strong>网络层协议</strong> :</p>
+<ul>
+<li>IP 协议（TCP&#x2F;IP 协议的基础，分为 IPv4 和 IPv6）</li>
+<li>ARP 协议（地址解析协议，用于解析 IP 地址和 MAC 地址之间的映射）</li>
+<li>ICMP 协议（控制报文协议，用于发送控制消息）</li>
+<li>NAT 协议（网络地址转换协议）</li>
+<li>RIP 协议、OSPF 协议、BGP 协议（路由选择协议）</li>
+<li>……</li>
+</ul>
+<p><strong>网络接口层</strong> :</p>
+<ul>
+<li>差错检测技术</li>
+<li>多路访问协议（信道复用技术）</li>
+<li>CSMA&#x2F;CD 协议</li>
+<li>MAC 协议</li>
+<li>以太网技术</li>
+</ul>
+<h3 id="网络分层的原因"><a href="#网络分层的原因" class="headerlink" title="网络分层的原因"></a>网络分层的原因</h3><p>说到分层，我们先从我们平时使用框架开发一个后台程序来说，我们往往会按照每一层做不同的事情的原则将系统分为三层（复杂的系统分层会更多）:</p>
+<ol>
+<li>Repository（数据库操作）</li>
+<li>Service（业务操作）</li>
+<li>Controller（前后端数据交互）</li>
+</ol>
+<p><strong>复杂的系统需要分层，因为每一层都需要专注于一类事情。网络分层的原因也是一样，每一层只专注于做一类事情。</strong></p>
+<p>好了，再来说回：“为什么网络要分层？”。我觉得主要有 3 方面的原因：</p>
+<ol>
+<li><strong>各层之间相互独立</strong>：各层之间相互独立，各层之间不需要关心其他层是如何实现的，只需要知道自己如何调用下层提供好的功能就可以了（可以简单理解为接口调用）<strong>。这个和我们对开发时系统进行分层是一个道理。</strong></li>
+<li><strong>提高了整体灵活性</strong> ：每一层都可以使用最适合的技术来实现，你只需要保证你提供的功能以及暴露的接口的规则没有改变就行了。<strong>这个和我们平时开发系统的时候要求的高内聚、低耦合的原则也是可以对应上的。</strong></li>
+<li><strong>大问题化小</strong> ： 分层可以将复杂的网络间题分解为许多比较小的、界线比较清晰简单的小问题来处理和解决。这样使得复杂的计算机网络系统变得易于设计，实现和标准化。 <strong>这个和我们平时开发的时候，一般会将系统功能分解，然后将复杂的问题分解为容易理解的更小的问题是相对应的，这些较小的问题具有更好的边界（目标和接口）定义。</strong></li>
+</ol>
+<p>我想到了计算机世界非常非常有名的一句话，这里分享一下：</p>
+<blockquote>
+<p>计算机科学领域的任何问题都可以通过增加一个间接的中间层来解决，计算机整个体系从上到下都是按照严格的层次结构设计的。</p>
+</blockquote>
+<h4 id="TCP-与-UDP-的区别（重要）"><a href="#TCP-与-UDP-的区别（重要）" class="headerlink" title="TCP 与 UDP 的区别（重要）"></a>TCP 与 UDP 的区别（重要）</h4><ol>
+<li><strong>是否面向连接</strong> ：TCP提供面向连接的服务，在传送数据之前必须先建立连接，数据传送结束后要释放连接；UDP是无连接的，在传送数据之前不需要建立连接。</li>
+<li><strong>是否是可靠传输</strong>：TCP提供可靠的传输服务，TCP在传递数据之前，会有三次握手来建立连接，而且在数据传递时，有确认、窗口、重传、拥塞控制机制。通过 TCP 连接传输的数据，无差错、不丢失、不重复、并且按序到达；UDP尽最大努力交付，远地主机在收到UDP报文后，不需要给出任何确认，并且不保证数据不丢失，不保证是否顺序到达。</li>
+<li><strong>是否有状态</strong> ：这个和上面的“是否可靠传输”相对应。UDP是无状态服务，简单来说就是不管发出去之后的事情了；TCP 传输是有状态的，这个有状态说的是 TCP 会去记录自己发送消息的状态比如消息是否发送了、是否被接收了等等。为此 ，TCP 需要维持复杂的连接状态表。</li>
+<li><strong>传输效率</strong> ：由于使用 TCP 进行传输的时候多了连接、确认、重传等机制，所以 TCP 的传输效率要比 UDP 低很多。</li>
+<li><strong>传输形式</strong> ： TCP 是面向字节流的，UDP 是面向报文的。</li>
+<li><strong>首部开销</strong> ：TCP 首部开销（20 ～ 60 字节）比 UDP 首部开销（8 字节）要大。</li>
+<li><strong>是否提供广播或多播服务</strong> ：TCP 只支持点对点通信，UDP 支持一对一、一对多、多对一、多对多；</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>TCP</th>
+<th>UDP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>是否面向连接</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>是否可靠</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>是否有状态</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>传输效率</td>
+<td>较慢</td>
+<td>较快</td>
+</tr>
+<tr>
+<td>传输形式</td>
+<td>字节流</td>
+<td>数据报文段</td>
+</tr>
+<tr>
+<td>首部开销</td>
+<td>20 ～ 60 bytes</td>
+<td>8 bytes</td>
+</tr>
+<tr>
+<td>是否提供广播或多播服务</td>
+<td>否</td>
+<td>是</td>
+</tr>
+</tbody></table>
+<h4 id="什么时候选择-TCP-什么时候选-UDP"><a href="#什么时候选择-TCP-什么时候选-UDP" class="headerlink" title="什么时候选择 TCP,什么时候选 UDP?"></a>什么时候选择 TCP,什么时候选 UDP?</h4><ul>
+<li><strong>UDP 一般用于即时通信</strong>，比如： 语音、 视频 、直播等等。这些场景对传输数据的准确性要求不是特别高，比如你看视频即使少个一两帧，实际给人的感觉区别也不大。</li>
+<li><strong>TCP 用于对传输准确性要求特别高的场景</strong>，比如文件传输、发送和接收邮件、远程登录等等。</li>
+</ul>
+<h4 id="HTTP-基于-TCP-还是-UDP？"><a href="#HTTP-基于-TCP-还是-UDP？" class="headerlink" title="HTTP 基于 TCP 还是 UDP？"></a>HTTP 基于 TCP 还是 UDP？</h4><p><strong>HTTP 协议是基于 TCP 协议的</strong>，所以发送 HTTP 请求之前首先要建立 TCP 连接也就是要经历 3 次握手。</p>
+<h4 id="使用-TCP-的协议有哪些-使用-UDP-的协议有哪些"><a href="#使用-TCP-的协议有哪些-使用-UDP-的协议有哪些" class="headerlink" title="使用 TCP 的协议有哪些?使用 UDP 的协议有哪些?"></a>使用 TCP 的协议有哪些?使用 UDP 的协议有哪些?</h4><p><strong>运行于 TCP 协议之上的协议</strong> ：</p>
+<ol>
+<li><strong>HTTP 协议</strong> ：超文本传输协议（HTTP，HyperText Transfer Protocol)主要是为 Web 浏览器与 Web 服务器之间的通信而设计的。当我们使用浏览器浏览网页的时候，我们网页就是通过 HTTP 请求进行加载的。</li>
+<li><strong>HTTPS 协议</strong> ：更安全的超文本传输协议(HTTPS,Hypertext Transfer Protocol Secure)，身披 SSL 外衣的 HTTP 协议</li>
+<li><strong>FTP 协议</strong>：文件传输协议 FTP（File Transfer Protocol），提供文件传输服务，<strong>基于 TCP</strong> 实现可靠的传输。使用 FTP 传输文件的好处是可以屏蔽操作系统和文件存储方式。</li>
+<li><strong>SMTP 协议</strong>：简单邮件传输协议（SMTP，Simple Mail Transfer Protocol）的缩写，<strong>基于 TCP 协议</strong>，用来发送电子邮件。注意 ⚠️：接受邮件的协议不是 SMTP 而是 POP3 协议。</li>
+<li><strong>POP3&#x2F;IMAP 协议</strong>： POP3 和 IMAP 两者都是负责邮件接收的协议。</li>
+<li><strong>Telent 协议</strong>：远程登陆协议，通过一个终端登陆到其他服务器。被一种称为 SSH 的非常安全的协议所取代。</li>
+<li><strong>SSH 协议</strong> : SSH（ Secure Shell）是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。SSH 建立在可靠的传输协议 TCP 之上。</li>
+<li>……</li>
+</ol>
+<p><strong>运行于 UDP 协议之上的协议</strong> ：</p>
+<ol>
+<li><strong>DHCP 协议</strong>：动态主机配置协议，动态配置 IP 地址</li>
+<li><strong>DNS</strong> ： <strong>域名系统（DNS，Domain Name System）将人类可读的域名 (例如，<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a>) 转换为机器可读的 IP 地址 (例如，220.181.38.148)。</strong> 我们可以将其理解为专为互联网设计的电话薄。实际上 DNS 同时支持 UDP 和 TCP 协议。</li>
+</ol>
+<h4 id="建立连接-TCP三次握手"><a href="#建立连接-TCP三次握手" class="headerlink" title="建立连接 - TCP三次握手"></a>建立连接 - TCP三次握手</h4><p><img src="/2022/08/13/Computer-Network/tcp-shakes-hands-three-times.png" alt="TCP 三次握手图解"></p>
+<ol>
+<li>第一次握手:客户端将标志位SYN置为1，随机产生一个值序列号seq&#x3D;x，并将该数据包发送给服务端，客户端 进入syn_sent状态，等待服务端确认。</li>
+<li>第二次握手:服务端收到数据包后由标志位SYN&#x3D;1知道客户端请求建立连接，服务端将标志位SYN和 ACK都置为1，ack&#x3D;x+1,随机产生一个值seq&#x3D;y，并将该数据包发送给客户端以确认连接请求，服务端进入syn_rcvd状态。</li>
+<li>第三次握手:客户端收到确认后检查,如果正确则将标志位ACK为1，ack&#x3D;y+1，并将该数据包发送给服务端，服务端进行检查如果正确则连接建立成功，客户端和服务端进入established状态，完成三次握手，随后客户端和服务端之间可以开始传输 数据了</li>
+</ol>
+<p>建立一个 TCP 连接需要“三次握手”，缺一不可：</p>
+<ul>
+<li><strong>一次握手</strong>:客户端发送带有 SYN（SEQ&#x3D;x） 标志的数据包 -&gt; 服务端，然后客户端进入 <strong>SYN_SEND</strong> 状态，等待服务器的确认；</li>
+<li><strong>二次握手</strong>:服务端发送带有 SYN+ACK(SEQ&#x3D;y,ACK&#x3D;x+1) 标志的数据包 –&gt; 客户端,然后服务端进入 <strong>SYN_RECV</strong> 状态</li>
+<li><strong>三次握手</strong>:客户端发送带有带有 ACK(ACK&#x3D;y+1) 标志的数据包 –&gt; 服务端，然后客户端和服务器端都进入<strong>ESTABLISHED</strong> 状态，完成TCP三次握手。</li>
+</ul>
+<p><strong>当建立了 3 次握手之后，客户端和服务端就可以传输数据啦！</strong></p>
+<h4 id="为什么要三次握手"><a href="#为什么要三次握手" class="headerlink" title="为什么要三次握手?"></a>为什么要三次握手?</h4><p>三次握手的目的是建立可靠的通信信道，说到通讯，简单来说就是数据的发送与接收，而三次握手最主要的目的就是双方确认自己与对方的发送与接收是正常的。</p>
+<ol>
+<li><strong>第一次握手</strong> ：Client 什么都不能确认；Server 确认了对方发送正常，自己接收正常</li>
+<li><strong>第二次握手</strong> ：Client 确认了：自己发送、接收正常，对方发送、接收正常；Server 确认了：对方发送正常，自己接收正常</li>
+<li><strong>第三次握手</strong> ：Client 确认了：自己发送、接收正常，对方发送、接收正常；Server 确认了：自己发送、接收正常，对方发送、接收正常</li>
+</ol>
+<blockquote>
+<p>三次握手就能确认双发收发功能都正常，缺一不可。</p>
+</blockquote>
+<h4 id="断开连接-TCP四次挥手"><a href="#断开连接-TCP四次挥手" class="headerlink" title="断开连接 - TCP四次挥手"></a>断开连接 - TCP四次挥手</h4><ol>
+<li>第一次挥手：客户端发送一个FIN，用来关闭客户端到服务端的数据传送，客户端进入fin_wait_1状态。</li>
+<li>第二次挥手：服务端收到FIN后，发送一个ACK给客户端，确认序号为收到序号+1，服务端进入Close_wait状态。此时TCP连接处于半关闭状态，即客户端已经没有要发送的数据了，但服务端若发送数据，则客户端仍要接收。</li>
+<li>第三次挥手：服务端发送一个FIN，用来关闭服务端到客户端的数据传送，服务端进入Last_ack状态。</li>
+<li>第四次挥手：客户端收到FIN后，客户端进入Time_wait状态，接着发送一个ACK给服务端，确认后，服务端进入Closed状态，完成四次挥手。</li>
+</ol>
+<p>断开一个 TCP 连接则需要“四次挥手”，缺一不可：</p>
+<ol>
+<li><strong>第一次挥手</strong> ：客户端发送一个 FIN（SEQ&#x3D;X） 标志的数据包-&gt;服务端，用来关闭客户端到服务器的数据传送。然后，客户端进入 <strong>FIN-WAIT-1</strong> 状态。</li>
+<li><strong>第二次挥手</strong> ：服务器收到这个 FIN（SEQ&#x3D;X） 标志的数据包，它发送一个 ACK （SEQ&#x3D;X+1）标志的数据包-&gt;客户端 。然后，此时服务端进入<strong>CLOSE-WAIT</strong>状态，客户端进入<strong>FIN-WAIT-2</strong>状态。</li>
+<li><strong>第三次挥手</strong> ：服务端关闭与客户端的连接并发送一个 FIN (SEQ&#x3D;y)标志的数据包-&gt;客户端请求关闭连接，然后，服务端进入<strong>LAST-ACK</strong>状态。</li>
+<li><strong>第四次挥手</strong> ：客户端发送 ACK (SEQ&#x3D;y+1)标志的数据包-&gt;服务端并且进入<strong>TIME-WAIT</strong>状态，服务端在收到 ACK (SEQ&#x3D;y+1)标志的数据包后进入 CLOSE 状态。此时，如果客户端等待 <strong>2MSL</strong> 后依然没有收到回复，就证明服务端已正常关闭，随后，客户端也可以关闭连接了。</li>
+</ol>
+<p><strong>只要四次挥手没有结束，客户端和服务端就可以继续传输数据！</strong></p>
+<h3 id="为什么要四次挥手？"><a href="#为什么要四次挥手？" class="headerlink" title="为什么要四次挥手？"></a>为什么要四次挥手？</h3><p>TCP是全双工通信，可以双向传输数据。任何一方都可以在数据传送结束后发出连接释放的通知，待对方确认后进入半关闭状态。当另一方也没有数据再发送的时候，则发出连接释放通知，对方确认后就完全关闭了 TCP 连接。</p>
+<p>举个例子：A 和 B 打电话，通话即将结束后。</p>
+<ol>
+<li><strong>第一次挥手</strong> ： A 说“我没啥要说的了”</li>
+<li><strong>第二次挥手</strong> ：B 回答“我知道了”，但是 B 可能还会有要说的话，A 不能要求 B 跟着自己的节奏结束通话</li>
+<li><strong>第三次挥手</strong> ：于是 B 可能又巴拉巴拉说了一通，最后 B 说“我说完了”</li>
+<li><strong>第四次挥手</strong> ：A 回答“知道了”，这样通话才算结束。</li>
+</ol>
+<h4 id="拥塞控制"><a href="#拥塞控制" class="headerlink" title="拥塞控制"></a>拥塞控制</h4><ul>
+<li>慢开始：<br>发送方维持一个拥塞窗口 cwnd ( congestion window )的状态变量。拥塞窗口的大小取决于网络的拥塞程度，并且动态地在变化。发送方让自己的发送窗口等于拥塞窗口。<br>发送方控制拥塞窗口的原则是：只要网络没有出现拥塞，拥塞窗口就再增大一些，以便把更多的分组发送出去。但只要网络出现拥塞，拥塞窗口就减小一些，以减少注入到网络中的分组数。<br>慢开始算法的思路就是，不要一开始就发送大量的数据，先探测一下网络的拥塞程度，也就是说由小到大逐渐增加拥塞窗口的大小。</li>
+<li>拥塞避免：<br>让拥塞窗口cwnd缓慢地增大，即每经过一个往返时间RTT就把发送方的拥塞窗口cwnd加1，而不是加倍。这样拥塞窗口cwnd按线性规律缓慢增长，比慢开始算法的拥塞窗口增长速率缓慢得多。</li>
+<li>快重传：<br>当接收端收到比期望序号大的报文段时，便会重复发送最近一次确认的报文段的确认信号，我们称之为冗余ACK（duplicate ACK）。<br>如图所示，报文段1成功接收并被确认ACK 2，接收端的期待序号为2，当报文段2丢失，报文段3失序到来，与接收端的期望不匹配，接收端重复发送冗余ACK 2。</li>
+<li>快恢复：<br>当发送方连续收到三个重复确认，就执行“乘法减小”算法，把慢开始门限ssthresh减半。这是为了预防网络发生拥塞。请注意：接下去不执行慢开始算法。<br>由于发送方现在认为网络很可能没有发生拥塞，因此与慢开始不同之处是现在不执行慢开始算法（即拥塞窗口cwnd现在不设置为1），而是把cwnd值设置为 慢开始门限ssthresh减半后的数值，然后开始执行拥塞避免算法（“加法增大”），使拥塞窗口缓慢地线性增大。</li>
+</ul>
+<h4 id="DNS协议"><a href="#DNS协议" class="headerlink" title="DNS协议"></a>DNS协议</h4><p>DNS协议是基于UDP的应用层协议，它的功能是根据用户输入的域名，解析出该域名对应的IP地址，从而给客户端进行访问。</p>
+<h4 id="HTTP协议-HyperText-Transfer-Protocol"><a href="#HTTP协议-HyperText-Transfer-Protocol" class="headerlink" title="HTTP协议(HyperText Transfer Protocol)"></a>HTTP协议(HyperText Transfer Protocol)</h4><p>http协议是超文本传输协议。它是基于TCP协议的应用层传输协议，即客户端和服务端进行数据传输的一种规则。该协议本身HTTP 是一种无状态的协议。</p>
+<h4 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h4><p>HTTP 协议本身是无状态的，为了使其能处理更加复杂的逻辑，HTTP&#x2F;1.1 引入 Cookie 来保存状态信息。</p>
+<p>Cookie是由服务端产生的，再发送给客户端保存，当客户端再次访问的时候，服务器可根据cookie辨识客户端是哪个，以此可以做个性化推送，免账号密码登录等等。</p>
+<h4 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h4><p>session用于标记特定客户端信息，存在在服务器的一个文件里。一般客户端带Cookie对服务器进行访问，可通过cookie中的session id从整个session中查询到服务器记录的关于客户端的信息。</p>
+<h4 id="Get与Post"><a href="#Get与Post" class="headerlink" title="Get与Post"></a>Get与Post</h4><ul>
+<li>Get：指定资源请求数据，刷新无害，Get请求的数据会附加到URL中，传输数据的大小受到url的限制。</li>
+<li>Post：向指定资源提交要被处理的数据。刷新会使数据会被重复提交。post在发送数据前会先将请求头发送给服务器进行确认，然后才真正发送数据。</li>
+</ul>
+<h4 id="浏览器中输入一个网址后，具体发生了什么"><a href="#浏览器中输入一个网址后，具体发生了什么" class="headerlink" title="浏览器中输入一个网址后，具体发生了什么"></a>浏览器中输入一个网址后，具体发生了什么</h4><ol>
+<li>进行DNS解析操作，根据DNS解析的结果查到服务器IP地址</li>
+<li>通过ip寻址和arp，找到服务器，并利用三次握手建立TCP连接</li>
+<li>浏览器生成HTTP报文，发送HTTP请求，等待服务器响应</li>
+<li>服务器处理请求，并返回给浏览器</li>
+<li>根据HTTP是否开启长连接，进行TCP的挥手过程</li>
+<li>浏览器根据收到的静态资源进行页面渲染</li>
+</ol>
+<h4 id="OSI七层协议"><a href="#OSI七层协议" class="headerlink" title="OSI七层协议"></a>OSI七层协议</h4><ul>
+<li>物理层<br>主要解决两台物理机之间的通信，通过二进制比特流的传输来实现，二进制数据表现为电流电压上的强弱，到达目的地再转化为二进制机器码。网卡、集线器工作在这一层。</li>
+<li>数据链路层<br>在不可靠的物理介质上提供可靠的传输，接收来自物理层的位流形式的数据，并封装成帧，传送到上一层；同样，也将来自上层的数据帧，拆装为位流形式的数据转发到物理层。这一层在物理层提供的比特流的基础上，通过差错控制、流量控制方法，使有差错的物理线路变为无差错的数据链路。提供物理地址寻址功能。交换机工作在这一层。</li>
+<li>网络层<br>将网络地址翻译成对应的物理地址，并决定如何将数据从发送方路由到接收方，通过路由选择算法为分组通过通信子网选择最佳路径。路由器工作在这一层。</li>
+<li>传输层<br>传输层提供了进程间的逻辑通信，传输层向高层用户屏蔽了下面网络层的核心细节，使应用程序看起来像是在两个传输层实体之间有一条端到端的逻辑通信信道。</li>
+</ul>
+<blockquote>
+<p>运输层主要使用以下两种协议<br>传输控制协议 TCP（Transmission Control Protocol）–提供面向连接的，可靠的数据传输服务。<br>用户数据协议 UDP（User Datagram Protocol）–提供无连接的，尽最大努力的数据传输服务（不保证数据传输的可靠性）。</p>
+</blockquote>
+<ul>
+<li>会话层<br>建立会话：身份验证，权限鉴定等；保持会话：对该会话进行维护，在会话维持期间两者可以随时使用这条会话传输局；断开会话：当应用程序或应用层规定的超时时间到期后，OSI会话层才会释放这条会话。</li>
+<li>表示层<br>对数据格式进行编译，对收到或发出的数据根据应用层的特征进行处理，如处理为文字、图片、音频、视频、文档等，还可以对压缩文件进行解压缩、对加密文件进行解密等。</li>
+<li>应用层<br>提供应用层协议，如HTTP协议，FTP协议等等，方便应用程序之间进行通信。</li>
+</ul>
+<h4 id="网络分层"><a href="#网络分层" class="headerlink" title="网络分层"></a>网络分层</h4><ul>
+<li><p>数据链路层 (Data Link Layer)<br>实现相邻（Neighboring）网络实体间的数据传输<br>成帧（Framing）：从物理层的比特流中提取出完整的帧<br>错误检测与纠正：为提供可靠数据通信提供可能<br>物理地址（MAC address）：48位，理论上唯一网络标识，烧录在网卡，不便更改<br>流量控制，避免“淹没”（overwhelming）:当快速的发送端遇上慢速的接收端，接收端缓存溢出<br>共享信道上的访问控制（MAC）：同一个信道，同时传输信号。如同：同一个Wifi热点（AP）连接着多个无线用户（手机），则多个用户同时需要发送数据，如何控制发送顺序？</p>
+</li>
+<li><p>网络层 (Network Layer)<br>将数据包跨越网络从源设备发送到目的设备（host to host）<br>路由（Routing）：在网络中选取从源端到目的端转发路径，常常会根据网络可达性动态选取最佳路径，也可以使用静态路由<br>路由协议：路由器之间交互路由信息所遵循的协议规范，使得单个路由器能够获取网络的可达性等信息<br>服务质量（QoS）控制：处理网络拥塞、负载均衡、准入控制、保障延迟<br>异构网络互联：在异构编址和异构网络中路由寻址和转发</p>
+</li>
+<li><p>传输层 (Transport Layer)<br>将数据从源端口发送到目的端口（进程到进程）<br>网络层定位到一台主机（host），传输层的作用域具体到主机上的某一个进程<br>网络层的控制主要面向运营商，传输层为终端用户提供端到端的数据传输控制<br>两类模式：可靠的传输模式，或不可靠传输模式<br>可靠传输：可靠的端到端数据传输，适合于对通信质量有要求的应用场景，如文件传输等<br>不可靠传输：更快捷、更轻量的端到端数据传输，适合于对通信质量要求不高，对通信响应速度要求高的应用场景，如语音对话、视频会议等</p>
+</li>
+<li><p>会话层 (Session Layer)<br>利用传输层提供的服务，在应用程序之间建立和维持会话，并能使会话获得同步</p>
+</li>
+<li><p>表示层（Presentation Layer）<br>关注所传递信息的语法和语义，管理数据的表示方法，传输的数据结构<br>应用层（Application Layer）</p>
+</li>
+</ul>
+<h4 id="媒体接入控制-MAC-Medium-Access-Control-子层"><a href="#媒体接入控制-MAC-Medium-Access-Control-子层" class="headerlink" title="媒体接入控制 MAC (Medium Access Control)子层"></a>媒体接入控制 MAC (Medium Access Control)子层</h4><blockquote>
+<p>if config \       查看网络情况<br>ping      \      测试网络连通<br>netstat  \       显示网络状态信息<br>nslookup  \      可以指定查询的类型，可以查到DNS记录的生存时间还可以指定使用哪个DNS服务器进行解释<br>ipconfig &#x2F;all   显示本机TCP&#x2F;IP配置的详细信息</p>
+</blockquote>
+<h4 id="常见面试题"><a href="#常见面试题" class="headerlink" title="常见面试题"></a>常见面试题</h4><ol start="5">
+<li>IP和MAC地址的区别<br>IP地址是根据网络拓扑结构而分配的，mac是网络设备出厂就配置的，用于标识唯一的设备，更换网络场景，ip可以重新分配，mac不可更改。</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>感谢大佬！</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.JPG" alt="Tiger泰航 WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.JPG" alt="Tiger泰航 Alipay">
+        <p>Alipay</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Computer-Network/" rel="tag"># Computer Network</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/08/12/markdown/" rel="prev" title="Markdown">
+      <i class="fa fa-chevron-left"></i> Markdown
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/08/13/Operating-System/" rel="next" title="Operating System">
+      Operating System <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#OSI-%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B"><span class="nav-number">1.</span> <span class="nav-text">OSI 七层模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TCP-x2F-IP-%E5%9B%9B%E5%B1%82%E6%A8%A1%E5%9E%8B"><span class="nav-number">2.</span> <span class="nav-text">TCP&#x2F;IP 四层模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E5%B1%82%EF%BC%88Application-layer%EF%BC%89"><span class="nav-number">2.1.</span> <span class="nav-text">应用层（Application layer）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%A0%E8%BE%93%E5%B1%82%EF%BC%88Transport-layer%EF%BC%89"><span class="nav-number">2.2.</span> <span class="nav-text">传输层（Transport layer）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%B1%82%EF%BC%88Network-layer%EF%BC%89"><span class="nav-number">2.3.</span> <span class="nav-text">网络层（Network layer）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3%E5%B1%82%EF%BC%88Network-interface-layer%EF%BC%89"><span class="nav-number">2.4.</span> <span class="nav-text">网络接口层（Network interface layer）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">2.5.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%88%86%E5%B1%82%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="nav-number">2.6.</span> <span class="nav-text">网络分层的原因</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#TCP-%E4%B8%8E-UDP-%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%88%E9%87%8D%E8%A6%81%EF%BC%89"><span class="nav-number">2.6.1.</span> <span class="nav-text">TCP 与 UDP 的区别（重要）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E9%80%89%E6%8B%A9-TCP-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E9%80%89-UDP"><span class="nav-number">2.6.2.</span> <span class="nav-text">什么时候选择 TCP,什么时候选 UDP?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HTTP-%E5%9F%BA%E4%BA%8E-TCP-%E8%BF%98%E6%98%AF-UDP%EF%BC%9F"><span class="nav-number">2.6.3.</span> <span class="nav-text">HTTP 基于 TCP 还是 UDP？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-TCP-%E7%9A%84%E5%8D%8F%E8%AE%AE%E6%9C%89%E5%93%AA%E4%BA%9B-%E4%BD%BF%E7%94%A8-UDP-%E7%9A%84%E5%8D%8F%E8%AE%AE%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="nav-number">2.6.4.</span> <span class="nav-text">使用 TCP 的协议有哪些?使用 UDP 的协议有哪些?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BB%BA%E7%AB%8B%E8%BF%9E%E6%8E%A5-TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B"><span class="nav-number">2.6.5.</span> <span class="nav-text">建立连接 - TCP三次握手</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B"><span class="nav-number">2.6.6.</span> <span class="nav-text">为什么要三次握手?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%AD%E5%BC%80%E8%BF%9E%E6%8E%A5-TCP%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B"><span class="nav-number">2.6.7.</span> <span class="nav-text">断开连接 - TCP四次挥手</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%EF%BC%9F"><span class="nav-number">2.7.</span> <span class="nav-text">为什么要四次挥手？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6"><span class="nav-number">2.7.1.</span> <span class="nav-text">拥塞控制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DNS%E5%8D%8F%E8%AE%AE"><span class="nav-number">2.7.2.</span> <span class="nav-text">DNS协议</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HTTP%E5%8D%8F%E8%AE%AE-HyperText-Transfer-Protocol"><span class="nav-number">2.7.3.</span> <span class="nav-text">HTTP协议(HyperText Transfer Protocol)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Cookie"><span class="nav-number">2.7.4.</span> <span class="nav-text">Cookie</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Session"><span class="nav-number">2.7.5.</span> <span class="nav-text">Session</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Get%E4%B8%8EPost"><span class="nav-number">2.7.6.</span> <span class="nav-text">Get与Post</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E8%BE%93%E5%85%A5%E4%B8%80%E4%B8%AA%E7%BD%91%E5%9D%80%E5%90%8E%EF%BC%8C%E5%85%B7%E4%BD%93%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88"><span class="nav-number">2.7.7.</span> <span class="nav-text">浏览器中输入一个网址后，具体发生了什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#OSI%E4%B8%83%E5%B1%82%E5%8D%8F%E8%AE%AE"><span class="nav-number">2.7.8.</span> <span class="nav-text">OSI七层协议</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%88%86%E5%B1%82"><span class="nav-number">2.7.9.</span> <span class="nav-text">网络分层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AA%92%E4%BD%93%E6%8E%A5%E5%85%A5%E6%8E%A7%E5%88%B6-MAC-Medium-Access-Control-%E5%AD%90%E5%B1%82"><span class="nav-number">2.7.10.</span> <span class="nav-text">媒体接入控制 MAC (Medium Access Control)子层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98"><span class="nav-number">2.7.11.</span> <span class="nav-text">常见面试题</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Tiger泰航"
+      src="/images/tiger.png">
+  <p class="site-author-name" itemprop="name">Tiger泰航</p>
+  <div class="site-description" itemprop="description">做好自己</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/TaihangLi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;TaihangLi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/5671378484" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;5671378484" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/taihang_li" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;taihang_li" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.douyin.com/user/MS4wLjABAAAAxWcXHNhqkr_bTjveO_XfcwOGDs_RCtplXJ2HfFQAzcM" title="TikTok → https:&#x2F;&#x2F;www.douyin.com&#x2F;user&#x2F;MS4wLjABAAAAxWcXHNhqkr_bTjveO_XfcwOGDs_RCtplXJ2HfFQAzcM" rel="noopener" target="_blank"><i class="/images/tiktok-brands.svg fa-fw"></i>TikTok</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2022 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tiger泰航</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

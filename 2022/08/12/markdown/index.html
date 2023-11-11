@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/tiger.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/tiger.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/tiger.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Markdown笔记（持续更新中）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown">
+<meta property="og:url" content="http://example.com/2022/08/12/markdown/index.html">
+<meta property="og:site_name" content="Tiger&#39; Home">
+<meta property="og:description" content="Markdown笔记（持续更新中）">
+<meta property="og:locale">
+<meta property="og:image" content="http://y.gtimg.cn/music/photo_new/T002R300x300M000000C4fZU14IubU_1.jpg">
+<meta property="og:image" content="http://example.com/2022/08/12/markdown/tcp-shakes-hands-three-times.png">
+<meta property="og:image" content="http://y.gtimg.cn/music/photo_new/T002R300x300M000000C4fZU14IubU_1.jpg">
+<meta property="og:image" content="http://example.com/2022/08/12/markdown/assets/img/cat.jpg">
+<meta property="article:published_time" content="2022-08-12T15:03:13.000Z">
+<meta property="article:modified_time" content="2022-09-25T15:34:32.000Z">
+<meta property="article:author" content="Tiger泰航">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://y.gtimg.cn/music/photo_new/T002R300x300M000000C4fZU14IubU_1.jpg">
+
+<link rel="canonical" href="http://example.com/2022/08/12/markdown/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-Hans'
+  };
+</script>
+
+  <title>Markdown | Tiger' Home</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Tiger' Home</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">种自己的花，爱自己的宇宙。</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/TaihangLi" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/12/markdown/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/tiger.png">
+      <meta itemprop="name" content="Tiger泰航">
+      <meta itemprop="description" content="做好自己">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tiger' Home">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Markdown
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-08-12 23:03:13" itemprop="dateCreated datePublished" datetime="2022-08-12T23:03:13+08:00">2022-08-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-09-25 23:34:32" itemprop="dateModified" datetime="2022-09-25T23:34:32+08:00">2022-09-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+            <div class="post-description">Markdown笔记（持续更新中）</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Markdown笔记（来自Joy）</p>
+<h2 id="自定义文字"><a href="#自定义文字" class="headerlink" title=" 自定义文字"></a><font color="6FBCE1"> 自定义文字</font></h2><p>`我是高亮`<br><code>我是高亮</code></p>
+<p>**粗体**<br> __粗体__<br><strong>粗体</strong></p>
+<p>*斜体*<br>_斜体_<br><em>斜体</em></p>
+<p><em><strong>这是斜体加粗的文字</strong></em><br><del>这是加删除线的文字</del></p>
+<p>- aa<br>- bb<br>  - bb.1<br>  - bb.2<br>- cc\</p>
+<ul>
+<li>aa</li>
+<li>bb<ul>
+<li>bb.1</li>
+<li>bb.2</li>
+</ul>
+</li>
+<li>cc</li>
+</ul>
+<p>\1. aa<br>\2. bb<br>\3. cc</p>
+<ol>
+<li>aa</li>
+<li>bb</li>
+<li>cc</li>
+</ol>
+<p>&lt;!– comment –&gt;<br>快捷键 command + &lt;- + &#x2F;</p>
+<p>快捷键 command + d find all same object</p>
+<p>&gt; 引用了一段名人名言。</p>
+<blockquote>
+<p>引用了一段名人名言。</p>
+</blockquote>
+<p>&gt; 曾经沧海难为水<br>除却巫山不是云\</p>
+<blockquote>
+<p>曾经沧海难为水<br>除却巫山不是云</p>
+</blockquote>
+<p>\&gt; 我不再是引用。</p>
+<p>- [x] 已经做完的事情</p>
+<ul>
+<li><input checked disabled type="checkbox"> 已经做完的事情</li>
+</ul>
+<p>- [ ] 还没做的事情</p>
+<ul>
+<li><input disabled type="checkbox"> 还没做的事情</li>
+</ul>
+<p><kbd>Create Project</kbd></p>
+<p>[这个是链接](<a target="_blank" rel="noopener" href="http://www.baidu.com/">http://www.baidu.com/</a>)<br><a target="_blank" rel="noopener" href="http://www.baidu.com/">这个是链接</a></p>
+<p>下面这个是图片：</p>
+<p>&lt;img src&#x3D;”<a target="_blank" rel="noopener" href="http://y.gtimg.cn/music/photo_new/T002R300x300M000000C4fZU14IubU_1.jpg">http://y.gtimg.cn/music/photo_new/T002R300x300M000000C4fZU14IubU_1.jpg</a>“ width&#x3D;256 height&#x3D;256 &#x2F;&gt;</p>
+<img src="http://y.gtimg.cn/music/photo_new/T002R300x300M000000C4fZU14IubU_1.jpg" width="256" height="256">
+
+<p>!<a href="tcp-shakes-hands-three-times.png"></a><br><img src="/2022/08/12/markdown/tcp-shakes-hands-three-times.png"></p>
+<p>!<a target="_blank" rel="noopener" href="https://guide-blog-images.oss-cn-shenzhen.aliyuncs.com/github/javaguide/cs-basics/network/tcp-shakes-hands-three-times.png">TCP 三次握手图解</a></p>
+<p>![这样就是图片](<a target="_blank" rel="noopener" href="http://y.gtimg.cn/music/photo_new/T002R300x300M000000C4fZU14IubU_1.jpg">http://y.gtimg.cn/music/photo_new/T002R300x300M000000C4fZU14IubU_1.jpg</a>)</p>
+<p><img src="http://y.gtimg.cn/music/photo_new/T002R300x300M000000C4fZU14IubU_1.jpg" alt="这样就是图片"></p>
+<table>
+<thead>
+<tr>
+<th>学号</th>
+<th>姓名</th>
+<th>成绩</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>AAA</td>
+<td>100</td>
+</tr>
+<tr>
+<td>2</td>
+<td>BBB</td>
+<td>98</td>
+</tr>
+<tr>
+<td>3</td>
+<td>CCC</td>
+<td>59</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th align="center">表头</th>
+<th align="right">表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容</td>
+<td align="center">内容</td>
+<td align="right">内容</td>
+</tr>
+<tr>
+<td>内容</td>
+<td align="center">内容</td>
+<td align="right">内容</td>
+</tr>
+</tbody></table>
+<p>第二行分割表头和内容。</p>
+<ul>
+<li>有一个就行，为了对齐，多加了几个<br>文字默认居左<br>-两边加：表示文字居中<br>-右边加：表示文字居右<br>注：原生的语法两边都要用 | 包起来。此处省略</li>
+</ul>
+<ol>
+<li>第一条</li>
+<li>第二条<blockquote>
+<p>第二条很重要。</p>
+</blockquote>
+</li>
+<li>第三条</li>
+</ol>
+<p>一起来玩捉迷藏。</p>
+<details>
+<summary>我在哪里？</summary>
+
+<blockquote>
+<p>被你发现了。</p>
+</blockquote>
+</details>
+
+<p>$\vartheta$</p>
+<p>&amp;nbsp;<br>空格</p>
+<p>&lt;br&#x2F;&gt;<br><br>下一行<br>&lt;center&gt; 居中 </p>
+<center> 居中 </center>
+
+<p>&lt;font color&#x3D; 977FD7&gt; 紫色&lt;&#x2F;font&gt;<br><font color="977FD7"> 紫色</font></p>
+<p>&lt;font color&#x3D; 6FBCE1&gt; 蓝色&lt;&#x2F;font&gt;<br><font color="6FBCE1"> 蓝色</font></p>
+<p>&lt;font color&#x3D; E675A7&gt; 粉色&lt;&#x2F;font&gt;<br><font color="E675A7"> 粉色</font></p>
+<p>&lt;font color&#x3D; FC572B&gt; 红色&lt;&#x2F;font&gt;<br><font color="FC572B"> 红色</font></p>
+<p>&lt;font color&#x3D;#2E86C1 size&#x3D;2 face&#x3D;”klee”&gt;蓝色特定大小字体&lt;/font&gt;<br><font color="#2E86C1" size="2" face="klee">蓝色特定大小字体</font></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">int</span> a;</span><br><span class="line">a = <span class="number">10</span>;</span><br><span class="line">a++;</span><br><span class="line">printf(<span class="string">&quot;%d\n&quot;</span>, a);</span><br></pre></td></tr></table></figure>
+<h2 id="一-标题"><a href="#一-标题" class="headerlink" title="一.标题"></a>一.标题</h2><p>在想要设置为标题的文字前面加#来表示<br>一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 这是一级标题</span><br><span class="line">## 这是二级标题</span><br><span class="line">### 这是三级标题</span><br><span class="line">#### 这是四级标题</span><br><span class="line">##### 这是五级标题</span><br><span class="line">###### 这是六级标题</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><h2 id="二-字体"><a href="#二-字体" class="headerlink" title="二.字体"></a>二.字体</h2><p>加粗<br>倾斜<br>倾斜加粗<br>删除线<br>下划线</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">**这是加粗的文字**</span><br><span class="line">*这是倾斜的文字*</span><br><span class="line">***这是斜体加粗的文字***</span><br><span class="line">~~这是加删除线的文字~~</span><br><span class="line">&lt;u&gt;下划线&lt;/u&gt;</span><br></pre></td></tr></table></figure>
+<p>效果：<br><strong>这是加粗的文字</strong></p>
+<p><em>这是倾斜的文字</em></p>
+<p><em><strong>这是斜体加粗的文字</strong></em></p>
+<p><del>这是加删除线的文字</del></p>
+<p><u>这是下划线</u></p>
+<h2 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是引用的内容</span><br><span class="line">&gt;&gt;这是引用的内容</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>这是引用的内容</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">----</span><br><span class="line">***</span><br><span class="line">*****</span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<h2 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 &#x27;图片title&#x27;)</span><br><span class="line"></span><br><span class="line">图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/08/12/markdown/assets/img/cat.jpg" alt="图片alt" title="图片title"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如果上线到blog</span><br><span class="line">![图片alt](/assets/img/cat.jpg &#x27;图片title&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[超链接名](超链接地址 &quot;超链接title&quot;)</span><br><span class="line">title可加可不加</span><br><span class="line">如：[百度](http://baidu.com)</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p><a target="_blank" rel="noopener" href="http://baidu.com/">百度</a></p>
+<h2 id="七-列表"><a href="#七-列表" class="headerlink" title="七.列表"></a>七.列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>无序列表用 - + * 任何一种都可以</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- 列表内容</span><br><span class="line">+ 列表内容</span><br><span class="line">* 列表内容</span><br><span class="line"></span><br><span class="line">注意：- + * 跟内容之间都要有一个空格</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>数字加点</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 列表内容</span><br><span class="line">2. 列表内容</span><br><span class="line">3. 列表内容</span><br><span class="line"></span><br><span class="line">注意：序号跟内容之间要有空格</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<ol>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
+<p>列表嵌套<br>上一级和下一级之间敲三个空格即可</p>
+<h2 id="八-表格"><a href="#八-表格" class="headerlink" title="八.表格"></a>八.表格</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|:--:|---:</span><br><span class="line">内容|内容|内容</span><br><span class="line">内容|内容|内容</span><br><span class="line"></span><br><span class="line">第二行分割表头和内容。</span><br><span class="line">- 有一个就行，为了对齐，多加了几个</span><br><span class="line">文字默认居左</span><br><span class="line">-两边加：表示文字居中</span><br><span class="line">-右边加：表示文字居右</span><br><span class="line">注：原生的语法两边都要用 | 包起来。此处省略</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th align="center">表头</th>
+<th align="right">表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容</td>
+<td align="center">内容</td>
+<td align="right">内容</td>
+</tr>
+<tr>
+<td>内容</td>
+<td align="center">内容</td>
+<td align="right">内容</td>
+</tr>
+</tbody></table>
+<h2 id="九-代码"><a href="#九-代码" class="headerlink" title="九.代码"></a>九.代码</h2><p>单行代码:<br><code>单行内容</code><br>代码块：<br>(<code>) (</code>)</p>
+<h2 id="Customizing-Text-with-Markdown"><a href="#Customizing-Text-with-Markdown" class="headerlink" title=" Customizing Text with Markdown"></a><font color="977FD7"> Customizing Text with Markdown</font></h2><h3 id="Headings"><a href="#Headings" class="headerlink" title=" Headings"></a><font color="6FBCE1"> Headings</font></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># This is the highest level of the text.</span><br><span class="line">## This is the second highest level of the text.</span><br><span class="line">### Each hash mark creates a new level of text for headers.</span><br><span class="line">#### These are useful for subsections for large chunks of information.</span><br><span class="line">##### There are six different headers you can use for text.</span><br><span class="line">###### This is sixth section!</span><br></pre></td></tr></table></figure>
+<h1 id="This-is-the-highest-level-of-the-text"><a href="#This-is-the-highest-level-of-the-text" class="headerlink" title="This is the highest level of the text."></a>This is the highest level of the text.</h1><h2 id="This-is-the-second-highest-level-of-the-text"><a href="#This-is-the-second-highest-level-of-the-text" class="headerlink" title="This is the second highest level of the text."></a>This is the second highest level of the text.</h2><h3 id="Each-hash-mark-creates-a-new-level-of-text-for-headers"><a href="#Each-hash-mark-creates-a-new-level-of-text-for-headers" class="headerlink" title="Each hash mark creates a new level of text for headers."></a>Each hash mark creates a new level of text for headers.</h3><h4 id="These-are-useful-for-subsections-for-large-chunks-of-information"><a href="#These-are-useful-for-subsections-for-large-chunks-of-information" class="headerlink" title="These are useful for subsections for large chunks of information."></a>These are useful for subsections for large chunks of information.</h4><h5 id="There-are-six-different-headers-you-can-use-for-text"><a href="#There-are-six-different-headers-you-can-use-for-text" class="headerlink" title="There are six different headers you can use for text."></a>There are six different headers you can use for text.</h5><h6 id="This-is-sixth-section"><a href="#This-is-sixth-section" class="headerlink" title="This is sixth section!"></a>This is sixth section!</h6><h3 id="Styling-Text"><a href="#Styling-Text" class="headerlink" title=" Styling Text"></a><font color="6FBCE1"> Styling Text</font></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">**This text is bold.**</span><br><span class="line">*This text is in italics.* _This text is also in italics._</span><br><span class="line">~~This text has a strike-through applied.~~</span><br><span class="line">~~**What if something is really important gets crossed out?**~~</span><br><span class="line">_**It&#x27;s pretty easy to ~~apply~~ multiple styles.**_</span><br></pre></td></tr></table></figure>
+<p>**This text is bold.**<br><em>This text is in italics.</em> _This text is also in italics._<br><del>This text has a strike-through applied.</del><br><del><strong>What if something is really important gets crossed out?</strong></del><br>_<strong>It’s pretty easy to <del>apply</del> multiple styles.</strong>_\</p>
+<h3 id="Quoting-Text"><a href="#Quoting-Text" class="headerlink" title=" Quoting Text"></a><font color="6FBCE1"> Quoting Text</font></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; I body him.</span><br><span class="line">&gt;&gt; There&#x27;s gonna come a point where you&#x27;ll forget about what</span><br><span class="line">happened and you&#x27;re gonna wanna come back at me.</span><br><span class="line">&gt;&gt;&gt; Don&#x27;t get hit</span><br><span class="line">&gt;&gt;&gt;&gt; SERIOUSLY, don&#x27;t get hit.</span><br><span class="line">&gt;&gt;&gt;&gt;&gt; These keep nesting at 20. I stopped checking after that point.</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>I body him.</p>
+<blockquote>
+<p>There’s gonna come a point where you’ll forget about what happened and you’re gonna wanna come back at me.</p>
+<blockquote>
+<p>Don’t get hit</p>
+<blockquote>
+<p>SERIOUSLY, don’t get hit.</p>
+<blockquote>
+<p>These keep nesting at 20. I stopped checking after that point.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h3 id="Code"><a href="#Code" class="headerlink" title=" Code"></a><font color="6FBCE1"> Code</font></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">``</span><br><span class="line">6XQS8-KLKEH-FTB</span><br><span class="line">STCBW-2V6V6-9D4</span><br><span class="line">``</span><br><span class="line">The lobby code is `weloveesports`!</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">6XQS8-KLKEH-FTB</span><br><span class="line">STCBW-2V6V6-9D4</span><br></pre></td></tr></table></figure>
+
+<p>The lobby code is <code>weloveesports</code>!</p>
+<h3 id="Lists-and-Bullets"><a href="#Lists-and-Bullets" class="headerlink" title=" Lists and Bullets"></a><font color="6FBCE1"> Lists and Bullets</font></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#### shopping list pt 1</span><br><span class="line">* allen wrenches</span><br><span class="line">* gerbil feeders</span><br><span class="line"></span><br><span class="line">*********</span><br><span class="line">#### shopping list pt 2</span><br><span class="line">1. Walkie-talkies</span><br><span class="line">- copper wires safety goggles</span><br><span class="line">- radial tires</span><br><span class="line"></span><br><span class="line">*********</span><br><span class="line">#### shopping list pt 3</span><br><span class="line">* Picture hangers</span><br><span class="line">	* paper cutters</span><br><span class="line">		* waffle irons</span><br></pre></td></tr></table></figure>
+
+<h4 id="shopping-list-pt-1"><a href="#shopping-list-pt-1" class="headerlink" title="shopping list pt 1"></a>shopping list pt 1</h4><ul>
+<li>allen wrenches</li>
+<li>gerbil feeders</li>
+</ul>
+<hr>
+<h4 id="shopping-list-pt-2"><a href="#shopping-list-pt-2" class="headerlink" title="shopping list pt 2"></a>shopping list pt 2</h4><ol>
+<li>Walkie-talkies</li>
+</ol>
+<ul>
+<li>copper wires safety goggles</li>
+<li>radial tires</li>
+</ul>
+<hr>
+<h4 id="shopping-list-pt-3"><a href="#shopping-list-pt-3" class="headerlink" title="shopping list pt 3"></a>shopping list pt 3</h4><ul>
+<li>Picture hangers<ul>
+<li>paper cutters<ul>
+<li>waffle irons</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Aligning-Text"><a href="#Aligning-Text" class="headerlink" title=" Aligning Text"></a><font color="6FBCE1"> Aligning Text</font></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div align=&quot;center&quot;&gt;The derogatory term ... win.&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div align=&quot;right&quot;&gt;Now, everyone begins ... win.&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<div align="center">The derogatory term “scrub” means several different things. One definition is someone (especially a game player) who is not good at something (especially a game). By this definition, we all start out as scrubs, and there is certainly no shame in that. I mean the term differently, though. A scrub is a player who is handicapped by self-imposed rules that the game knows nothing about. A scrub does not play to win.</div>
+
+<div align="right">Now, everyone begins as a poor player—it takes time to learn a game to get to a point where you know what you’re doing. There is the mistaken notion, though, that by merely continuing to play or “learn” the game, one can become a top player. In reality, the “scrub” has many more mental obstacles to overcome than anything actually going on during the game. The scrub has lost the game even before it starts. He’s lost the game even before deciding which game to play. His problem? He does not play to win.</div>
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>感谢大佬！</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.JPG" alt="Tiger泰航 WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.JPG" alt="Tiger泰航 Alipay">
+        <p>Alipay</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/08/12/Data-Mining/" rel="prev" title="Data Mining">
+      <i class="fa fa-chevron-left"></i> Data Mining
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/08/13/Computer-Network/" rel="next" title="Computer Network">
+      Computer Network <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%87%E5%AD%97"><span class="nav-number">1.</span> <span class="nav-text"> 自定义文字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-%E6%A0%87%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">一.标题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number"></span> <span class="nav-text">这是一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">这是二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">这是三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.1.</span> <span class="nav-text">这是四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">这是五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">这是六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C-%E5%AD%97%E4%BD%93"><span class="nav-number">2.</span> <span class="nav-text">二.字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%BC%95%E7%94%A8"><span class="nav-number">3.</span> <span class="nav-text">三、引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%88%86%E5%89%B2%E7%BA%BF"><span class="nav-number">4.</span> <span class="nav-text">四、分割线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E5%9B%BE%E7%89%87"><span class="nav-number">5.</span> <span class="nav-text">五、图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="nav-number">6.</span> <span class="nav-text">六、超链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%83-%E5%88%97%E8%A1%A8"><span class="nav-number">7.</span> <span class="nav-text">七.列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="nav-number">7.1.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="nav-number">7.2.</span> <span class="nav-text">有序列表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AB-%E8%A1%A8%E6%A0%BC"><span class="nav-number">8.</span> <span class="nav-text">八.表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%9D-%E4%BB%A3%E7%A0%81"><span class="nav-number">9.</span> <span class="nav-text">九.代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Customizing-Text-with-Markdown"><span class="nav-number">10.</span> <span class="nav-text"> Customizing Text with Markdown</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Headings"><span class="nav-number">10.1.</span> <span class="nav-text"> Headings</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#This-is-the-highest-level-of-the-text"><span class="nav-number"></span> <span class="nav-text">This is the highest level of the text.</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#This-is-the-second-highest-level-of-the-text"><span class="nav-number">1.</span> <span class="nav-text">This is the second highest level of the text.</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Each-hash-mark-creates-a-new-level-of-text-for-headers"><span class="nav-number">1.1.</span> <span class="nav-text">Each hash mark creates a new level of text for headers.</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#These-are-useful-for-subsections-for-large-chunks-of-information"><span class="nav-number">1.1.1.</span> <span class="nav-text">These are useful for subsections for large chunks of information.</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#There-are-six-different-headers-you-can-use-for-text"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">There are six different headers you can use for text.</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#This-is-sixth-section"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">This is sixth section!</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Styling-Text"><span class="nav-number">1.2.</span> <span class="nav-text"> Styling Text</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Quoting-Text"><span class="nav-number">1.3.</span> <span class="nav-text"> Quoting Text</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Code"><span class="nav-number">1.4.</span> <span class="nav-text"> Code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lists-and-Bullets"><span class="nav-number">1.5.</span> <span class="nav-text"> Lists and Bullets</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#shopping-list-pt-1"><span class="nav-number">1.5.1.</span> <span class="nav-text">shopping list pt 1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#shopping-list-pt-2"><span class="nav-number">1.5.2.</span> <span class="nav-text">shopping list pt 2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#shopping-list-pt-3"><span class="nav-number">1.5.3.</span> <span class="nav-text">shopping list pt 3</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Aligning-Text"><span class="nav-number">1.6.</span> <span class="nav-text"> Aligning Text</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Tiger泰航"
+      src="/images/tiger.png">
+  <p class="site-author-name" itemprop="name">Tiger泰航</p>
+  <div class="site-description" itemprop="description">做好自己</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/TaihangLi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;TaihangLi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/5671378484" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;5671378484" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/taihang_li" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;taihang_li" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.douyin.com/user/MS4wLjABAAAAxWcXHNhqkr_bTjveO_XfcwOGDs_RCtplXJ2HfFQAzcM" title="TikTok → https:&#x2F;&#x2F;www.douyin.com&#x2F;user&#x2F;MS4wLjABAAAAxWcXHNhqkr_bTjveO_XfcwOGDs_RCtplXJ2HfFQAzcM" rel="noopener" target="_blank"><i class="/images/tiktok-brands.svg fa-fw"></i>TikTok</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2022 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tiger泰航</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
