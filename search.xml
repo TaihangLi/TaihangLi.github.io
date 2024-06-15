@@ -13,18 +13,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Big Data</title>
-    <url>/2022/09/25/Big-Data/</url>
-    <content><![CDATA[<p><img src="/2022/09/25/Big-Data/tcp-shakes-hands-three-times.png"></p>
-]]></content>
-      <categories>
-        <category>Data Science</category>
-      </categories>
-      <tags>
-        <tag>Big Data</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Computer Network</title>
     <url>/2022/08/13/Computer-Network/</url>
     <content><![CDATA[<h2 id="OSI-七层模型"><a href="#OSI-七层模型" class="headerlink" title="OSI 七层模型"></a>OSI 七层模型</h2><p><strong>OSI 七层模型</strong> 是国际标准化组织提出一个网络分层模型，物理层(Physical)，数据链路层(Data Link)，网络层(Network)，传输层(Transport)，会话层(Session)，表示层(Presentation)，应用层(Application)：</p>
@@ -327,6 +315,98 @@
       </tags>
   </entry>
   <entry>
+    <title>Big Data</title>
+    <url>/2022/09/25/Big-Data/</url>
+    <content><![CDATA[<p><img src="/2022/09/25/Big-Data/tcp-shakes-hands-three-times.png"></p>
+]]></content>
+      <categories>
+        <category>Data Science</category>
+      </categories>
+      <tags>
+        <tag>Big Data</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Data Analysis</title>
+    <url>/2022/09/01/Data-Analysis/</url>
+    <content><![CDATA[<h3 id="用户画像"><a href="#用户画像" class="headerlink" title="用户画像"></a>用户画像</h3><p>定义: 通过各个维度对用户或者产品特征属性的刻画，并对这些特征分析统计挖掘潜在价值信息。完美地抽象出一个用户的信息全貌，可以看作企业应用大数据的根基。用户画像使用标签来量化用户特征属性，达到描述用户的目的。用户画像是对现实世界中的用户进行建模。用户画像是描述用户的数据， 是符合特定业务需求的对用户的形式化描述。<br>用户画像，即用户信息标签化。企业通过收集与分析消费者个人属性、社会属性、生活习惯、消费行为等主要信息的数据之后，完美地抽象出一个用户的商业全貌。<br>用户画像为企业提供了足够的信息基础，能够帮助企业快速找到精准用户群体以及精准用户需求等更为广泛的反馈信息，来进行各种精准营销。<br>分析的维度：可以按照人口属性和产品行为属性进行综合分析。<br>    人口属性：地域、年龄、性别、文化、职业、收入、生活习惯、消费习惯等；<br>    产品行为属性：产品类别、活跃频率、产品喜好、产品驱动、使用习惯、产品消费等。</p>
+<h3 id="RFM模型"><a href="#RFM模型" class="headerlink" title="RFM模型"></a>RFM模型</h3><p>R——最后交易距离当前天数（Recency）<br>F——累计交易次数（Frequency）<br>M——累计交易金额（Monetary）</p>
+<p><strong>模型应用</strong><br>可用于有关重要客户筛选场景中。针对不同的客户制定相应的营销策略。<br>M：消费越多，用户价值越高，越应该重点关注。<br>R：离得越远，用户越有流失可能，越应该唤醒用户。<br>F：频次越低，越需要用一次性手段（比如促销、赠礼），频次越高，越可以用持续性手段（积分）来维护</p>
+<blockquote>
+<p>RFM的缺点是很明显的：它仅仅考虑了用户的行为数量，没有考虑用户在干什么。比如用RFM考察用户消费，就少了一个关键内容：用户买的是啥。同样的RFM数值，可能情况完全不一样</p>
+</blockquote>
+<h3 id="5W2H模型"><a href="#5W2H模型" class="headerlink" title="5W2H模型"></a>5W2H模型</h3><p>为什么（Why）、什么事（What）、谁（Who）、什么时候（When）、什么地方（Where）、如何做（How）、什么价格（How much)，主要用于用户行为分析、业务问题专题分析营销活动</p>
+<p><strong>模型解释</strong><br>Why：用户为什么要买？产品的吸引点在哪里？<br>What：用户主要购买的产品是哪些———产品销量获取<br>Who：用户特征：性别构成、年龄分布、地域分布、学历分布、收入分布、注册时间<br>When：购买时间分布、购买间隔分布<br>Where：买渠道，例如：官网、app、天猫旗舰店、京东、苏宁、线下线上代理商<br>How：用户通过什么方式、渠道购买？<br>How much：价格段销量分布（用户更容易接受那个价位）</p>
+<p><strong>模型应用</strong><br>模型是一种定律、是一种原理、也是一种流程、更是一种工具，被广泛运用于企业管理和日常工作学习之中、当然也可以对营销活动或者其它行为的分解。个人认为是一种缜密的思维逻辑。</p>
+<h3 id="数据仓库"><a href="#数据仓库" class="headerlink" title="数据仓库"></a>数据仓库</h3><ol>
+<li>数据仓库的定义</li>
+</ol>
+<ul>
+<li>数据仓库是一个数据集合</li>
+<li>数据仓库是一个为业务决策提供数据支持的数据集合</li>
+<li>数据仓库是通过监控业务流程的形式为业务决策提供数据支持的数据集合</li>
+</ul>
+<ol start="2">
+<li>数据仓库的特征</li>
+</ol>
+<ul>
+<li><p>面向主题<br>面向事务性问题进行数据操作<br>例如：数据仓库对口市场部，提供业务支持<br>相关主题<br>人：客户基本信息，客户标签，销售人员业绩等<br>货：存货预测，资源分配，产品推陈出新等<br>场：社会环境，地域趋势，政策变动等</p>
+</li>
+<li><p>集成性<br>数据由不同的数据库经过加工处理，整合。关键是消除增提上数据的不一致性，统一口径，保证数据仓库内的信息是企业内部一致的全局信息</p>
+</li>
+<li><p>相对稳定性<br>关系型数据库相对于操作型数据库而言<br>数据仓库内的数据时效性不如操作型数据库，数据保留的更为长久，并且大概率是数据操作为查询语句操作，需要谨慎操作修改和删除语句，但是需要定期（日，周，月，季，年）做更新</p>
+</li>
+<li><p>历史变动<br>占用较大空间保留下来的数据，一定程度上可以反映活动效果等随着时间变化带来的影响，可以为业务提供相应的定量分析和预测</p>
+</li>
+</ul>
+<ol start="3">
+<li>数据仓库的终极目标<br>准确并且及时的为信息使用者提供数据决策支持</li>
+</ol>
+<h3 id="数据清洗"><a href="#数据清洗" class="headerlink" title="数据清洗"></a>数据清洗</h3><h4 id="日期格式"><a href="#日期格式" class="headerlink" title="日期格式"></a>日期格式</h4><p>Pandas中使用to_datetime()方法将文本格式转换为日期格式</p>
+<h4 id="缺失值"><a href="#缺失值" class="headerlink" title="缺失值"></a>缺失值</h4><ol>
+<li>可以直接删除</li>
+<li>替换法或插值法</li>
+<li>替换法有均值替换、前向、后向替换和常数替换</li>
+</ol>
+<h4 id="异常值处理"><a href="#异常值处理" class="headerlink" title="异常值处理"></a>异常值处理</h4><ol>
+<li>指那些偏离正常范围的值，不是错误值</li>
+<li>异常值出现频率低，但又会对实际项目分析造成偏差</li>
+<li>异常值一般用箱线图（分位差法）或分布图（标准差法）来判断</li>
+<li>异常值往往采取盖帽法或数据离散化</li>
+</ol>
+<h3 id="特征工程"><a href="#特征工程" class="headerlink" title="特征工程"></a>特征工程</h3>]]></content>
+      <categories>
+        <category>Data Science</category>
+      </categories>
+      <tags>
+        <tag>Data Analysis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Data Mining</title>
+    <url>/2022/08/12/Data-Mining/</url>
+    <content><![CDATA[<p>典型的机器学习方法包括： <strong>决策树方法、人工神经网络、支持向量机、正则化</strong> 方法。其他常见的预测方法还有 <strong>近邻法、朴素贝叶斯</strong> （属于统计学习方法）等。</p>
+<h4 id="1-回归"><a href="#1-回归" class="headerlink" title="1. 回归"></a>1. 回归</h4><h4 id="2-分类"><a href="#2-分类" class="headerlink" title="2. 分类"></a>2. 分类</h4><span id="more"></span>
+<h4 id="3-聚类分析"><a href="#3-聚类分析" class="headerlink" title="3. 聚类分析"></a>3. 聚类分析</h4><h4 id="4-关联和相关分析"><a href="#4-关联和相关分析" class="headerlink" title="4. 关联和相关分析"></a>4. 关联和相关分析</h4><p>关联规则挖掘属于无监督学习方法。</p>
+<h4 id="5-异常值分析"><a href="#5-异常值分析" class="headerlink" title="5. 异常值分析"></a>5. 异常值分析</h4><h4 id="6-CRISP-DM-模型"><a href="#6-CRISP-DM-模型" class="headerlink" title="6. CRISP-DM 模型"></a>6. CRISP-DM 模型</h4><ul>
+<li>商业理解(Business understanding)：商业理解阶段应算是数据挖掘中最重要的一个部分，在这个阶段里我们需要明确商业目标、评估商业环境、确定挖掘目标以及产生一个项目计划。</li>
+<li>数据理解(Data understanding)：数据是我们挖掘过程的“原材料”，在数据理解过程中我们要知道都有些什么数据，这些数据的特征是什么，可以通过对数据的描述性分析得到数据的特点。</li>
+<li>数据准备(Date preparation)：在数据准备阶段我们需要对数据作出选择、清洗、重建、合并等工作。选出要进行分析的数据，并对不符合模型输入要求的数据进行规范化操作。</li>
+<li>建模(Modeling)：建模过程也是数据挖掘中一个比较重要的过程。我们需要根据分析目的选出适合的模型工具，通过样本建立模型并对模型进行评估。</li>
+<li>模型评估(Evaluation)：并不是每一次建模都能与我们的目的吻合，评价阶段旨在对建模结果进行评估，对效果较差的结果我们需要分析原因，有时还需要返回前面的步骤对挖掘过程重新定义。</li>
+<li>结果部署(Deployment)：这个阶段是用建立的模型去解决实际中遇到的问题，它还包括了监督、维持、产生最终报表、重新评估模型等过程。</li>
+</ul>
+<p>数据挖掘入门的书籍，中文的大体有这些：<br>Jiawei Han的《数据挖掘概念与技术》<br>Ian H. Witten &#x2F; Eibe Frank的《数据挖掘 实用机器学习技术》<br>Tom Mitchell的《机器学习》<br>TOBY SEGARAN的《集体智慧编程》<br>Anand Rajaraman的《大数据》<br>Pang-Ning Tan的《数据挖掘导论》<br>Matthew A. Russell的《社交网站的数据挖掘与分析》</p>
+<p>自我介绍；<br>挑一个重点项目详细讲一下；<br>为什么选树模型做这个项目，优势在哪里（重点就是可以实现并行化，而且效果也不错，原理也没有很复杂）；<br>Xgboost 的 loss 函数有什么特点，与其他树模型有什么区别（可以控制模型复杂度）；<br>Xgboost 调参怎么做，重要的参数有哪些；<br>Python 用过哪些包；<br>Python 元组和列表的区别；<br>Python 深复制和浅复制；<br>Numpy 中矩阵乘法有几种（一定要分清元素乘法和矩阵乘法）；<br>Pandas 读取文件如何操作；<br>SQL 索引底层算法用什么实现的，算法原理是什么（ b+ 树）；<br>b 树 和 b+ 树 的区别（ b+ 树只在叶节点存储数据，而且叶节点之间有双向链表连接，这样可以做到范围查询，而b树或者 b- 树做不到这一点）；<br>SQL 如何优化（小表驱动大表，避免查询回表，尽量使用索引提高查询效率，尽量索引覆盖，少用 in、group by 这些等等）；<br>连接有几种，有什么区别（left join， right join 等等，区别就是谁是主表的问题）；<br>开窗函数了解吗，讲一下吧；<br>出了一个 SQL 题，比较简单，就是分组排序那些，leetcode 上面有原题；<br>样本均衡算法的细节（内部使用了 knn 算法）；<br>方差和偏差的概念（两者之间要选取均衡，不能只关注低偏差，容易造成过拟合问题）；<br>常用的评价指标，Precision，Recall，MAE等等；<br>对大数据是否接触过；</p>
+]]></content>
+      <categories>
+        <category>Data Science</category>
+      </categories>
+      <tags>
+        <tag>Data Mining</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Data Structures</title>
     <url>/2022/08/14/Data-Structures/</url>
     <content><![CDATA[<p>数据结构（持续更新中）</p>
@@ -409,96 +489,21 @@
       </tags>
   </entry>
   <entry>
-    <title>Data Mining</title>
-    <url>/2022/08/12/Data-Mining/</url>
-    <content><![CDATA[<p>典型的机器学习方法包括： <strong>决策树方法、人工神经网络、支持向量机、正则化</strong> 方法。其他常见的预测方法还有 <strong>近邻法、朴素贝叶斯</strong> （属于统计学习方法）等。</p>
-<h4 id="1-回归"><a href="#1-回归" class="headerlink" title="1. 回归"></a>1. 回归</h4><h4 id="2-分类"><a href="#2-分类" class="headerlink" title="2. 分类"></a>2. 分类</h4><span id="more"></span>
-<h4 id="3-聚类分析"><a href="#3-聚类分析" class="headerlink" title="3. 聚类分析"></a>3. 聚类分析</h4><h4 id="4-关联和相关分析"><a href="#4-关联和相关分析" class="headerlink" title="4. 关联和相关分析"></a>4. 关联和相关分析</h4><p>关联规则挖掘属于无监督学习方法。</p>
-<h4 id="5-异常值分析"><a href="#5-异常值分析" class="headerlink" title="5. 异常值分析"></a>5. 异常值分析</h4><h4 id="6-CRISP-DM-模型"><a href="#6-CRISP-DM-模型" class="headerlink" title="6. CRISP-DM 模型"></a>6. CRISP-DM 模型</h4><ul>
-<li>商业理解(Business understanding)：商业理解阶段应算是数据挖掘中最重要的一个部分，在这个阶段里我们需要明确商业目标、评估商业环境、确定挖掘目标以及产生一个项目计划。</li>
-<li>数据理解(Data understanding)：数据是我们挖掘过程的“原材料”，在数据理解过程中我们要知道都有些什么数据，这些数据的特征是什么，可以通过对数据的描述性分析得到数据的特点。</li>
-<li>数据准备(Date preparation)：在数据准备阶段我们需要对数据作出选择、清洗、重建、合并等工作。选出要进行分析的数据，并对不符合模型输入要求的数据进行规范化操作。</li>
-<li>建模(Modeling)：建模过程也是数据挖掘中一个比较重要的过程。我们需要根据分析目的选出适合的模型工具，通过样本建立模型并对模型进行评估。</li>
-<li>模型评估(Evaluation)：并不是每一次建模都能与我们的目的吻合，评价阶段旨在对建模结果进行评估，对效果较差的结果我们需要分析原因，有时还需要返回前面的步骤对挖掘过程重新定义。</li>
-<li>结果部署(Deployment)：这个阶段是用建立的模型去解决实际中遇到的问题，它还包括了监督、维持、产生最终报表、重新评估模型等过程。</li>
-</ul>
-<p>数据挖掘入门的书籍，中文的大体有这些：<br>Jiawei Han的《数据挖掘概念与技术》<br>Ian H. Witten &#x2F; Eibe Frank的《数据挖掘 实用机器学习技术》<br>Tom Mitchell的《机器学习》<br>TOBY SEGARAN的《集体智慧编程》<br>Anand Rajaraman的《大数据》<br>Pang-Ning Tan的《数据挖掘导论》<br>Matthew A. Russell的《社交网站的数据挖掘与分析》</p>
-<p>自我介绍；<br>挑一个重点项目详细讲一下；<br>为什么选树模型做这个项目，优势在哪里（重点就是可以实现并行化，而且效果也不错，原理也没有很复杂）；<br>Xgboost 的 loss 函数有什么特点，与其他树模型有什么区别（可以控制模型复杂度）；<br>Xgboost 调参怎么做，重要的参数有哪些；<br>Python 用过哪些包；<br>Python 元组和列表的区别；<br>Python 深复制和浅复制；<br>Numpy 中矩阵乘法有几种（一定要分清元素乘法和矩阵乘法）；<br>Pandas 读取文件如何操作；<br>SQL 索引底层算法用什么实现的，算法原理是什么（ b+ 树）；<br>b 树 和 b+ 树 的区别（ b+ 树只在叶节点存储数据，而且叶节点之间有双向链表连接，这样可以做到范围查询，而b树或者 b- 树做不到这一点）；<br>SQL 如何优化（小表驱动大表，避免查询回表，尽量使用索引提高查询效率，尽量索引覆盖，少用 in、group by 这些等等）；<br>连接有几种，有什么区别（left join， right join 等等，区别就是谁是主表的问题）；<br>开窗函数了解吗，讲一下吧；<br>出了一个 SQL 题，比较简单，就是分组排序那些，leetcode 上面有原题；<br>样本均衡算法的细节（内部使用了 knn 算法）；<br>方差和偏差的概念（两者之间要选取均衡，不能只关注低偏差，容易造成过拟合问题）；<br>常用的评价指标，Precision，Recall，MAE等等；<br>对大数据是否接触过；</p>
+    <title>English Writing</title>
+    <url>/2022/09/21/English-Writing/</url>
+    <content><![CDATA[<h3 id="Vocabulary"><a href="#Vocabulary" class="headerlink" title=" Vocabulary"></a><font color="6FBCE1"> Vocabulary</font></h3><p>appropriate, essential, tremendous, considerable, significantly, massive, generous, huge, large<br>anxiety, necessarily, certainly, constantly, heavily, nearly, unfortunately<br>secure, severe, economic, intensive, particular<br>comfortable, glad, pleased, pleasant<br>devote, disturb, a phenomenon, tough<br>famous, well-known</p>
+<h3 id="Phrase"><a href="#Phrase" class="headerlink" title=" Phrase"></a><font color="977FD7"> Phrase</font></h3><p>run out of energy, keep air conditioners on<br>all the time, raise children, birth rate, acquire knowledge, achieve goals<br>play sports, score points<br>on my own, mental and physical health<br>a huge fee, relieve poverty</p>
+<h3 id="Organization"><a href="#Organization" class="headerlink" title=" Organization"></a><font color="008000"> Organization</font></h3><h3 id="Errors"><a href="#Errors" class="headerlink" title=" Errors"></a><font color="FC572B"> Errors</font></h3><p>单复数s, 冠词a&#x2F;the,<br>running, cutting, eating<br>destroyed, limited, committed, submitted<br>hundred, thousand, </p>
+<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p>She suffers from a lack of confidence.<br>He’s ignorant about modern&#x2F;space technology.<br>Medical technology has advanced considerably.<br>Competition for jobs is acute. &#x2F;intense<br>The strategy worked brilliantly.<br>She’s responsible for the hirings and firings.<br>He decided to devote the rest of his life to scientific investigation.<br>The need for sleep varies considerably from person to person.<br>Most of my salary goes on the rent.<br>Because there’s a power outage.<br>It is worth the effort.<br>Rent is a huge expense&#x2F;cost for students.<br>We hope to prevent anything unpleasant from happening.<br>With the advancement of science and technology, people’s living standards have improved significantly.<br>She loves all sports, especially swimming.<br>Bill Gates regularly donates money to charity.<br>A good diet is beneficial to health.</p>
+<h3 id="Bill-Gates"><a href="#Bill-Gates" class="headerlink" title="Bill Gates"></a>Bill Gates</h3><p>“We all need people who will give us feedback. That’s how we improve.”<br>Bill Gates frequently talks about the need for constant self-improvement. It’s important to have people in our lives who will give us honest, constructive feedback. This is the only way we can grow and become better.</p>
+<p>Bill Gates<br>What impresses me most is his saying, “Patience is a key element of success.” Success usually comes after a lot of trials and errors and a lot of failures. Successful individuals are those who have the patience to stick through all the frustrating moments along the way. Probably I cannot be a Bill Gates myself, but I can be a hard-working learner. From him, I realize the secret to success is not when or where you were born but what you do and how you do it in your life.</p>
+<p><a href="https://writing.wisc.edu/handbook/style/transitions/">transitional words phrases</a><br>Transitions to help establish some of the most common kinds of relationships</p>
 ]]></content>
       <categories>
-        <category>Data Science</category>
+        <category>English</category>
       </categories>
       <tags>
-        <tag>Data Mining</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Data Analysis</title>
-    <url>/2022/09/01/Data-Analysis/</url>
-    <content><![CDATA[<h3 id="用户画像"><a href="#用户画像" class="headerlink" title="用户画像"></a>用户画像</h3><p>定义: 通过各个维度对用户或者产品特征属性的刻画，并对这些特征分析统计挖掘潜在价值信息。完美地抽象出一个用户的信息全貌，可以看作企业应用大数据的根基。用户画像使用标签来量化用户特征属性，达到描述用户的目的。用户画像是对现实世界中的用户进行建模。用户画像是描述用户的数据， 是符合特定业务需求的对用户的形式化描述。<br>用户画像，即用户信息标签化。企业通过收集与分析消费者个人属性、社会属性、生活习惯、消费行为等主要信息的数据之后，完美地抽象出一个用户的商业全貌。<br>用户画像为企业提供了足够的信息基础，能够帮助企业快速找到精准用户群体以及精准用户需求等更为广泛的反馈信息，来进行各种精准营销。<br>分析的维度：可以按照人口属性和产品行为属性进行综合分析。<br>    人口属性：地域、年龄、性别、文化、职业、收入、生活习惯、消费习惯等；<br>    产品行为属性：产品类别、活跃频率、产品喜好、产品驱动、使用习惯、产品消费等。</p>
-<h3 id="RFM模型"><a href="#RFM模型" class="headerlink" title="RFM模型"></a>RFM模型</h3><p>R——最后交易距离当前天数（Recency）<br>F——累计交易次数（Frequency）<br>M——累计交易金额（Monetary）</p>
-<p><strong>模型应用</strong><br>可用于有关重要客户筛选场景中。针对不同的客户制定相应的营销策略。<br>M：消费越多，用户价值越高，越应该重点关注。<br>R：离得越远，用户越有流失可能，越应该唤醒用户。<br>F：频次越低，越需要用一次性手段（比如促销、赠礼），频次越高，越可以用持续性手段（积分）来维护</p>
-<blockquote>
-<p>RFM的缺点是很明显的：它仅仅考虑了用户的行为数量，没有考虑用户在干什么。比如用RFM考察用户消费，就少了一个关键内容：用户买的是啥。同样的RFM数值，可能情况完全不一样</p>
-</blockquote>
-<h3 id="5W2H模型"><a href="#5W2H模型" class="headerlink" title="5W2H模型"></a>5W2H模型</h3><p>为什么（Why）、什么事（What）、谁（Who）、什么时候（When）、什么地方（Where）、如何做（How）、什么价格（How much)，主要用于用户行为分析、业务问题专题分析营销活动</p>
-<p><strong>模型解释</strong><br>Why：用户为什么要买？产品的吸引点在哪里？<br>What：用户主要购买的产品是哪些———产品销量获取<br>Who：用户特征：性别构成、年龄分布、地域分布、学历分布、收入分布、注册时间<br>When：购买时间分布、购买间隔分布<br>Where：买渠道，例如：官网、app、天猫旗舰店、京东、苏宁、线下线上代理商<br>How：用户通过什么方式、渠道购买？<br>How much：价格段销量分布（用户更容易接受那个价位）</p>
-<p><strong>模型应用</strong><br>模型是一种定律、是一种原理、也是一种流程、更是一种工具，被广泛运用于企业管理和日常工作学习之中、当然也可以对营销活动或者其它行为的分解。个人认为是一种缜密的思维逻辑。</p>
-<h3 id="数据仓库"><a href="#数据仓库" class="headerlink" title="数据仓库"></a>数据仓库</h3><ol>
-<li>数据仓库的定义</li>
-</ol>
-<ul>
-<li>数据仓库是一个数据集合</li>
-<li>数据仓库是一个为业务决策提供数据支持的数据集合</li>
-<li>数据仓库是通过监控业务流程的形式为业务决策提供数据支持的数据集合</li>
-</ul>
-<ol start="2">
-<li>数据仓库的特征</li>
-</ol>
-<ul>
-<li><p>面向主题<br>面向事务性问题进行数据操作<br>例如：数据仓库对口市场部，提供业务支持<br>相关主题<br>人：客户基本信息，客户标签，销售人员业绩等<br>货：存货预测，资源分配，产品推陈出新等<br>场：社会环境，地域趋势，政策变动等</p>
-</li>
-<li><p>集成性<br>数据由不同的数据库经过加工处理，整合。关键是消除增提上数据的不一致性，统一口径，保证数据仓库内的信息是企业内部一致的全局信息</p>
-</li>
-<li><p>相对稳定性<br>关系型数据库相对于操作型数据库而言<br>数据仓库内的数据时效性不如操作型数据库，数据保留的更为长久，并且大概率是数据操作为查询语句操作，需要谨慎操作修改和删除语句，但是需要定期（日，周，月，季，年）做更新</p>
-</li>
-<li><p>历史变动<br>占用较大空间保留下来的数据，一定程度上可以反映活动效果等随着时间变化带来的影响，可以为业务提供相应的定量分析和预测</p>
-</li>
-</ul>
-<ol start="3">
-<li>数据仓库的终极目标<br>准确并且及时的为信息使用者提供数据决策支持</li>
-</ol>
-<h3 id="数据清洗"><a href="#数据清洗" class="headerlink" title="数据清洗"></a>数据清洗</h3><h4 id="日期格式"><a href="#日期格式" class="headerlink" title="日期格式"></a>日期格式</h4><p>Pandas中使用to_datetime()方法将文本格式转换为日期格式</p>
-<h4 id="缺失值"><a href="#缺失值" class="headerlink" title="缺失值"></a>缺失值</h4><ol>
-<li>可以直接删除</li>
-<li>替换法或插值法</li>
-<li>替换法有均值替换、前向、后向替换和常数替换</li>
-</ol>
-<h4 id="异常值处理"><a href="#异常值处理" class="headerlink" title="异常值处理"></a>异常值处理</h4><ol>
-<li>指那些偏离正常范围的值，不是错误值</li>
-<li>异常值出现频率低，但又会对实际项目分析造成偏差</li>
-<li>异常值一般用箱线图（分位差法）或分布图（标准差法）来判断</li>
-<li>异常值往往采取盖帽法或数据离散化</li>
-</ol>
-<h3 id="特征工程"><a href="#特征工程" class="headerlink" title="特征工程"></a>特征工程</h3>]]></content>
-      <categories>
-        <category>Data Science</category>
-      </categories>
-      <tags>
-        <tag>Data Analysis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux</title>
-    <url>/2022/08/14/Linux/</url>
-    <content><![CDATA[<p>Linux八股（持续更新中）</p>
-<h4 id="使用变量"><a href="#使用变量" class="headerlink" title="使用变量"></a>使用变量</h4><p>使用变量的时，用英文符号”$”取变量值，对于较长的变量名，建议加上{ }花括号，帮助解释器识别变量的边界</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">name=&quot;test_name&quot;</span><br><span class="line">echo &quot;My name is $&#123;name&#125;and you&quot;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Computer Basics</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
+        <tag>English Writing</tag>
       </tags>
   </entry>
   <entry>
@@ -888,21 +893,16 @@
       </tags>
   </entry>
   <entry>
-    <title>English Writing</title>
-    <url>/2022/12/05/English-Writing/</url>
-    <content><![CDATA[<h3 id="Vocabulary"><a href="#Vocabulary" class="headerlink" title=" Vocabulary"></a><font color="6FBCE1"> Vocabulary</font></h3><p>appropriate, essential, tremendous, considerable, significantly, massive, generous, huge, large<br>anxiety, necessarily, certainly, constantly, heavily, nearly, unfortunately<br>secure, severe, economic, intensive, particular<br>comfortable, glad, pleased, pleasant<br>devote, disturb, a phenomenon, tough<br>famous, well-known</p>
-<h3 id="Phrase"><a href="#Phrase" class="headerlink" title=" Phrase"></a><font color="977FD7"> Phrase</font></h3><p>run out of energy, keep air conditioners on<br>all the time, raise children, birth rate, acquire knowledge, achieve goals<br>play sports, score points<br>on my own, mental and physical health<br>a huge fee, relieve poverty</p>
-<h3 id="Organization"><a href="#Organization" class="headerlink" title=" Organization"></a><font color="008000"> Organization</font></h3><h3 id="Errors"><a href="#Errors" class="headerlink" title=" Errors"></a><font color="FC572B"> Errors</font></h3><p>单复数s, 冠词a&#x2F;the,<br>running, cutting, eating<br>destroyed, limited, committed, submitted<br>hundred, thousand, </p>
-<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p>She suffers from a lack of confidence.<br>He’s ignorant about modern&#x2F;space technology.<br>Medical technology has advanced considerably.<br>Competition for jobs is acute. &#x2F;intense<br>The strategy worked brilliantly.<br>She’s responsible for the hirings and firings.<br>He decided to devote the rest of his life to scientific investigation.<br>The need for sleep varies considerably from person to person.<br>Most of my salary goes on the rent.<br>Because there’s a power outage.<br>It is worth the effort.<br>Rent is a huge expense&#x2F;cost for students.<br>We hope to prevent anything unpleasant from happening.<br>With the advancement of science and technology, people’s living standards have improved significantly.<br>She loves all sports, especially swimming.<br>Bill Gates regularly donates money to charity.<br>A good diet is beneficial to health.</p>
-<h3 id="Bill-Gates"><a href="#Bill-Gates" class="headerlink" title="Bill Gates"></a>Bill Gates</h3><p>“We all need people who will give us feedback. That’s how we improve.”<br>Bill Gates frequently talks about the need for constant self-improvement. It’s important to have people in our lives who will give us honest, constructive feedback. This is the only way we can grow and become better.</p>
-<p>Bill Gates<br>What impresses me most is his saying, “Patience is a key element of success.” Success usually comes after a lot of trials and errors and a lot of failures. Successful individuals are those who have the patience to stick through all the frustrating moments along the way. Probably I cannot be a Bill Gates myself, but I can be a hard-working learner. From him, I realize the secret to success is not when or where you were born but what you do and how you do it in your life.</p>
-<p><a href="https://writing.wisc.edu/handbook/style/transitions/">transitional words phrases</a><br>Transitions to help establish some of the most common kinds of relationships</p>
-]]></content>
+    <title>Linux</title>
+    <url>/2022/08/14/Linux/</url>
+    <content><![CDATA[<p>Linux八股（持续更新中）</p>
+<h4 id="使用变量"><a href="#使用变量" class="headerlink" title="使用变量"></a>使用变量</h4><p>使用变量的时，用英文符号”$”取变量值，对于较长的变量名，建议加上{ }花括号，帮助解释器识别变量的边界</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">name=&quot;test_name&quot;</span><br><span class="line">echo &quot;My name is $&#123;name&#125;and you&quot;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>English</category>
+        <category>Computer Basics</category>
       </categories>
       <tags>
-        <tag>English Writing</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1105,94 +1105,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python</title>
-    <url>/2022/08/12/Python/</url>
-    <content><![CDATA[<p><strong>6种内建序列</strong>: 列表(list), 元组(tuple), 字符串, Unicode字符串, buffer对象, xrange对象<br><strong>7种序列操作</strong>: 索引(indexing),分片(sliceing), 加(adding), 乘(multiplying), 检查某个元素是否属于这个序列, 计算序列长度(len), 找出最大和最小元素(max&#x2F;min)</p>
-<blockquote>
-<p>列表和元组的区别</p>
-</blockquote>
-<ul>
-<li>相同点：<br>1、均具有序列的特性，均可以进行序列通用的操作；<br>2、通常均使用括号表示，且括号内的元素以逗号分隔值出现，数据项均不需要具有相同的类型；<br>3、均包含内置函数max、min、len<br>4、均可以转换为对方</li>
-<li>不同点：</li>
-</ul>
-<ol>
-<li>定义不同<br>1）列表使用方括号括起来的。<br>2）元组使用小括号括起来的。</li>
-<li>是否可修改<br>1）列表可修改<br>2）元组不可修改</li>
-<li>转换方式<br>1）列表转元组：tuple(seq)<br>2）元组转列表： list(seq)</li>
-<li>是否含内置方法<br>1）列表提供11个内置方法<br>2）元组未提供内置方法</li>
-</ol>
-<ul>
-<li>List 是一个有序且可修改的集合。允许有重复的成员。</li>
-<li>Tuple 是一个有序且不可更改的集合。允许有重复的成员。</li>
-<li>Set 是一个无序且无索引的集合。没有重复的成员。</li>
-<li>Dictionary 是一个无序的、可修改的、有索引的集合。没有重复的成员。</li>
-</ul>
-<h3 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h3><p>在Python中，这种一边循环一边计算的机制，称为生成器：generator。<br>有两种产生生成器对象的方式：一种是列表生成式加括号：</p>
-<blockquote>
-<p>g1 &#x3D; (x for x in range(10))</p>
-</blockquote>
-<p>一种是在函数定义中包含yield关键字：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fib</span>(<span class="params"><span class="built_in">max</span></span>):</span><br><span class="line">    n, a, b = <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> n &lt; <span class="built_in">max</span>:</span><br><span class="line">        <span class="keyword">yield</span> b</span><br><span class="line">        a, b = b, a + b</span><br><span class="line">        n = n + <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;done&#x27;</span></span><br><span class="line"></span><br><span class="line">g2 = fib(<span class="number">8</span>)</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<p>对于generator对象g1和g2，可以通过next(g1)不断获得下一个元素的值，如果没有更多的元素，就会报错 <em>StopIteration</em> ，也可以通过for循环获得元素的值。<br>生成器的好处是不用占用很多内存，只需要在用的时候计算元素的值就行了。</p>
-<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p>Python中可以用于for循环的，叫做可迭代Iterable，包括list&#x2F;set&#x2F;tuple&#x2F;str&#x2F;dict等数据结构以及生成器；可以用以下语句判断一个对象是否是可迭代的：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> Iterable</span><br><span class="line"><span class="built_in">isinstance</span>(x, Iterable)</span><br></pre></td></tr></table></figure>
-<p>迭代器Iterator，是指可以被next()函数调用并不断返回下一个值，直到StopIteration；生成器都是Iterator，而列表等数据结构不是；可以通过以下语句将list变为Iterator：</p>
-<blockquote>
-<p>iter([1,2,3,4,5])</p>
-</blockquote>
-<p>生成器都是Iterator，但迭代器不一定是生成器。</p>
-<h3 id="读取文件"><a href="#读取文件" class="headerlink" title="读取文件"></a>读取文件</h3><ol>
-<li>读取 csv文件。用到pandas库中的read_csv()<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">csv_data= pd.read_csv(<span class="string">&#x27;/路径/文件名.csv/&#x27;</span>)</span><br></pre></td></tr></table></figure></li>
-<li>读取txt文件。<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">f=<span class="built_in">open</span>(<span class="string">&#x27;路径/文件名.txt&#x27;</span>, <span class="string">&#x27;r&#x27;</span>)</span><br><span class="line">f.close()</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#readlines()</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;filepath&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    lines=f.readlines()</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">        <span class="built_in">print</span>(line)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-这个函数将文件所用内容以行为区分读到一个列表中 ，列表中的每一个元素是一行；lines是list，line 是str。<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#readline()</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;filepath&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    line =f.readline()</span><br><span class="line">    <span class="keyword">while</span> line:</span><br><span class="line">        <span class="built_in">print</span>(line)</span><br><span class="line">        line=f.readline()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-这种方式是一行一行的读，非常的省内存，当文件巨大的情况下是有好处的</li>
-<li>读取excel文件。用到xlrd库（pip install xlrd安装，导入模块import xlrd）<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> xlrd</span><br><span class="line">data=xlrd.open_workbook(<span class="string">r&#x27;\路径\文件名.xlsx&#x27;</span>,formatting_info=<span class="literal">True</span>)</span><br><span class="line">table =data.sheet_by_name(<span class="string">&#x27;Sheet3&#x27;</span>)</span><br><span class="line"><span class="comment">#or</span></span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.read_excel(<span class="string">&quot;\路径\文件名.xlsx&quot;</span>,sheetname=<span class="string">&#x27;Sheet3&#x27;</span>)</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h3><p><strong>拼接函数</strong><br>join()方法、concat() 方法和merge()方法都是属于pandas库中的拼接函数；concatenate()方法属于numpy库中的拼接的方法，除此之外numpy库中拼接的方法还有np.append() 、np.stack()、 np. Hstack()、np.vstack()和np.vstack()等操作</p>
-<p><strong>to_numberic(arg,errors,downcast)</strong><br>errors存在三个参数{‘ignore’，’raise’，’coerce’}，默认情况下为’raise’。如果为“ raise”，则无效的解析将引发异常；如果为“强制”，则无效的解析将设置为NaN；如果为“ ignore”，则无效的解析将返回输入。downcast &#x3D;’signed’所有值都将转换为整型。</p>
-]]></content>
-      <categories>
-        <category>Programming</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SQL</title>
-    <url>/2022/08/15/SQL/</url>
-    <content><![CDATA[<ul>
-<li>describe<br>用于查看特定表的详细设计信息</li>
-<li>show columns<br>查看数据库中表的列名</li>
-<li>OVER<br>OVER()函数不能单独使用，必须跟在排名函数（ ROW_NUMBER、DENSE_RANK、RANK、NTILE） 或5种聚合函数（SUM、MAX、MIN、AVG、COUNT）后边。<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">OVER</span>( [ <span class="keyword">PARTITION</span> <span class="keyword">BY</span> … ] [ <span class="keyword">ORDER</span> <span class="keyword">BY</span> … ] )</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h4 id="join和union的区别"><a href="#join和union的区别" class="headerlink" title="join和union的区别"></a>join和union的区别</h4><p>join 是两张表做交连后里面条件相同的部分记录产生一个记录集<br>union是产生的两个记录集(字段要一样的)并在一起，成为一个新的记录集</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Select</span> table1.<span class="operator">*</span> </span><br><span class="line"><span class="keyword">FROM</span> table1 </span><br><span class="line"><span class="keyword">JOIN</span> table2 </span><br><span class="line"><span class="keyword">ON</span> table1.id<span class="operator">=</span>table2.id</span><br></pre></td></tr></table></figure>
-<h4 id="四大排名函数"><a href="#四大排名函数" class="headerlink" title="四大排名函数"></a>四大排名函数</h4><ol>
-<li>ROW_NUMBER()<br>排名是序号 连续 不重复，即使遇到表中的两个一样的数值亦是如此<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">row_number</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth <span class="keyword">DESC</span>) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> </span><br></pre></td></tr></table></figure></li>
-<li>RANK()<br>把要求排序的值相同的归为一组且每组序号一样，排序序号不连续 1 1 3 4 4 6<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">rank</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth <span class="keyword">ASC</span>) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure></li>
-<li>DENSE_RANK()<br>排序是连续的，也会把相同的值分为一组且每组排序号一样<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">dense_rank</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth ) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure></li>
-<li>NTILE()<br>Ntile(group_num) 将所有记录分成group_num个组，每组序号一样<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">ntile</span>(<span class="number">2</span>) <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth ) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> </span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><blockquote>
-<p>IF</p>
-</blockquote>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> IF(sva<span class="operator">=</span><span class="number">1</span>,&quot;男&quot;,&quot;女&quot;) <span class="keyword">AS</span> s <span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> sva <span class="operator">!=</span> <span class="string">&#x27;&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>LIMIT</p>
-</blockquote>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">limit <span class="number">0</span>,<span class="number">1</span> <span class="comment">-- 表示第一条数据(计算是从0开始的)</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Computer Basics</category>
-      </categories>
-      <tags>
-        <tag>SQL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python Programming</title>
     <url>/2022/09/23/Python-Programming/</url>
     <content><![CDATA[<h2 id="Python基础"><a href="#Python基础" class="headerlink" title="Python基础"></a>Python基础</h2><h3 id="列表的11种方法"><a href="#列表的11种方法" class="headerlink" title="列表的11种方法"></a>列表的11种方法</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#1. append 将一个对象附加到列表末尾</span></span><br><span class="line">list1=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">list1.append(<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#2. clear 清空列表的内容</span></span><br><span class="line">list1.clear()</span><br><span class="line"></span><br><span class="line"><span class="comment">#3. copy 复制列表 (常规复制只是将另一个名称关联到列表)</span></span><br><span class="line">a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">b=a</span><br><span class="line">b[<span class="number">1</span>]=<span class="number">4</span></span><br><span class="line"><span class="comment"># a: [1,4,3]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#4. count 计算指定的元素在列表中出现了多少次</span></span><br><span class="line">list1.count(<span class="number">1</span>) <span class="comment"># 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#5. extend 同时将多个值附加到列表末尾</span></span><br><span class="line">list1.extend(a)</span><br><span class="line"></span><br><span class="line"><span class="comment">#6. index 查找指定值第一次出现的索引</span></span><br><span class="line">list1.index(<span class="number">2</span>) <span class="comment"># 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#7. insert 将一个对象插入列表</span></span><br><span class="line">list1.insert(<span class="number">1</span>,<span class="string">&quot;four&quot;</span>) <span class="comment"># [1,&quot;four&quot;,2,3]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#8. pop 从列表中删除一个元素（默认为最后一个元素），并返回这一元素</span></span><br><span class="line">list1.pop()</span><br><span class="line"></span><br><span class="line"><span class="comment">#9. remove 删除.第一个.为指定值的元素</span></span><br><span class="line">list1.remove()</span><br><span class="line"></span><br><span class="line"><span class="comment">#10. reverse 按相反的顺序排列列表中的元素</span></span><br><span class="line">list1.reverse() <span class="comment"># [3,2,1]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#11. sort 对列表就地排序</span></span><br><span class="line">list1.sort()</span><br><span class="line">x = [<span class="string">&#x27;aardvark&#x27;</span>, <span class="string">&#x27;abalone&#x27;</span>, <span class="string">&#x27;acme&#x27;</span>, <span class="string">&#x27;add&#x27;</span>, <span class="string">&#x27;aerate&#x27;</span>]</span><br><span class="line">x.sort(key=<span class="built_in">len</span>) <span class="comment"># [&#x27;add&#x27;, &#x27;acme&#x27;, &#x27;aerate&#x27;, &#x27;abalone&#x27;, &#x27;aardvark&#x27;]</span></span><br><span class="line">x = [<span class="number">4</span>, <span class="number">6</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">7</span>, <span class="number">9</span>]</span><br><span class="line">x.sort(reverse=<span class="literal">True</span>) <span class="comment"># [9, 7, 6, 4, 2, 1]</span></span><br><span class="line">x.sort(key=<span class="keyword">lambda</span> x: x[<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># list生成加判断语句</span></span><br><span class="line">label_list = [<span class="built_in">int</span>(i) <span class="keyword">for</span> i <span class="keyword">in</span> label_list <span class="keyword">if</span> i&gt;<span class="number">3</span>]</span><br><span class="line"><span class="comment"># list连成字符串</span></span><br><span class="line">s=[<span class="string">&quot;1&quot;</span>,<span class="string">&quot;2&quot;</span>,<span class="string">&quot;3&quot;</span>,<span class="string">&quot;t&quot;</span>]</span><br><span class="line">t=<span class="string">&quot;&quot;</span>.join(s)</span><br><span class="line"><span class="string">&quot;123t&quot;</span></span><br><span class="line"><span class="comment"># 列表相加组成新列表</span></span><br><span class="line">a = []</span><br><span class="line"><span class="keyword">while</span> <span class="built_in">len</span>(a)&lt;<span class="number">5</span>:</span><br><span class="line">  a+=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
@@ -1259,27 +1171,116 @@
       </tags>
   </entry>
   <entry>
-    <title>My First Post</title>
-    <url>/2022/06/19/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://taihangli.github.io/">Tiger’ Home</a>! This is my very first post.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Post-a-new-blog"><a href="#Post-a-new-blog" class="headerlink" title="Post a new blog"></a>Post a new blog</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo d -g</span><br></pre></td></tr></table></figure>
+    <title>Python</title>
+    <url>/2022/08/12/Python/</url>
+    <content><![CDATA[<p><strong>6种内建序列</strong>: 列表(list), 元组(tuple), 字符串, Unicode字符串, buffer对象, xrange对象<br><strong>7种序列操作</strong>: 索引(indexing),分片(sliceing), 加(adding), 乘(multiplying), 检查某个元素是否属于这个序列, 计算序列长度(len), 找出最大和最小元素(max&#x2F;min)</p>
+<blockquote>
+<p>列表和元组的区别</p>
+</blockquote>
+<ul>
+<li>相同点：<br>1、均具有序列的特性，均可以进行序列通用的操作；<br>2、通常均使用括号表示，且括号内的元素以逗号分隔值出现，数据项均不需要具有相同的类型；<br>3、均包含内置函数max、min、len<br>4、均可以转换为对方</li>
+<li>不同点：</li>
+</ul>
+<ol>
+<li>定义不同<br>1）列表使用方括号括起来的。<br>2）元组使用小括号括起来的。</li>
+<li>是否可修改<br>1）列表可修改<br>2）元组不可修改</li>
+<li>转换方式<br>1）列表转元组：tuple(seq)<br>2）元组转列表： list(seq)</li>
+<li>是否含内置方法<br>1）列表提供11个内置方法<br>2）元组未提供内置方法</li>
+</ol>
+<ul>
+<li>List 是一个有序且可修改的集合。允许有重复的成员。</li>
+<li>Tuple 是一个有序且不可更改的集合。允许有重复的成员。</li>
+<li>Set 是一个无序且无索引的集合。没有重复的成员。</li>
+<li>Dictionary 是一个无序的、可修改的、有索引的集合。没有重复的成员。</li>
+</ul>
+<h3 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h3><p>在Python中，这种一边循环一边计算的机制，称为生成器：generator。<br>有两种产生生成器对象的方式：一种是列表生成式加括号：</p>
+<blockquote>
+<p>g1 &#x3D; (x for x in range(10))</p>
+</blockquote>
+<p>一种是在函数定义中包含yield关键字：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fib</span>(<span class="params"><span class="built_in">max</span></span>):</span><br><span class="line">    n, a, b = <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> n &lt; <span class="built_in">max</span>:</span><br><span class="line">        <span class="keyword">yield</span> b</span><br><span class="line">        a, b = b, a + b</span><br><span class="line">        n = n + <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;done&#x27;</span></span><br><span class="line"></span><br><span class="line">g2 = fib(<span class="number">8</span>)</span><br></pre></td></tr></table></figure>
 <span id="more"></span>
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<p>对于generator对象g1和g2，可以通过next(g1)不断获得下一个元素的值，如果没有更多的元素，就会报错 <em>StopIteration</em> ，也可以通过for循环获得元素的值。<br>生成器的好处是不用占用很多内存，只需要在用的时候计算元素的值就行了。</p>
+<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p>Python中可以用于for循环的，叫做可迭代Iterable，包括list&#x2F;set&#x2F;tuple&#x2F;str&#x2F;dict等数据结构以及生成器；可以用以下语句判断一个对象是否是可迭代的：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> Iterable</span><br><span class="line"><span class="built_in">isinstance</span>(x, Iterable)</span><br></pre></td></tr></table></figure>
+<p>迭代器Iterator，是指可以被next()函数调用并不断返回下一个值，直到StopIteration；生成器都是Iterator，而列表等数据结构不是；可以通过以下语句将list变为Iterator：</p>
+<blockquote>
+<p>iter([1,2,3,4,5])</p>
+</blockquote>
+<p>生成器都是Iterator，但迭代器不一定是生成器。</p>
+<h3 id="读取文件"><a href="#读取文件" class="headerlink" title="读取文件"></a>读取文件</h3><ol>
+<li>读取 csv文件。用到pandas库中的read_csv()<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">csv_data= pd.read_csv(<span class="string">&#x27;/路径/文件名.csv/&#x27;</span>)</span><br></pre></td></tr></table></figure></li>
+<li>读取txt文件。<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">f=<span class="built_in">open</span>(<span class="string">&#x27;路径/文件名.txt&#x27;</span>, <span class="string">&#x27;r&#x27;</span>)</span><br><span class="line">f.close()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#readlines()</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;filepath&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    lines=f.readlines()</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">        <span class="built_in">print</span>(line)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+这个函数将文件所用内容以行为区分读到一个列表中 ，列表中的每一个元素是一行；lines是list，line 是str。<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#readline()</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;filepath&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    line =f.readline()</span><br><span class="line">    <span class="keyword">while</span> line:</span><br><span class="line">        <span class="built_in">print</span>(line)</span><br><span class="line">        line=f.readline()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+这种方式是一行一行的读，非常的省内存，当文件巨大的情况下是有好处的</li>
+<li>读取excel文件。用到xlrd库（pip install xlrd安装，导入模块import xlrd）<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> xlrd</span><br><span class="line">data=xlrd.open_workbook(<span class="string">r&#x27;\路径\文件名.xlsx&#x27;</span>,formatting_info=<span class="literal">True</span>)</span><br><span class="line">table =data.sheet_by_name(<span class="string">&#x27;Sheet3&#x27;</span>)</span><br><span class="line"><span class="comment">#or</span></span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.read_excel(<span class="string">&quot;\路径\文件名.xlsx&quot;</span>,sheetname=<span class="string">&#x27;Sheet3&#x27;</span>)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h3><p><strong>拼接函数</strong><br>join()方法、concat() 方法和merge()方法都是属于pandas库中的拼接函数；concatenate()方法属于numpy库中的拼接的方法，除此之外numpy库中拼接的方法还有np.append() 、np.stack()、 np. Hstack()、np.vstack()和np.vstack()等操作</p>
+<p><strong>to_numberic(arg,errors,downcast)</strong><br>errors存在三个参数{‘ignore’，’raise’，’coerce’}，默认情况下为’raise’。如果为“ raise”，则无效的解析将引发异常；如果为“强制”，则无效的解析将设置为NaN；如果为“ ignore”，则无效的解析将返回输入。downcast &#x3D;’signed’所有值都将转换为整型。</p>
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>Programming</category>
       </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>R</title>
+    <url>/2022/09/22/R/</url>
+    <content><![CDATA[<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul>
+<li>无序列表<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="operator">*</span>观点<span class="number">1</span></span><br><span class="line"><span class="operator">*</span>观点<span class="number">2</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol>
+<li>有序列表<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 观点<span class="number">1</span></span><br><span class="line"><span class="number">2.</span> <span class="operator">*</span>观点<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="operator">*</span><span class="operator">*</span>加粗<span class="operator">*</span><span class="operator">*</span></span><br><span class="line"><span class="operator">*</span>斜体<span class="operator">*</span></span><br><span class="line"><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span>加粗且斜体<span class="operator">*</span><span class="operator">*</span><span class="operator">*</span></span><br><span class="line"><span class="punctuation">[</span>链接<span class="punctuation">]</span><span class="punctuation">(</span>https<span class="operator">:</span><span class="operator">/</span><span class="operator">/</span>taihangli.github.io<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Programming</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SQL</title>
+    <url>/2022/09/23/SQL/</url>
+    <content><![CDATA[<ul>
+<li>describe<br>用于查看特定表的详细设计信息</li>
+<li>show columns<br>查看数据库中表的列名</li>
+<li>OVER<br>OVER()函数不能单独使用，必须跟在排名函数（ ROW_NUMBER、DENSE_RANK、RANK、NTILE） 或5种聚合函数（SUM、MAX、MIN、AVG、COUNT）后边。<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">OVER</span>( [ <span class="keyword">PARTITION</span> <span class="keyword">BY</span> … ] [ <span class="keyword">ORDER</span> <span class="keyword">BY</span> … ] )</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="join和union的区别"><a href="#join和union的区别" class="headerlink" title="join和union的区别"></a>join和union的区别</h4><p>join 是两张表做交连后里面条件相同的部分记录产生一个记录集<br>union是产生的两个记录集(字段要一样的)并在一起，成为一个新的记录集</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Select</span> table1.<span class="operator">*</span> </span><br><span class="line"><span class="keyword">FROM</span> table1 </span><br><span class="line"><span class="keyword">JOIN</span> table2 </span><br><span class="line"><span class="keyword">ON</span> table1.id<span class="operator">=</span>table2.id</span><br></pre></td></tr></table></figure>
+<h4 id="四大排名函数"><a href="#四大排名函数" class="headerlink" title="四大排名函数"></a>四大排名函数</h4><ol>
+<li>ROW_NUMBER()<br>排名是序号 连续 不重复，即使遇到表中的两个一样的数值亦是如此<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">row_number</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth <span class="keyword">DESC</span>) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> </span><br></pre></td></tr></table></figure></li>
+<li>RANK()<br>把要求排序的值相同的归为一组且每组序号一样，排序序号不连续 1 1 3 4 4 6<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">rank</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth <span class="keyword">ASC</span>) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure></li>
+<li>DENSE_RANK()<br>排序是连续的，也会把相同的值分为一组且每组排序号一样<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">dense_rank</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth ) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure></li>
+<li>NTILE()<br>Ntile(group_num) 将所有记录分成group_num个组，每组序号一样<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">ntile</span>(<span class="number">2</span>) <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth ) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> </span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><blockquote>
+<p>IF</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> IF(sva<span class="operator">=</span><span class="number">1</span>,&quot;男&quot;,&quot;女&quot;) <span class="keyword">AS</span> s <span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> sva <span class="operator">!=</span> <span class="string">&#x27;&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>LIMIT</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">limit <span class="number">0</span>,<span class="number">1</span> <span class="comment">-- 表示第一条数据(计算是从0开始的)</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Computer Basics</category>
+      </categories>
+      <tags>
+        <tag>SQL</tag>
+      </tags>
   </entry>
   <entry>
     <title>Markdown</title>
@@ -1562,27 +1563,26 @@
       </categories>
   </entry>
   <entry>
-    <title>R</title>
-    <url>/2022/09/22/R/</url>
-    <content><![CDATA[<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul>
-<li>无序列表<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="operator">*</span>观点<span class="number">1</span></span><br><span class="line"><span class="operator">*</span>观点<span class="number">2</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol>
-<li>有序列表<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 观点<span class="number">1</span></span><br><span class="line"><span class="number">2.</span> <span class="operator">*</span>观点<span class="number">2</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="operator">*</span><span class="operator">*</span>加粗<span class="operator">*</span><span class="operator">*</span></span><br><span class="line"><span class="operator">*</span>斜体<span class="operator">*</span></span><br><span class="line"><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span>加粗且斜体<span class="operator">*</span><span class="operator">*</span><span class="operator">*</span></span><br><span class="line"><span class="punctuation">[</span>链接<span class="punctuation">]</span><span class="punctuation">(</span>https<span class="operator">:</span><span class="operator">/</span><span class="operator">/</span>taihangli.github.io<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></li>
-</ol>
+    <title>My First Post</title>
+    <url>/2022/06/19/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://taihangli.github.io/">Tiger’ Home</a>! This is my very first post.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Post-a-new-blog"><a href="#Post-a-new-blog" class="headerlink" title="Post a new blog"></a>Post a new blog</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo d -g</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>Welcome to <a href="https://hexo.io/">Hexo</a>! Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 ]]></content>
       <categories>
-        <category>Programming</category>
+        <category>Hexo</category>
       </categories>
-      <tags>
-        <tag>R</tag>
-      </tags>
   </entry>
 </search>
