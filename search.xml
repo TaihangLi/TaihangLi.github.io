@@ -13,6 +13,18 @@
       </tags>
   </entry>
   <entry>
+    <title>Big Data</title>
+    <url>/2022/09/21/Big-Data/</url>
+    <content><![CDATA[<p><img src="/2022/09/21/Big-Data/tcp-shakes-hands-three-times.png"></p>
+]]></content>
+      <categories>
+        <category>Data Science</category>
+      </categories>
+      <tags>
+        <tag>Big Data</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Computer Network</title>
     <url>/2022/08/13/Computer-Network/</url>
     <content><![CDATA[<h2 id="OSI-七层模型"><a href="#OSI-七层模型" class="headerlink" title="OSI 七层模型"></a>OSI 七层模型</h2><p><strong>OSI 七层模型</strong> 是国际标准化组织提出一个网络分层模型，物理层(Physical)，数据链路层(Data Link)，网络层(Network)，传输层(Transport)，会话层(Session)，表示层(Presentation)，应用层(Application)：</p>
@@ -315,18 +327,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Big Data</title>
-    <url>/2022/09/25/Big-Data/</url>
-    <content><![CDATA[<p><img src="/2022/09/25/Big-Data/tcp-shakes-hands-three-times.png"></p>
-]]></content>
-      <categories>
-        <category>Data Science</category>
-      </categories>
-      <tags>
-        <tag>Big Data</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Data Analysis</title>
     <url>/2022/09/01/Data-Analysis/</url>
     <content><![CDATA[<h3 id="用户画像"><a href="#用户画像" class="headerlink" title="用户画像"></a>用户画像</h3><p>定义: 通过各个维度对用户或者产品特征属性的刻画，并对这些特征分析统计挖掘潜在价值信息。完美地抽象出一个用户的信息全貌，可以看作企业应用大数据的根基。用户画像使用标签来量化用户特征属性，达到描述用户的目的。用户画像是对现实世界中的用户进行建模。用户画像是描述用户的数据， 是符合特定业务需求的对用户的形式化描述。<br>用户画像，即用户信息标签化。企业通过收集与分析消费者个人属性、社会属性、生活习惯、消费行为等主要信息的数据之后，完美地抽象出一个用户的商业全貌。<br>用户画像为企业提供了足够的信息基础，能够帮助企业快速找到精准用户群体以及精准用户需求等更为广泛的反馈信息，来进行各种精准营销。<br>分析的维度：可以按照人口属性和产品行为属性进行综合分析。<br>    人口属性：地域、年龄、性别、文化、职业、收入、生活习惯、消费习惯等；<br>    产品行为属性：产品类别、活跃频率、产品喜好、产品驱动、使用习惯、产品消费等。</p>
@@ -383,6 +383,18 @@
       </tags>
   </entry>
   <entry>
+    <title>Data Structures</title>
+    <url>/2022/08/14/Data-Structures/</url>
+    <content><![CDATA[<p>数据结构（持续更新中）</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>Computer Basics</category>
+      </categories>
+      <tags>
+        <tag>Data Structures</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Data Mining</title>
     <url>/2022/08/12/Data-Mining/</url>
     <content><![CDATA[<p>典型的机器学习方法包括： <strong>决策树方法、人工神经网络、支持向量机、正则化</strong> 方法。其他常见的预测方法还有 <strong>近邻法、朴素贝叶斯</strong> （属于统计学习方法）等。</p>
@@ -407,88 +419,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Data Structures</title>
-    <url>/2022/08/14/Data-Structures/</url>
-    <content><![CDATA[<p>数据结构（持续更新中）</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>Computer Basics</category>
-      </categories>
-      <tags>
-        <tag>Data Structures</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Deep Learning</title>
-    <url>/2022/08/16/Deep-Learning/</url>
-    <content><![CDATA[<h4 id="the-rise-of-deep-learning"><a href="#the-rise-of-deep-learning" class="headerlink" title="the rise of deep learning"></a>the rise of deep learning</h4><ul>
-<li>Better algorithms(e.g. dropout, batch normalization, etc.)</li>
-<li>Better hardware(high performing GPU) &#x2F; we have access to a lot more computational power.</li>
-<li>More data to train &#x2F; we have access to a lot more data</li>
-</ul>
-<h4 id="difference-between-CNN-and-RNN"><a href="#difference-between-CNN-and-RNN" class="headerlink" title="difference between CNN and RNN"></a>difference between CNN and RNN</h4><ul>
-<li>CNN’s work really well for computer vision. RNN’s are really good for natural languate processing.</li>
-<li>In CNN, the network takes fixed-size inputs and generates fixed size outputs. RNN can handle arbitrary input&#x2F; out lengths.</li>
-<li>CNN saves a set of weights and applies them spatially. Whereas, RNN saves a set of wights and applies them temporally.</li>
-<li>CNN is used for spatial data like images. Whereas, RNN is more suitable for sequence modeling, i.e. series.</li>
-</ul>
-<h4 id="Reinforcement-Learning-RL"><a href="#Reinforcement-Learning-RL" class="headerlink" title="Reinforcement Learning(RL)"></a>Reinforcement Learning(RL)</h4><p>RL enables the agents to learn to take appropriate action based on external environment, internal state, and reward for action.</p>
-<h4 id="Stochastic-Gradient-Descent-SGD-and-Batch-Gradient-Descent"><a href="#Stochastic-Gradient-Descent-SGD-and-Batch-Gradient-Descent" class="headerlink" title="Stochastic Gradient Descent(SGD) and Batch Gradient Descent"></a>Stochastic Gradient Descent(SGD) and Batch Gradient Descent</h4><p>为了获取准确的梯度，批量梯度下降法的每一 步都把整个训练集载入进来进行计算，时间花费和内存开销都非常大，无法应用于大数据集、大模型的场景。相反，随机梯度下降法则放弃了对梯度准确性的追求，每步仅仅随机采样一个(或少量)样本来估计当前梯度，计算速度快，内存开销小。但由于每步接受的信息量有限，随机梯度下降法对梯度的估计常常出现偏差，造成目标函数曲线收敛得很不稳定，伴有剧烈波动，有时甚至出现不收敛的情况。</p>
-<h4 id="Momentum-AdaGrad-Adam"><a href="#Momentum-AdaGrad-Adam" class="headerlink" title="Momentum, AdaGrad, Adam"></a>Momentum, AdaGrad, Adam</h4><ul>
-<li>Adagrad adjusts the learning rate based on historical information<br>• Frequently occurring features in the gradients get small learning rates and<br>infrequent features get higher ones<br>• Key idea: “learn slowly” from frequent features but “pay attention” to rare but<br>informative features</li>
-</ul>
-<h4 id="Softmax"><a href="#Softmax" class="headerlink" title="Softmax"></a>Softmax</h4><p>它是二分类函数sigmoid在多分类上的推广，目的是将多分类的结果以概率的形式展现出来。</p>
-<ol>
-<li>降预测结果转化为非负数</li>
-<li>各种预测结果概率之和等于1</li>
-</ol>
-<p>backpropagation:recursive application of the chain rule along a computational graph to compute the gradients of all inputs&#x2F;parameters&#x2F;intermediates<br>• forward: compute result of an operation and save any intermediates needed for<br>gradient computation in memory<br>• backward: apply the chain rule to compute the gradient of the loss function<br>with respect to the inputs</p>
-<p>Random Initialization<br>• Important to randomize initial weight matrices<br>• Can’t have uniform initial weights, as in logistic regression. Otherwise, all updates will be identical &amp; the net won’t learn</p>
-<p>Training a Neural Network</p>
-<ol>
-<li>Randomly initialize weights</li>
-<li>Implement forward propagation to get hΘ(xi) for any instance xi</li>
-<li>Implement code to compute cost function J(Θ)</li>
-<li>Implement backprop to compute partial derivatives</li>
-<li>Use gradient checking to compare computed using backpropagation vs. the numerical gradient estimate.<br>• Then, disable gradient checking code</li>
-<li>Use gradient descent with backprop to fit the network</li>
-</ol>
-<blockquote>
-<p>Multilayer Perceptron<br>• A multilayer perceptron is a special case of a feedforward neural<br>network, where every layer is a fully connected layer</p>
-</blockquote>
-<p>Why Convolution?</p>
-<ul>
-<li>ReLU<br>very fast computation<br>most common activation function<br>piecewise linear</li>
-<li>tanh<br>“hyperbolic tangent”, often pronounced like “tanch”<br>Smoothes out discontinuities<br>used to be more popular, replaced by ReLU</li>
-<li>logistic sigmoid<br>similar to tanh. Used rarely nowadays</li>
-</ul>
-<p>Softmax<br>• Applied to an entire vector, not component-wise.<br>• Normalizes a vector. Entries of the output sum to 1.<br>• The most common way to predict a probability distribution.<br>• Typically used in the final layer of networks for classification tasks.</p>
-<p><strong>Dropout</strong><br>• Prevents overfitting by preventing co-adaptations<br>• Forces “dead branches” to learn<br>Forces the network to have a redundant representation; prevents co-adaptation of features</p>
-<p>• Randomly select weights to update<br>• More precisely, in each update step<br> • Randomly sample a different binary mask to all the input and hidden units<br> • Multiple the mask bits with the units and do the update as usual<br>• Typical dropout probability: 0.2 for input and 0.5 for hidden units</p>
-<p><strong>RNN(Recurrent Neural Networks)</strong><br>• Use <strong>the same</strong> computational function and parameters across different time steps of the sequence<br>• Each time step: takes the input entry and <strong>the previous hidden state</strong> to compute the output entry<br>• Loss: typically computed at every time step</p>
-<p><strong>Batch Normalization</strong><br>Usually inserted after Fully Connected or Convolutional layers, and before nonlinearity<br>• Improves gradient flow through the network<br>• Allows higher learning rates<br>• Reduces the strong dependence on initialization<br>• Acts as a form of regularization in a funny way, and slightly reduces the need for dropout, maybe</p>
-<p><strong>Advantages of Naïve Bayes</strong><br>• Based on the independent assumption<br>• A small amount of training data to estimate parameters (means and variances of the variable)<br>• Only the variances of variables for each class need to be determined and not the entire covariance matrix<br>• Test is straightforward; just looking up tables or calculating conditional probabilities with normal distribution</p>
-<p><strong>Why Generative Models?</strong><br>• Excellent test of our ability to use high-dimensional and complicated probability distributions<br>• Simulate possible futures for planning or simulated RL<br>• Generating more data or missing data<br> • Semi-supervised learning<br>• Multi-modal outputs<br>• Realistic generation tasks</p>
-<p><strong>Why GANs?</strong><br>• Sampling (or generation) is straightforward.<br>• Training doesn’t involve Maximum Likelihood estimation.<br>• Robust to Overfitting since Generator never sees the training data.<br>• Empirically, GANs are good at capturing the modes of the distribution.</p>
-<p><strong>Problems with GANs</strong><br>• Probability Distribution is Implicit<br> • Not straightforward to compute P(X).<br> • Thus Vanilla GANs are only good for Sampling&#x2F;Generation.<br>• Training is Hard<br> • Non-Convergence<br> • Mode-Collapse</p>
-<p><strong>Mode-Collapse</strong><br>• Perhaps the most challenging model failure is the case where multiple inputs to the generator result in the generation of the same output. This is referred to as mode-collapse, and may represent one of the most challenging issues when training GANs<br>• Problem that occurs when the generator learns to map several different input z values to the same output point.<br>• One intuitive metric of performance can be obtained by having human annotators judge the visual quality of samples</p>
-<p><strong>How To Train a GAN?</strong></p>
-<ul>
-<li>Use a Gaussian Latent Space<br> • Sample from a standard Gaussian distribution, meaning that the shape of the latent space is a hypersphere, with a mean of zero and a standard deviation of one</li>
-<li>Separate Batches of Real and Fake Images<br> • The discriminator model is trained using SGD with mini-batches<br> • The best practice is to update the discriminator with separate batches of real and fake images rather than combining real and fake images into a single batch</li>
-<li>Use Label Smoothing<br> • Using the class label 1 for real images and 0 for fake images when training the discriminator model is common. These are hard labels<br> • Also use soft labels, such as values slightly more or less than 1.0 or slightly more than 0.0 for real and fake images respectively, where the variation for<br>each image is random. This is often referred to as label smoothing and can have a regularizing effect when training the model</li>
-<li>Use Noisy Labels<br> • Introduce some errors to the labels, where some fake images are marked as real, and some real images are marked as fake</li>
-</ul>
-<p>(N-F)&#x2F;stride+1</p>
-]]></content>
-      <categories>
-        <category>Machine Learning</category>
-      </categories>
-      <tags>
-        <tag>Deep Learning</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>English Writing</title>
     <url>/2022/09/21/English-Writing/</url>
     <content><![CDATA[<h3 id="Vocabulary"><a href="#Vocabulary" class="headerlink" title=" Vocabulary"></a><font color="6FBCE1"> Vocabulary</font></h3><p>appropriate, essential, tremendous, considerable, significantly, massive, generous, huge, large<br>anxiety, necessarily, certainly, constantly, heavily, nearly, unfortunately<br>secure, severe, economic, intensive, particular<br>comfortable, glad, pleased, pleasant<br>devote, disturb, a phenomenon, tough<br>famous, well-known</p>
@@ -504,6 +434,155 @@
       </categories>
       <tags>
         <tag>English Writing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux</title>
+    <url>/2022/08/14/Linux/</url>
+    <content><![CDATA[<p>Linux八股（持续更新中）</p>
+<h4 id="使用变量"><a href="#使用变量" class="headerlink" title="使用变量"></a>使用变量</h4><p>使用变量的时，用英文符号”$”取变量值，对于较长的变量名，建议加上{ }花括号，帮助解释器识别变量的边界</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">name=&quot;test_name&quot;</span><br><span class="line">echo &quot;My name is $&#123;name&#125;and you&quot;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Computer Basics</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Machine Learning</title>
+    <url>/2022/08/12/Machine-Learning/</url>
+    <content><![CDATA[<p>Machine learning is the field of study that gives computers the ability to learn without being explicitly programmed.</p>
+<h3 id="1-特征工程"><a href="#1-特征工程" class="headerlink" title="1. 特征工程"></a>1. 特征工程</h3><p>两种归一化<br>类别型的三种特征<br>高维组合特征处理<br>如何进行特征的组合</p>
+<h4 id="1-1-标准化-归一化"><a href="#1-1-标准化-归一化" class="headerlink" title="1.1 标准化,归一化"></a>1.1 标准化,归一化</h4><blockquote>
+<p>在进行距离有关的计算时，单位的不同会导致计算结果的不同，尺度大的特征会起决定性作用，而尺度小的特征其作用可能会被忽略。为了消除特征间单位和尺度差异的影响，以对每维特征同等看待，需要对特征进行归一化。</p>
+</blockquote>
+<span id="more"></span>
+<ul>
+<li>提升模型精度</li>
+<li>提升收敛速度</li>
+<li>解决数值计算的一些问题</li>
+</ul>
+<h4 id="1-2-什么是组合特征？如何处理高维组合特征？"><a href="#1-2-什么是组合特征？如何处理高维组合特征？" class="headerlink" title="1.2 什么是组合特征？如何处理高维组合特征？"></a>1.2 什么是组合特征？如何处理高维组合特征？</h4><p>为了提高复杂关系的拟合能力，在特征工程中经常会把一阶离散特征两两组 合，构成高阶组合特征。可以采取降维，矩阵分解或者特征筛选的方法得到具备绝大部分信息的几个特征进行训练。</p>
+<h4 id="1-3-欧氏距离-Euclidean-Distance-和曼哈顿距离"><a href="#1-3-欧氏距离-Euclidean-Distance-和曼哈顿距离" class="headerlink" title="1.3 欧氏距离(Euclidean Distance)和曼哈顿距离"></a>1.3 欧氏距离(Euclidean Distance)和曼哈顿距离</h4><ul>
+<li>欧氏距离：欧几里得距离，就是平方和开根号。我们最常用的。欧氏距离越小，两个向量的相似度越大；欧氏距离越大，两个向量的相似度越小。</li>
+<li>曼哈顿距离：|x1 - x2| + |y1 - y2|，曼哈顿距离也称为城市街区距离。可以看出在曼哈顿距离中，考虑了更多的实际因素。总之在曼哈顿距离的世界中，规则是我们只能沿着线画出的格子行进。<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">enclidean_distance</span>(<span class="params">row1,row1</span>): <span class="comment">#one row represents a point</span></span><br><span class="line">	distance=<span class="number">0.0</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(row1)-<span class="number">1</span>):</span><br><span class="line">		distance+=(row1[i]-row2[i])**<span class="number">2</span></span><br><span class="line">	<span class="keyword">return</span> sqrt(distance)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="1-4-什么是余弦相似度？为什么有些场景使用余弦相似度而不使用欧氏距离？"><a href="#1-4-什么是余弦相似度？为什么有些场景使用余弦相似度而不使用欧氏距离？" class="headerlink" title="1.4 什么是余弦相似度？为什么有些场景使用余弦相似度而不使用欧氏距离？"></a>1.4 什么是余弦相似度？为什么有些场景使用余弦相似度而不使用欧氏距离？</h4><p>对于两个向量A和B，其余弦相似度定义为cos（A，B）＝ A<em>B &#x2F; |A|</em>|B| 即两个向量夹角的余弦，关注的是向量之间的角度关系，并不关心它们的绝对大小,余弦相似度依然符合“相同为1，正交为0，相反为-1”的性质，其取值范围是［-1，1］。欧式距离衡量空间点的直线距离，余弦距离衡量点在空间的方向差异。欧式距离体现的数值上的绝对差异，而余弦距离体现方向上的相对差异。</p>
+<h4 id="1-5-one-hot的作用是什么？为什么不能直接用数字来表示？"><a href="#1-5-one-hot的作用是什么？为什么不能直接用数字来表示？" class="headerlink" title="1.5 one-hot的作用是什么？为什么不能直接用数字来表示？"></a>1.5 one-hot的作用是什么？为什么不能直接用数字来表示？</h4><p>One-Hot编码是分类变量作为二进制向量的表示。这首先要求将分类值映射到整数值。然后，每个整数值被表示为二进制向量，除了整数的索引之外，它都是零值，它被标记为1。<a href="https://cloud.tencent.com/developer/article/1688022">One-Hot详解</a>，直接使用数字会给将人工误差而导致的假设引入到类别特征中，比如类别之间的大小关系，以及差异关系等等</p>
+<h3 id="2-模型评估"><a href="#2-模型评估" class="headerlink" title="2. 模型评估"></a>2. 模型评估</h3><h4 id="2-1"><a href="#2-1" class="headerlink" title="2.1"></a>2.1</h4><ul>
+<li>准确率，召回率<table>
+<thead>
+<tr>
+<th align="center">Evalutation</th>
+<th align="center">predicted Postive</th>
+<th align="center">predicted Negative</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">real Postive</td>
+<td align="center">TP</td>
+<td align="center">FN</td>
+</tr>
+<tr>
+<td align="center">real Negative</td>
+<td align="center">FP</td>
+<td align="center">TN</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<p>Precision &#x3D; TP&#x2F;TP+FP 预测为正例的样本中有多少真正的正例<br>Recall &#x3D; TP&#x2F;TP+FN 所有的正例中有多少被预测出来</p>
+<ul>
+<li><p>ROC曲线（Receiver Operating Characteristic）PR曲线，<br>ROC是一个用于度量分类中的非均衡性的工具，ROC曲线及AUC常被用来评价一个二值分类器的优劣。</p>
+</li>
+<li><p>AUC（Area Under Curve）<br>AUC 被定义为ROC曲线下的面积，因为ROC曲线一般都处于y&#x3D;x这条直线的上方，所以取值范围在0.5和1之间，使用AUC作为评价指标是因为ROC曲线在很多时候并不能清晰地说明哪个分类器的效果更好，而AUC作为一个数值，其值越大代表分类器效果更好。</p>
+</li>
+</ul>
+<p>The AUC value is equivalent to the probability that a randomly chosen positive example is ranked higher than a randomly chosen negative example.</p>
+<p>首先AUC是一个概率值，当随机挑选一个正样本以及一个负样本，当前的分类算法根据计算得到的分数将这个正样本排在负样本前面的概率就是AUC值。所以，AUC的值越大，当前的分类算法越有可能将正样本排在负样本值前面，既能够更好的分类。</p>
+<ul>
+<li>超参数调优</li>
+<li>欠拟合，过拟合<br>训练集上表现很好，测试集上表现很差。欠拟合：训练集上表现很差。欠拟合会导致高 Bias ，过拟合会导致高 Variance ，所以模型需要在 Bias与Variance之间做出一个权衡。<br><em>Bias</em> 和 <em>Variance</em> 分别从两个方面来描述我们学习到的模型与真实模型之间的差距。<br>Bias 是用所有可能的训练数据集训练出的所有模型的输出的平均值与真实模型的输出值之间的差异。<br>Variance 是不同的训练数据集训练出的模型输出值之间的差异。</li>
+</ul>
+<blockquote>
+<p>Error &#x3D; Bias + Variance + Noise，Error反映的是整个模型的准确度，Bias反映的是模型在样本上的输出与真实值之间的误差，即模型本身的精准度，Variance反映的是模型每一次输出结果与模型输出期望之间的误差，即模型的稳定性。</p>
+</blockquote>
+<h4 id="2-2-降低过拟合和欠拟合的方法"><a href="#2-2-降低过拟合和欠拟合的方法" class="headerlink" title="2.2 降低过拟合和欠拟合的方法"></a>2.2 降低过拟合和欠拟合的方法</h4><p>(1)解决欠拟合的方法：</p>
+<ol>
+<li>增加新特征，可以考虑加入进特征组合、高次特征，来增大假设空间;</li>
+<li>尝试非线性模型，比如核SVM 、决策树、DNN等模型;</li>
+<li>如果有正则项可以较小正则项参数 $\lambda$;</li>
+<li>Boosting ,Boosting 往往会有较小的 Bias，比如 Gradient Boosting 等.</li>
+</ol>
+<p>(2)解决过拟合的方法：</p>
+<ol>
+<li>交叉验证，通过交叉检验得到较优的模型参数;</li>
+<li>减少特征的数量（-人工选择保留哪些特征，-模型选择算法）,ditch some non-linear attributes</li>
+<li>正则化, make lambda bigger</li>
+<li>collect more training data</li>
+</ol>
+<h4 id="K-fold-Cross-Validation"><a href="#K-fold-Cross-Validation" class="headerlink" title="K-fold Cross Validation"></a>K-fold Cross Validation</h4><p>• Assessing how the results of a statistical analysis will generalize to an independent data set<br>• Finding an optimal set of parameters without seeing the testing samples</p>
+<blockquote>
+<p>正则化</p>
+</blockquote>
+<h4 id="2-4-对于树形结构为什么不用归一化？"><a href="#2-4-对于树形结构为什么不用归一化？" class="headerlink" title="2.4 对于树形结构为什么不用归一化？"></a>2.4 对于树形结构为什么不用归一化？</h4><p>因为数值缩放不影响分裂点位置，对树模型的结构不造成影响。按照特征值进行排序的，排序的顺序不变，那么所属的分支以及分裂点就不会有不同。而且，树模型是不能进行梯度下降的，因为构建树模型（回归树）寻找最优点时是通过寻找最优分裂点完成的，因此树模型是阶跃的，阶跃点是不可导的，并且求导没意义，也就不需要归一化。树型结构不关心变量的值，只关心变量分布以及变量之间的条件概率</p>
+<h4 id="2-5-什么是数据不平衡？如何解决？"><a href="#2-5-什么是数据不平衡？如何解决？" class="headerlink" title="2.5 什么是数据不平衡？如何解决？"></a>2.5 什么是数据不平衡？如何解决？</h4><p>在机器学习中我们经常会遇到数据不平衡问题。数据不平衡主要存在于有监督机器学习任务中。当遇到数据不平衡时，以总体分类准确率为学习目标的传统分类算法会过多地关注多数类，从而使得少数样本的分类性能下降。绝大多数常见的机器学习算法对于不平衡数据集都不能很好地工作。</p>
+<h3 id="3-线性回归，逻辑回归"><a href="#3-线性回归，逻辑回归" class="headerlink" title="3. 线性回归，逻辑回归"></a>3. 线性回归，逻辑回归</h3><h3 id="SVM-Support-Vector-Machines"><a href="#SVM-Support-Vector-Machines" class="headerlink" title="SVM(Support Vector Machines)"></a>SVM(Support Vector Machines)</h3><p>Maximize the Margin<br>Hyperplane</p>
+<ul>
+<li>Polynomial Kernel</li>
+<li>Gaussian Kernel</li>
+</ul>
+<h3 id="4-朴素贝叶斯"><a href="#4-朴素贝叶斯" class="headerlink" title="4. 朴素贝叶斯"></a>4. 朴素贝叶斯</h3><ul>
+<li>Generative model<br>• Based on generation assumptions, which category is most likely to generate this observation</li>
+<li>Discriminative model<br>• Not care about how the data was generated, simply categorizes a given observation</li>
+</ul>
+<h3 id="5-决策树"><a href="#5-决策树" class="headerlink" title="5. 决策树"></a>5. 决策树</h3><h3 id="6-降维"><a href="#6-降维" class="headerlink" title="6. 降维"></a>6. 降维</h3><ul>
+<li>PCA</li>
+<li>LDA</li>
+</ul>
+<h3 id="7-优化算法"><a href="#7-优化算法" class="headerlink" title="7. 优化算法"></a>7. 优化算法</h3><p>有监督的损失函数<br>梯度验证<br>L1、L2正则<br>L1范数，其表示某个向量中所有元素绝对值的和。<br>L2范数，表示某个向量中所有元素平方和再开根，也就是欧氏距离</p>
+<h3 id="8-集成学习-bagging-boosting"><a href="#8-集成学习-bagging-boosting" class="headerlink" title="8. 集成学习(bagging, boosting)"></a>8. 集成学习(bagging, boosting)</h3><p>所谓的集成学习，就是用多重或多个弱分类器结合为一个强分类器，从而达到提升分类方法效果。严格来说，集成学习并不算是一种分类器，而是一种分类器结合的方法。</p>
+<p><strong>Bagging和Boosting的主要区别</strong></p>
+<blockquote>
+<p>Bagging采取Bootstraping的是随机有放回的取样，Boosting的每一轮训练的样本是固定的，改变的是每个样本的权重。<br>Bagging采取的是均匀取样，每个样本的权重相同，Boosting根据错误率调整样本权重，错误率越大的样本权重越大<br>Bagging所有预测函数权值相同，Boosting中误差越小的预测函数权值越大。<br>Bagging 的各个预测函数可以并行生成;Boosting的各个预测函数必须按照顺序迭代生成</p>
+</blockquote>
+<h5 id="Bagging和Boosting的区别："><a href="#Bagging和Boosting的区别：" class="headerlink" title="Bagging和Boosting的区别："></a>Bagging和Boosting的区别：</h5><ol>
+<li><p>样本选择上：<br>Bagging：训练集是在原始集中有放回选取的，从原始集中选出的各轮训练集之间是独立的。<br>Boosting：每一轮的训练集不变，只是训练集中每个样例在分类器中的权重发生变化。而权值是根据上一轮的分类结果进行调整。</p>
+</li>
+<li><p>样例权重：<br>Bagging：使用均匀取样，每个样例的权重相等<br>Boosting：根据错误率不断调整样例的权值，错误率越大则权重越大。</p>
+</li>
+<li><p>预测函数：<br>Bagging：所有预测函数的权重相等。<br>Boosting：每个弱分类器都有相应的权重，对于分类误差小的分类器会有更大的权重。</p>
+</li>
+<li><p>并行计算：<br>Bagging：各个预测函数可以并行生成<br>Boosting：各个预测函数只能顺序生成，因为后一个模型参数需要前一轮模型的结果。</p>
+</li>
+</ol>
+<p>将Bagging和Boosting分别和树模型结合分别生成：</p>
+<p>Bagging+决策树&#x3D;随机森林<br>Boosting+决策树&#x3D;GBDT</p>
+<blockquote>
+<p><strong>那么，为什么集成学习会好于单个学习器呢？原因可能有三：</strong><br>训练样本可能无法选择出最好的单个学习器，由于没法选择出最好的学习器，所以干脆结合起来一起用；<br>假设能找到最好的学习器，但由于算法运算的限制无法找到最优解，只能找到次优解，采用集成学习可以弥补算法的不足；<br>可能算法无法得到最优解，而集成学习能够得到近似解。比如说最优解是一条对角线，而单个决策树得到的结果只能是平行于坐标轴的，但是集成学习可以去拟合这条对角线。</p>
+</blockquote>
+<p><strong>Rand forest：</strong> 随机森林，顾名思义，是用随机的方式建立一个森林，森林里面有很多的决策树组成，随机森林的每一棵决策树之间是没有关联的。在得到森林之后，当有一个新的输入样本进入的时候，就让森林中的每一棵决策树分别进行一下判断，看看这个样本应该属于哪一类（对于分类算法），然后看看哪一类被选择最多，就预测这个样本为那一类。 在建立每一棵决策树的过程中，有两点需要注意 - 采样与完全分裂。首先是两个随机采样的过程，random forest对输入的数据要进行行、列的采样。对于行采样，采用有放回的方式，也就是在采样得到的样本集合中，可能有重复的样本。假设输入样本为N个，那么采样的样本也为N个。这样使得在训练的时候，每一棵树的输入样本都不是全部的样本，使得相对不容易出现over-fitting。然后进行列采样，从M个feature中，选择m个(m &lt;&lt; M)。之后就是对采样之后的数据使用完全分裂的方式建立出决策树，这样决策树的某一个叶子节点要么是无法继续分裂的，要么里面的所有样本的都是指向的同一个分类。一般很多的决策树算法都一个重要的步骤-剪枝，但是这里不这样干，由于之前的两个随机采样的过程保证了随机性，所以就算不剪枝，也不会出现over-fitting。 按这种算法得到的随机森林中的每一棵都是很弱的，但是大家组合起来就很厉害了。可以这样比喻随机森林算法：每一棵决策树就是一个精通于某一个窄领域的专家（因为我们从M个feature中选择m让每一棵决策树进行学习），这样在随机森林中就有了很多个精通不同领域的专家，对一个新的问题（新的输入数据），可以用不同的角度去看待它，最终由各个专家，投票得到结果。</p>
+<p>Independence in probability<br>If the probability of occurrence of one event does not affect the probability of occurrence of the other event, these two events are called indenpendent.</p>
+<p>XGBoost</p>
+<blockquote>
+<p>聚类:KNN, SVM, Boosting, 推荐系统，正则化，异常检测，EM算法，</p>
+</blockquote>
+<ul>
+<li><input disabled type="checkbox"> 1）L1 L2正则化的区别，为什么正则化（字节）</li>
+<li><input disabled type="checkbox"> 2）如何解决多重共线性–其实也是正则问题（快手）</li>
+<li><input disabled type="checkbox"> 3）召回率，准确率分别是什么（B站）</li>
+<li><input disabled type="checkbox"> 4）bagging 和boosting 的区别（B站）</li>
+<li><input disabled type="checkbox"> 5）聚类算法的好坏，流程（百度）</li>
+<li><input disabled type="checkbox"> 6）决策树ID3 的启发函数（猿辅导）</li>
+<li><input disabled type="checkbox"> 7）PCA（拼多多）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Machine Learning</category>
+      </categories>
+      <tags>
+        <tag>Machine Learning</tag>
       </tags>
   </entry>
   <entry>
@@ -893,218 +972,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux</title>
-    <url>/2022/08/14/Linux/</url>
-    <content><![CDATA[<p>Linux八股（持续更新中）</p>
-<h4 id="使用变量"><a href="#使用变量" class="headerlink" title="使用变量"></a>使用变量</h4><p>使用变量的时，用英文符号”$”取变量值，对于较长的变量名，建议加上{ }花括号，帮助解释器识别变量的边界</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">name=&quot;test_name&quot;</span><br><span class="line">echo &quot;My name is $&#123;name&#125;and you&quot;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Computer Basics</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Machine Learning</title>
-    <url>/2022/08/12/Machine-Learning/</url>
-    <content><![CDATA[<p>Machine learning is the field of study that gives computers the ability to learn without being explicitly programmed.</p>
-<h3 id="1-特征工程"><a href="#1-特征工程" class="headerlink" title="1. 特征工程"></a>1. 特征工程</h3><p>两种归一化<br>类别型的三种特征<br>高维组合特征处理<br>如何进行特征的组合</p>
-<h4 id="1-1-标准化-归一化"><a href="#1-1-标准化-归一化" class="headerlink" title="1.1 标准化,归一化"></a>1.1 标准化,归一化</h4><blockquote>
-<p>在进行距离有关的计算时，单位的不同会导致计算结果的不同，尺度大的特征会起决定性作用，而尺度小的特征其作用可能会被忽略。为了消除特征间单位和尺度差异的影响，以对每维特征同等看待，需要对特征进行归一化。</p>
-</blockquote>
-<span id="more"></span>
-<ul>
-<li>提升模型精度</li>
-<li>提升收敛速度</li>
-<li>解决数值计算的一些问题</li>
-</ul>
-<h4 id="1-2-什么是组合特征？如何处理高维组合特征？"><a href="#1-2-什么是组合特征？如何处理高维组合特征？" class="headerlink" title="1.2 什么是组合特征？如何处理高维组合特征？"></a>1.2 什么是组合特征？如何处理高维组合特征？</h4><p>为了提高复杂关系的拟合能力，在特征工程中经常会把一阶离散特征两两组 合，构成高阶组合特征。可以采取降维，矩阵分解或者特征筛选的方法得到具备绝大部分信息的几个特征进行训练。</p>
-<h4 id="1-3-欧氏距离-Euclidean-Distance-和曼哈顿距离"><a href="#1-3-欧氏距离-Euclidean-Distance-和曼哈顿距离" class="headerlink" title="1.3 欧氏距离(Euclidean Distance)和曼哈顿距离"></a>1.3 欧氏距离(Euclidean Distance)和曼哈顿距离</h4><ul>
-<li>欧氏距离：欧几里得距离，就是平方和开根号。我们最常用的。欧氏距离越小，两个向量的相似度越大；欧氏距离越大，两个向量的相似度越小。</li>
-<li>曼哈顿距离：|x1 - x2| + |y1 - y2|，曼哈顿距离也称为城市街区距离。可以看出在曼哈顿距离中，考虑了更多的实际因素。总之在曼哈顿距离的世界中，规则是我们只能沿着线画出的格子行进。<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">enclidean_distance</span>(<span class="params">row1,row1</span>): <span class="comment">#one row represents a point</span></span><br><span class="line">	distance=<span class="number">0.0</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(row1)-<span class="number">1</span>):</span><br><span class="line">		distance+=(row1[i]-row2[i])**<span class="number">2</span></span><br><span class="line">	<span class="keyword">return</span> sqrt(distance)</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h4 id="1-4-什么是余弦相似度？为什么有些场景使用余弦相似度而不使用欧氏距离？"><a href="#1-4-什么是余弦相似度？为什么有些场景使用余弦相似度而不使用欧氏距离？" class="headerlink" title="1.4 什么是余弦相似度？为什么有些场景使用余弦相似度而不使用欧氏距离？"></a>1.4 什么是余弦相似度？为什么有些场景使用余弦相似度而不使用欧氏距离？</h4><p>对于两个向量A和B，其余弦相似度定义为cos（A，B）＝ A<em>B &#x2F; |A|</em>|B| 即两个向量夹角的余弦，关注的是向量之间的角度关系，并不关心它们的绝对大小,余弦相似度依然符合“相同为1，正交为0，相反为-1”的性质，其取值范围是［-1，1］。欧式距离衡量空间点的直线距离，余弦距离衡量点在空间的方向差异。欧式距离体现的数值上的绝对差异，而余弦距离体现方向上的相对差异。</p>
-<h4 id="1-5-one-hot的作用是什么？为什么不能直接用数字来表示？"><a href="#1-5-one-hot的作用是什么？为什么不能直接用数字来表示？" class="headerlink" title="1.5 one-hot的作用是什么？为什么不能直接用数字来表示？"></a>1.5 one-hot的作用是什么？为什么不能直接用数字来表示？</h4><p>One-Hot编码是分类变量作为二进制向量的表示。这首先要求将分类值映射到整数值。然后，每个整数值被表示为二进制向量，除了整数的索引之外，它都是零值，它被标记为1。<a href="https://cloud.tencent.com/developer/article/1688022">One-Hot详解</a>，直接使用数字会给将人工误差而导致的假设引入到类别特征中，比如类别之间的大小关系，以及差异关系等等</p>
-<h3 id="2-模型评估"><a href="#2-模型评估" class="headerlink" title="2. 模型评估"></a>2. 模型评估</h3><h4 id="2-1"><a href="#2-1" class="headerlink" title="2.1"></a>2.1</h4><ul>
-<li>准确率，召回率<table>
-<thead>
-<tr>
-<th align="center">Evalutation</th>
-<th align="center">predicted Postive</th>
-<th align="center">predicted Negative</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">real Postive</td>
-<td align="center">TP</td>
-<td align="center">FN</td>
-</tr>
-<tr>
-<td align="center">real Negative</td>
-<td align="center">FP</td>
-<td align="center">TN</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<p>Precision &#x3D; TP&#x2F;TP+FP 预测为正例的样本中有多少真正的正例<br>Recall &#x3D; TP&#x2F;TP+FN 所有的正例中有多少被预测出来</p>
-<ul>
-<li><p>ROC曲线（Receiver Operating Characteristic）PR曲线，<br>ROC是一个用于度量分类中的非均衡性的工具，ROC曲线及AUC常被用来评价一个二值分类器的优劣。</p>
-</li>
-<li><p>AUC（Area Under Curve）<br>AUC 被定义为ROC曲线下的面积，因为ROC曲线一般都处于y&#x3D;x这条直线的上方，所以取值范围在0.5和1之间，使用AUC作为评价指标是因为ROC曲线在很多时候并不能清晰地说明哪个分类器的效果更好，而AUC作为一个数值，其值越大代表分类器效果更好。</p>
-</li>
-</ul>
-<p>The AUC value is equivalent to the probability that a randomly chosen positive example is ranked higher than a randomly chosen negative example.</p>
-<p>首先AUC是一个概率值，当随机挑选一个正样本以及一个负样本，当前的分类算法根据计算得到的分数将这个正样本排在负样本前面的概率就是AUC值。所以，AUC的值越大，当前的分类算法越有可能将正样本排在负样本值前面，既能够更好的分类。</p>
-<ul>
-<li>超参数调优</li>
-<li>欠拟合，过拟合<br>训练集上表现很好，测试集上表现很差。欠拟合：训练集上表现很差。欠拟合会导致高 Bias ，过拟合会导致高 Variance ，所以模型需要在 Bias与Variance之间做出一个权衡。<br><em>Bias</em> 和 <em>Variance</em> 分别从两个方面来描述我们学习到的模型与真实模型之间的差距。<br>Bias 是用所有可能的训练数据集训练出的所有模型的输出的平均值与真实模型的输出值之间的差异。<br>Variance 是不同的训练数据集训练出的模型输出值之间的差异。</li>
-</ul>
-<blockquote>
-<p>Error &#x3D; Bias + Variance + Noise，Error反映的是整个模型的准确度，Bias反映的是模型在样本上的输出与真实值之间的误差，即模型本身的精准度，Variance反映的是模型每一次输出结果与模型输出期望之间的误差，即模型的稳定性。</p>
-</blockquote>
-<h4 id="2-2-降低过拟合和欠拟合的方法"><a href="#2-2-降低过拟合和欠拟合的方法" class="headerlink" title="2.2 降低过拟合和欠拟合的方法"></a>2.2 降低过拟合和欠拟合的方法</h4><p>(1)解决欠拟合的方法：</p>
-<ol>
-<li>增加新特征，可以考虑加入进特征组合、高次特征，来增大假设空间;</li>
-<li>尝试非线性模型，比如核SVM 、决策树、DNN等模型;</li>
-<li>如果有正则项可以较小正则项参数 $\lambda$;</li>
-<li>Boosting ,Boosting 往往会有较小的 Bias，比如 Gradient Boosting 等.</li>
-</ol>
-<p>(2)解决过拟合的方法：</p>
-<ol>
-<li>交叉验证，通过交叉检验得到较优的模型参数;</li>
-<li>减少特征的数量（-人工选择保留哪些特征，-模型选择算法）,ditch some non-linear attributes</li>
-<li>正则化, make lambda bigger</li>
-<li>collect more training data</li>
-</ol>
-<h4 id="K-fold-Cross-Validation"><a href="#K-fold-Cross-Validation" class="headerlink" title="K-fold Cross Validation"></a>K-fold Cross Validation</h4><p>• Assessing how the results of a statistical analysis will generalize to an independent data set<br>• Finding an optimal set of parameters without seeing the testing samples</p>
-<blockquote>
-<p>正则化</p>
-</blockquote>
-<h4 id="2-4-对于树形结构为什么不用归一化？"><a href="#2-4-对于树形结构为什么不用归一化？" class="headerlink" title="2.4 对于树形结构为什么不用归一化？"></a>2.4 对于树形结构为什么不用归一化？</h4><p>因为数值缩放不影响分裂点位置，对树模型的结构不造成影响。按照特征值进行排序的，排序的顺序不变，那么所属的分支以及分裂点就不会有不同。而且，树模型是不能进行梯度下降的，因为构建树模型（回归树）寻找最优点时是通过寻找最优分裂点完成的，因此树模型是阶跃的，阶跃点是不可导的，并且求导没意义，也就不需要归一化。树型结构不关心变量的值，只关心变量分布以及变量之间的条件概率</p>
-<h4 id="2-5-什么是数据不平衡？如何解决？"><a href="#2-5-什么是数据不平衡？如何解决？" class="headerlink" title="2.5 什么是数据不平衡？如何解决？"></a>2.5 什么是数据不平衡？如何解决？</h4><p>在机器学习中我们经常会遇到数据不平衡问题。数据不平衡主要存在于有监督机器学习任务中。当遇到数据不平衡时，以总体分类准确率为学习目标的传统分类算法会过多地关注多数类，从而使得少数样本的分类性能下降。绝大多数常见的机器学习算法对于不平衡数据集都不能很好地工作。</p>
-<h3 id="3-线性回归，逻辑回归"><a href="#3-线性回归，逻辑回归" class="headerlink" title="3. 线性回归，逻辑回归"></a>3. 线性回归，逻辑回归</h3><h3 id="SVM-Support-Vector-Machines"><a href="#SVM-Support-Vector-Machines" class="headerlink" title="SVM(Support Vector Machines)"></a>SVM(Support Vector Machines)</h3><p>Maximize the Margin<br>Hyperplane</p>
-<ul>
-<li>Polynomial Kernel</li>
-<li>Gaussian Kernel</li>
-</ul>
-<h3 id="4-朴素贝叶斯"><a href="#4-朴素贝叶斯" class="headerlink" title="4. 朴素贝叶斯"></a>4. 朴素贝叶斯</h3><ul>
-<li>Generative model<br>• Based on generation assumptions, which category is most likely to generate this observation</li>
-<li>Discriminative model<br>• Not care about how the data was generated, simply categorizes a given observation</li>
-</ul>
-<h3 id="5-决策树"><a href="#5-决策树" class="headerlink" title="5. 决策树"></a>5. 决策树</h3><h3 id="6-降维"><a href="#6-降维" class="headerlink" title="6. 降维"></a>6. 降维</h3><ul>
-<li>PCA</li>
-<li>LDA</li>
-</ul>
-<h3 id="7-优化算法"><a href="#7-优化算法" class="headerlink" title="7. 优化算法"></a>7. 优化算法</h3><p>有监督的损失函数<br>梯度验证<br>L1、L2正则<br>L1范数，其表示某个向量中所有元素绝对值的和。<br>L2范数，表示某个向量中所有元素平方和再开根，也就是欧氏距离</p>
-<h3 id="8-集成学习-bagging-boosting"><a href="#8-集成学习-bagging-boosting" class="headerlink" title="8. 集成学习(bagging, boosting)"></a>8. 集成学习(bagging, boosting)</h3><p>所谓的集成学习，就是用多重或多个弱分类器结合为一个强分类器，从而达到提升分类方法效果。严格来说，集成学习并不算是一种分类器，而是一种分类器结合的方法。</p>
-<p><strong>Bagging和Boosting的主要区别</strong></p>
-<blockquote>
-<p>Bagging采取Bootstraping的是随机有放回的取样，Boosting的每一轮训练的样本是固定的，改变的是每个样本的权重。<br>Bagging采取的是均匀取样，每个样本的权重相同，Boosting根据错误率调整样本权重，错误率越大的样本权重越大<br>Bagging所有预测函数权值相同，Boosting中误差越小的预测函数权值越大。<br>Bagging 的各个预测函数可以并行生成;Boosting的各个预测函数必须按照顺序迭代生成</p>
-</blockquote>
-<h5 id="Bagging和Boosting的区别："><a href="#Bagging和Boosting的区别：" class="headerlink" title="Bagging和Boosting的区别："></a>Bagging和Boosting的区别：</h5><ol>
-<li><p>样本选择上：<br>Bagging：训练集是在原始集中有放回选取的，从原始集中选出的各轮训练集之间是独立的。<br>Boosting：每一轮的训练集不变，只是训练集中每个样例在分类器中的权重发生变化。而权值是根据上一轮的分类结果进行调整。</p>
-</li>
-<li><p>样例权重：<br>Bagging：使用均匀取样，每个样例的权重相等<br>Boosting：根据错误率不断调整样例的权值，错误率越大则权重越大。</p>
-</li>
-<li><p>预测函数：<br>Bagging：所有预测函数的权重相等。<br>Boosting：每个弱分类器都有相应的权重，对于分类误差小的分类器会有更大的权重。</p>
-</li>
-<li><p>并行计算：<br>Bagging：各个预测函数可以并行生成<br>Boosting：各个预测函数只能顺序生成，因为后一个模型参数需要前一轮模型的结果。</p>
-</li>
-</ol>
-<p>将Bagging和Boosting分别和树模型结合分别生成：</p>
-<p>Bagging+决策树&#x3D;随机森林<br>Boosting+决策树&#x3D;GBDT</p>
-<blockquote>
-<p><strong>那么，为什么集成学习会好于单个学习器呢？原因可能有三：</strong><br>训练样本可能无法选择出最好的单个学习器，由于没法选择出最好的学习器，所以干脆结合起来一起用；<br>假设能找到最好的学习器，但由于算法运算的限制无法找到最优解，只能找到次优解，采用集成学习可以弥补算法的不足；<br>可能算法无法得到最优解，而集成学习能够得到近似解。比如说最优解是一条对角线，而单个决策树得到的结果只能是平行于坐标轴的，但是集成学习可以去拟合这条对角线。</p>
-</blockquote>
-<p><strong>Rand forest：</strong> 随机森林，顾名思义，是用随机的方式建立一个森林，森林里面有很多的决策树组成，随机森林的每一棵决策树之间是没有关联的。在得到森林之后，当有一个新的输入样本进入的时候，就让森林中的每一棵决策树分别进行一下判断，看看这个样本应该属于哪一类（对于分类算法），然后看看哪一类被选择最多，就预测这个样本为那一类。 在建立每一棵决策树的过程中，有两点需要注意 - 采样与完全分裂。首先是两个随机采样的过程，random forest对输入的数据要进行行、列的采样。对于行采样，采用有放回的方式，也就是在采样得到的样本集合中，可能有重复的样本。假设输入样本为N个，那么采样的样本也为N个。这样使得在训练的时候，每一棵树的输入样本都不是全部的样本，使得相对不容易出现over-fitting。然后进行列采样，从M个feature中，选择m个(m &lt;&lt; M)。之后就是对采样之后的数据使用完全分裂的方式建立出决策树，这样决策树的某一个叶子节点要么是无法继续分裂的，要么里面的所有样本的都是指向的同一个分类。一般很多的决策树算法都一个重要的步骤-剪枝，但是这里不这样干，由于之前的两个随机采样的过程保证了随机性，所以就算不剪枝，也不会出现over-fitting。 按这种算法得到的随机森林中的每一棵都是很弱的，但是大家组合起来就很厉害了。可以这样比喻随机森林算法：每一棵决策树就是一个精通于某一个窄领域的专家（因为我们从M个feature中选择m让每一棵决策树进行学习），这样在随机森林中就有了很多个精通不同领域的专家，对一个新的问题（新的输入数据），可以用不同的角度去看待它，最终由各个专家，投票得到结果。</p>
-<p>Independence in probability<br>If the probability of occurrence of one event does not affect the probability of occurrence of the other event, these two events are called indenpendent.</p>
-<p>XGBoost</p>
-<blockquote>
-<p>聚类:KNN, SVM, Boosting, 推荐系统，正则化，异常检测，EM算法，</p>
-</blockquote>
-<ul>
-<li><input disabled type="checkbox"> 1）L1 L2正则化的区别，为什么正则化（字节）</li>
-<li><input disabled type="checkbox"> 2）如何解决多重共线性–其实也是正则问题（快手）</li>
-<li><input disabled type="checkbox"> 3）召回率，准确率分别是什么（B站）</li>
-<li><input disabled type="checkbox"> 4）bagging 和boosting 的区别（B站）</li>
-<li><input disabled type="checkbox"> 5）聚类算法的好坏，流程（百度）</li>
-<li><input disabled type="checkbox"> 6）决策树ID3 的启发函数（猿辅导）</li>
-<li><input disabled type="checkbox"> 7）PCA（拼多多）</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Machine Learning</category>
-      </categories>
-      <tags>
-        <tag>Machine Learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Operating System</title>
-    <url>/2022/08/13/Operating-System/</url>
-    <content><![CDATA[<h3 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h3><h4 id="进程的调度算法"><a href="#进程的调度算法" class="headerlink" title="进程的调度算法"></a>进程的调度算法</h4><p>👨‍💻<strong>面试官</strong> ：<strong>你知道操作系统中进程的调度算法有哪些吗?</strong></p>
-<p>🙋 <strong>我</strong> ：嗯嗯！这个我们大学的时候学过，是一个很重要的知识点！</p>
-<p>为了确定首先执行哪个进程以及最后执行哪个进程以实现最大 CPU 利用率，计算机科学家已经定义了一些算法，它们是：</p>
-<ul>
-<li><strong>先到先服务(FCFS)调度算法</strong> : 从就绪队列中选择一个最先进入该队列的进程为之分配资源，使它立即执行并一直执行到完成或发生某事件而被阻塞放弃占用 CPU 时再重新调度。</li>
-<li><strong>短作业优先(SJF)的调度算法</strong> : 从就绪队列中选出一个估计运行时间最短的进程为之分配资源，使它立即执行并一直执行到完成或发生某事件而被阻塞放弃占用 CPU 时再重新调度。</li>
-<li><strong>时间片轮转调度算法</strong> : 时间片轮转调度是一种最古老，最简单，最公平且使用最广的算法，又称 RR(Round robin)调度。每个进程被分配一个时间段，称作它的时间片，即该进程允许运行的时间。</li>
-<li><strong>多级反馈队列调度算法</strong> ：前面介绍的几种进程调度的算法都有一定的局限性。如<strong>短进程优先的调度算法，仅照顾了短进程而忽略了长进程</strong> 。多级反馈队列调度算法既能使高优先级的作业得到响应又能使短作业（进程）迅速完成。，因而它是目前<strong>被公认的一种较好的进程调度算法</strong>，UNIX 操作系统采取的便是这种调度算法。</li>
-<li><strong>优先级调度</strong> ： 为每个流程分配优先级，首先执行具有最高优先级的进程，依此类推。具有相同优先级的进程以 FCFS 方式执行。可以根据内存要求，时间要求或任何其他资源要求来确定优先级。</li>
-</ul>
-<h3 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h3><p>👨‍💻<strong>面试官</strong> ：<strong>你知道什么是死锁吗?</strong></p>
-<p>🙋 <strong>我</strong> ：死锁描述的是这样一种情况：多个进程&#x2F;线程同时被阻塞，它们中的一个或者全部都在等待某个资源被释放。由于进程&#x2F;线程被无限期地阻塞，因此程序不可能正常终止。</p>
-<h4 id="死锁的四个条件"><a href="#死锁的四个条件" class="headerlink" title="死锁的四个条件"></a>死锁的四个条件</h4><p>👨‍💻<strong>面试官</strong> ：<strong>产生死锁的四个必要条件是什么?</strong></p>
-<p>🙋 <strong>我</strong> ：如果系统中以下四个条件同时成立，那么就能引起死锁：</p>
-<ul>
-<li><strong>互斥</strong>：资源必须处于非共享模式，即一次只有一个进程可以使用。如果另一进程申请该资源，那么必须等待直到该资源被释放为止。</li>
-<li><strong>占有并等待</strong>：一个进程至少应该占有一个资源，并等待另一资源，而该资源被其他进程所占有。</li>
-<li><strong>非抢占</strong>：资源不能被抢占。只能在持有资源的进程完成任务后，该资源才会被释放。</li>
-<li><strong>循环等待</strong>：有一组等待进程 <code>&#123;P0, P1,..., Pn&#125;</code>， <code>P0</code> 等待的资源被 <code>P1</code> 占有，<code>P1</code> 等待的资源被 <code>P2</code> 占有，……，<code>Pn-1</code> 等待的资源被 <code>Pn</code> 占有，<code>Pn</code> 等待的资源被 <code>P0</code> 占有。</li>
-</ul>
-<p>注意，只有四个条件同时成立时，死锁才会出现。</p>
-<h4 id="解决死锁的方法"><a href="#解决死锁的方法" class="headerlink" title="解决死锁的方法"></a>解决死锁的方法</h4><p>解决死锁的方法可以从多个角度去分析，一般的情况下，有<strong>预防，避免，检测和解除四种</strong>。</p>
-<ul>
-<li><p><strong>预防</strong> 是采用某种策略，<strong>限制并发进程对资源的请求</strong>，从而使得死锁的必要条件在系统执行的任何时间上都不满足。</p>
-</li>
-<li><p><strong>避免</strong>则是系统在分配资源时，根据资源的使用情况<strong>提前做出预测</strong>，从而<strong>避免死锁的发生</strong></p>
-</li>
-<li><p><strong>检测</strong>是指系统设有<strong>专门的机构</strong>，当死锁发生时，该机构能够检测死锁的发生，并精确地确定与死锁有关的进程和资源。</p>
-</li>
-<li><p><strong>解除</strong> 是与检测相配套的一种措施，用于<strong>将进程从死锁状态下解脱出来</strong>。</p>
-</li>
-</ul>
-<h5 id="死锁的预防"><a href="#死锁的预防" class="headerlink" title="死锁的预防"></a>死锁的预防</h5><p>死锁四大必要条件上面都已经列出来了，很显然，只要破坏四个必要条件中的任何一个就能够预防死锁的发生。</p>
-<p>破坏第一个条件 <strong>互斥条件</strong>：使得资源是可以同时访问的，这是种简单的方法，磁盘就可以用这种方法管理，但是我们要知道，有很多资源 <strong>往往是不能同时访问的</strong> ，所以这种做法在大多数的场合是行不通的。</p>
-<p>破坏第三个条件 <strong>非抢占</strong> ：也就是说可以采用 <strong>剥夺式调度算法</strong>，但剥夺式调度方法目前一般仅适用于 <strong>主存资源</strong> 和 <strong>处理器资源</strong> 的分配，并不适用于所以的资源，会导致 <strong>资源利用率下降</strong>。</p>
-<p>所以一般比较实用的 <strong>预防死锁的方法</strong>，是通过考虑破坏第二个条件和第四个条件。</p>
-<p><strong>1、静态分配策略</strong></p>
-<p>静态分配策略可以破坏死锁产生的第二个条件（占有并等待）。所谓静态分配策略，就是指一个进程必须在执行前就申请到它所需要的全部资源，并且知道它所要的资源都得到满足之后才开始执行。进程要么占有所有的资源然后开始执行，要么不占有资源，不会出现占有一些资源等待一些资源的情况。</p>
-<p>静态分配策略逻辑简单，实现也很容易，但这种策略 <strong>严重地降低了资源利用率</strong>，因为在每个进程所占有的资源中，有些资源是在比较靠后的执行时间里采用的，甚至有些资源是在额外的情况下才是用的，这样就可能造成了一个进程占有了一些 <strong>几乎不用的资源而使其他需要该资源的进程产生等待</strong> 的情况。</p>
-<p><strong>2、层次分配策略</strong></p>
-<p>层次分配策略破坏了产生死锁的第四个条件(循环等待)。在层次分配策略下，所有的资源被分成了多个层次，一个进程得到某一次的一个资源后，它只能再申请较高一层的资源；当一个进程要释放某层的一个资源时，必须先释放所占用的较高层的资源，按这种策略，是不可能出现循环等待链的，因为那样的话，就出现了已经申请了较高层的资源，反而去申请了较低层的资源，不符合层次分配策略，证明略。</p>
-<h4 id="死锁的避免"><a href="#死锁的避免" class="headerlink" title="死锁的避免"></a>死锁的避免</h4><p>上面提到的 <strong>破坏</strong> 死锁产生的四个必要条件之一就可以成功 <strong>预防系统发生死锁</strong> ，但是会导致 <strong>低效的进程运行</strong> 和 <strong>资源使用率</strong> 。而死锁的避免相反，它的角度是允许系统中<strong>同时存在四个必要条件</strong> ，只要掌握并发进程中与每个进程有关的资源动态申请情况，做出 <strong>明智和合理的选择</strong> ，仍然可以避免死锁，因为四大条件仅仅是产生死锁的必要条件。</p>
-<p>我们将系统的状态分为 <strong>安全状态</strong> 和 <strong>不安全状态</strong> ，每当在未申请者分配资源前先测试系统状态，若把系统资源分配给申请者会产生死锁，则拒绝分配，否则接受申请，并为它分配资源。</p>
-<blockquote>
-<p>如果操作系统能够保证所有的进程在有限的时间内得到需要的全部资源，则称系统处于安全状态，否则说系统是不安全的。很显然，系统处于安全状态则不会发生死锁，系统若处于不安全状态则可能发生死锁。</p>
-</blockquote>
-<p>那么如何保证系统保持在安全状态呢？通过算法，其中最具有代表性的 <strong>避免死锁算法</strong> 就是 Dijkstra 的银行家算法，银行家算法用一句话表达就是：当一个进程申请使用资源的时候，<strong>银行家算法</strong> 通过先 <strong>试探</strong> 分配给该进程资源，然后通过 <strong>安全性算法</strong> 判断分配后系统是否处于安全状态，若不安全则试探分配作废，让该进程继续等待，若能够进入到安全的状态，则就 <strong>真的分配资源给该进程</strong>。</p>
-<p>银行家算法详情可见：<a href="https://blog.csdn.net/qq_33414271/article/details/80245715">《一句话+一张图说清楚——银行家算法》</a> 。</p>
-<p>操作系统教程树中讲述的银行家算法也比较清晰，可以一看.</p>
-<p>死锁的避免(银行家算法)改善解决了 <strong>资源使用率低的问题</strong> ，但是它要不断地检测每个进程对各类资源的占用和申请情况，以及做 <strong>安全性检查</strong> ，需要花费较多的时间。</p>
-<h4 id="死锁的检测"><a href="#死锁的检测" class="headerlink" title="死锁的检测"></a>死锁的检测</h4><p>对资源的分配加以限制可以 <strong>预防和避免</strong> 死锁的发生，但是都不利于各进程对系统资源的<strong>充分共享</strong>。解决死锁问题的另一条途径是 <strong>死锁检测和解除</strong> (这里突然联想到了乐观锁和悲观锁，感觉死锁的检测和解除就像是 <strong>乐观锁</strong> ，分配资源时不去提前管会不会发生死锁了，等到真的死锁出现了再来解决嘛，而 <strong>死锁的预防和避免</strong> 更像是悲观锁，总是觉得死锁会出现，所以在分配资源的时候就很谨慎)。</p>
-<p>这种方法对资源的分配不加以任何限制，也不采取死锁避免措施，但系统 <strong>定时地运行一个 “死锁检测”</strong> 的程序，判断系统内是否出现死锁，如果检测到系统发生了死锁，再采取措施去解除它。</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>Computer Basics</category>
-      </categories>
-      <tags>
-        <tag>Operating System</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python Programming</title>
     <url>/2022/09/23/Python-Programming/</url>
     <content><![CDATA[<h2 id="Python基础"><a href="#Python基础" class="headerlink" title="Python基础"></a>Python基础</h2><h3 id="列表的11种方法"><a href="#列表的11种方法" class="headerlink" title="列表的11种方法"></a>列表的11种方法</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#1. append 将一个对象附加到列表末尾</span></span><br><span class="line">list1=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">list1.append(<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#2. clear 清空列表的内容</span></span><br><span class="line">list1.clear()</span><br><span class="line"></span><br><span class="line"><span class="comment">#3. copy 复制列表 (常规复制只是将另一个名称关联到列表)</span></span><br><span class="line">a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">b=a</span><br><span class="line">b[<span class="number">1</span>]=<span class="number">4</span></span><br><span class="line"><span class="comment"># a: [1,4,3]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#4. count 计算指定的元素在列表中出现了多少次</span></span><br><span class="line">list1.count(<span class="number">1</span>) <span class="comment"># 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#5. extend 同时将多个值附加到列表末尾</span></span><br><span class="line">list1.extend(a)</span><br><span class="line"></span><br><span class="line"><span class="comment">#6. index 查找指定值第一次出现的索引</span></span><br><span class="line">list1.index(<span class="number">2</span>) <span class="comment"># 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#7. insert 将一个对象插入列表</span></span><br><span class="line">list1.insert(<span class="number">1</span>,<span class="string">&quot;four&quot;</span>) <span class="comment"># [1,&quot;four&quot;,2,3]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#8. pop 从列表中删除一个元素（默认为最后一个元素），并返回这一元素</span></span><br><span class="line">list1.pop()</span><br><span class="line"></span><br><span class="line"><span class="comment">#9. remove 删除.第一个.为指定值的元素</span></span><br><span class="line">list1.remove()</span><br><span class="line"></span><br><span class="line"><span class="comment">#10. reverse 按相反的顺序排列列表中的元素</span></span><br><span class="line">list1.reverse() <span class="comment"># [3,2,1]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#11. sort 对列表就地排序</span></span><br><span class="line">list1.sort()</span><br><span class="line">x = [<span class="string">&#x27;aardvark&#x27;</span>, <span class="string">&#x27;abalone&#x27;</span>, <span class="string">&#x27;acme&#x27;</span>, <span class="string">&#x27;add&#x27;</span>, <span class="string">&#x27;aerate&#x27;</span>]</span><br><span class="line">x.sort(key=<span class="built_in">len</span>) <span class="comment"># [&#x27;add&#x27;, &#x27;acme&#x27;, &#x27;aerate&#x27;, &#x27;abalone&#x27;, &#x27;aardvark&#x27;]</span></span><br><span class="line">x = [<span class="number">4</span>, <span class="number">6</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">7</span>, <span class="number">9</span>]</span><br><span class="line">x.sort(reverse=<span class="literal">True</span>) <span class="comment"># [9, 7, 6, 4, 2, 1]</span></span><br><span class="line">x.sort(key=<span class="keyword">lambda</span> x: x[<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># list生成加判断语句</span></span><br><span class="line">label_list = [<span class="built_in">int</span>(i) <span class="keyword">for</span> i <span class="keyword">in</span> label_list <span class="keyword">if</span> i&gt;<span class="number">3</span>]</span><br><span class="line"><span class="comment"># list连成字符串</span></span><br><span class="line">s=[<span class="string">&quot;1&quot;</span>,<span class="string">&quot;2&quot;</span>,<span class="string">&quot;3&quot;</span>,<span class="string">&quot;t&quot;</span>]</span><br><span class="line">t=<span class="string">&quot;&quot;</span>.join(s)</span><br><span class="line"><span class="string">&quot;123t&quot;</span></span><br><span class="line"><span class="comment"># 列表相加组成新列表</span></span><br><span class="line">a = []</span><br><span class="line"><span class="keyword">while</span> <span class="built_in">len</span>(a)&lt;<span class="number">5</span>:</span><br><span class="line">  a+=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
@@ -1171,6 +1038,163 @@
       </tags>
   </entry>
   <entry>
+    <title>Deep Learning</title>
+    <url>/2022/08/16/Deep-Learning/</url>
+    <content><![CDATA[<h4 id="the-rise-of-deep-learning"><a href="#the-rise-of-deep-learning" class="headerlink" title="the rise of deep learning"></a>the rise of deep learning</h4><ul>
+<li>Better algorithms(e.g. dropout, batch normalization, etc.)</li>
+<li>Better hardware(high performing GPU) &#x2F; we have access to a lot more computational power.</li>
+<li>More data to train &#x2F; we have access to a lot more data</li>
+</ul>
+<h4 id="difference-between-CNN-and-RNN"><a href="#difference-between-CNN-and-RNN" class="headerlink" title="difference between CNN and RNN"></a>difference between CNN and RNN</h4><ul>
+<li>CNN’s work really well for computer vision. RNN’s are really good for natural languate processing.</li>
+<li>In CNN, the network takes fixed-size inputs and generates fixed size outputs. RNN can handle arbitrary input&#x2F; out lengths.</li>
+<li>CNN saves a set of weights and applies them spatially. Whereas, RNN saves a set of wights and applies them temporally.</li>
+<li>CNN is used for spatial data like images. Whereas, RNN is more suitable for sequence modeling, i.e. series.</li>
+</ul>
+<h4 id="Reinforcement-Learning-RL"><a href="#Reinforcement-Learning-RL" class="headerlink" title="Reinforcement Learning(RL)"></a>Reinforcement Learning(RL)</h4><p>RL enables the agents to learn to take appropriate action based on external environment, internal state, and reward for action.</p>
+<h4 id="Stochastic-Gradient-Descent-SGD-and-Batch-Gradient-Descent"><a href="#Stochastic-Gradient-Descent-SGD-and-Batch-Gradient-Descent" class="headerlink" title="Stochastic Gradient Descent(SGD) and Batch Gradient Descent"></a>Stochastic Gradient Descent(SGD) and Batch Gradient Descent</h4><p>为了获取准确的梯度，批量梯度下降法的每一 步都把整个训练集载入进来进行计算，时间花费和内存开销都非常大，无法应用于大数据集、大模型的场景。相反，随机梯度下降法则放弃了对梯度准确性的追求，每步仅仅随机采样一个(或少量)样本来估计当前梯度，计算速度快，内存开销小。但由于每步接受的信息量有限，随机梯度下降法对梯度的估计常常出现偏差，造成目标函数曲线收敛得很不稳定，伴有剧烈波动，有时甚至出现不收敛的情况。</p>
+<h4 id="Momentum-AdaGrad-Adam"><a href="#Momentum-AdaGrad-Adam" class="headerlink" title="Momentum, AdaGrad, Adam"></a>Momentum, AdaGrad, Adam</h4><ul>
+<li>Adagrad adjusts the learning rate based on historical information<br>• Frequently occurring features in the gradients get small learning rates and<br>infrequent features get higher ones<br>• Key idea: “learn slowly” from frequent features but “pay attention” to rare but<br>informative features</li>
+</ul>
+<h4 id="Softmax"><a href="#Softmax" class="headerlink" title="Softmax"></a>Softmax</h4><p>它是二分类函数sigmoid在多分类上的推广，目的是将多分类的结果以概率的形式展现出来。</p>
+<ol>
+<li>降预测结果转化为非负数</li>
+<li>各种预测结果概率之和等于1</li>
+</ol>
+<p>backpropagation:recursive application of the chain rule along a computational graph to compute the gradients of all inputs&#x2F;parameters&#x2F;intermediates<br>• forward: compute result of an operation and save any intermediates needed for<br>gradient computation in memory<br>• backward: apply the chain rule to compute the gradient of the loss function<br>with respect to the inputs</p>
+<p>Random Initialization<br>• Important to randomize initial weight matrices<br>• Can’t have uniform initial weights, as in logistic regression. Otherwise, all updates will be identical &amp; the net won’t learn</p>
+<p>Training a Neural Network</p>
+<ol>
+<li>Randomly initialize weights</li>
+<li>Implement forward propagation to get hΘ(xi) for any instance xi</li>
+<li>Implement code to compute cost function J(Θ)</li>
+<li>Implement backprop to compute partial derivatives</li>
+<li>Use gradient checking to compare computed using backpropagation vs. the numerical gradient estimate.<br>• Then, disable gradient checking code</li>
+<li>Use gradient descent with backprop to fit the network</li>
+</ol>
+<blockquote>
+<p>Multilayer Perceptron<br>• A multilayer perceptron is a special case of a feedforward neural<br>network, where every layer is a fully connected layer</p>
+</blockquote>
+<p>Why Convolution?</p>
+<ul>
+<li>ReLU<br>very fast computation<br>most common activation function<br>piecewise linear</li>
+<li>tanh<br>“hyperbolic tangent”, often pronounced like “tanch”<br>Smoothes out discontinuities<br>used to be more popular, replaced by ReLU</li>
+<li>logistic sigmoid<br>similar to tanh. Used rarely nowadays</li>
+</ul>
+<p>Softmax<br>• Applied to an entire vector, not component-wise.<br>• Normalizes a vector. Entries of the output sum to 1.<br>• The most common way to predict a probability distribution.<br>• Typically used in the final layer of networks for classification tasks.</p>
+<p><strong>Dropout</strong><br>• Prevents overfitting by preventing co-adaptations<br>• Forces “dead branches” to learn<br>Forces the network to have a redundant representation; prevents co-adaptation of features</p>
+<p>• Randomly select weights to update<br>• More precisely, in each update step<br> • Randomly sample a different binary mask to all the input and hidden units<br> • Multiple the mask bits with the units and do the update as usual<br>• Typical dropout probability: 0.2 for input and 0.5 for hidden units</p>
+<p><strong>RNN(Recurrent Neural Networks)</strong><br>• Use <strong>the same</strong> computational function and parameters across different time steps of the sequence<br>• Each time step: takes the input entry and <strong>the previous hidden state</strong> to compute the output entry<br>• Loss: typically computed at every time step</p>
+<p><strong>Batch Normalization</strong><br>Usually inserted after Fully Connected or Convolutional layers, and before nonlinearity<br>• Improves gradient flow through the network<br>• Allows higher learning rates<br>• Reduces the strong dependence on initialization<br>• Acts as a form of regularization in a funny way, and slightly reduces the need for dropout, maybe</p>
+<p><strong>Advantages of Naïve Bayes</strong><br>• Based on the independent assumption<br>• A small amount of training data to estimate parameters (means and variances of the variable)<br>• Only the variances of variables for each class need to be determined and not the entire covariance matrix<br>• Test is straightforward; just looking up tables or calculating conditional probabilities with normal distribution</p>
+<p><strong>Why Generative Models?</strong><br>• Excellent test of our ability to use high-dimensional and complicated probability distributions<br>• Simulate possible futures for planning or simulated RL<br>• Generating more data or missing data<br> • Semi-supervised learning<br>• Multi-modal outputs<br>• Realistic generation tasks</p>
+<p><strong>Why GANs?</strong><br>• Sampling (or generation) is straightforward.<br>• Training doesn’t involve Maximum Likelihood estimation.<br>• Robust to Overfitting since Generator never sees the training data.<br>• Empirically, GANs are good at capturing the modes of the distribution.</p>
+<p><strong>Problems with GANs</strong><br>• Probability Distribution is Implicit<br> • Not straightforward to compute P(X).<br> • Thus Vanilla GANs are only good for Sampling&#x2F;Generation.<br>• Training is Hard<br> • Non-Convergence<br> • Mode-Collapse</p>
+<p><strong>Mode-Collapse</strong><br>• Perhaps the most challenging model failure is the case where multiple inputs to the generator result in the generation of the same output. This is referred to as mode-collapse, and may represent one of the most challenging issues when training GANs<br>• Problem that occurs when the generator learns to map several different input z values to the same output point.<br>• One intuitive metric of performance can be obtained by having human annotators judge the visual quality of samples</p>
+<p><strong>How To Train a GAN?</strong></p>
+<ul>
+<li>Use a Gaussian Latent Space<br> • Sample from a standard Gaussian distribution, meaning that the shape of the latent space is a hypersphere, with a mean of zero and a standard deviation of one</li>
+<li>Separate Batches of Real and Fake Images<br> • The discriminator model is trained using SGD with mini-batches<br> • The best practice is to update the discriminator with separate batches of real and fake images rather than combining real and fake images into a single batch</li>
+<li>Use Label Smoothing<br> • Using the class label 1 for real images and 0 for fake images when training the discriminator model is common. These are hard labels<br> • Also use soft labels, such as values slightly more or less than 1.0 or slightly more than 0.0 for real and fake images respectively, where the variation for<br>each image is random. This is often referred to as label smoothing and can have a regularizing effect when training the model</li>
+<li>Use Noisy Labels<br> • Introduce some errors to the labels, where some fake images are marked as real, and some real images are marked as fake</li>
+</ul>
+<p>(N-F)&#x2F;stride+1</p>
+]]></content>
+      <categories>
+        <category>Machine Learning</category>
+      </categories>
+      <tags>
+        <tag>Deep Learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Operating System</title>
+    <url>/2022/08/13/Operating-System/</url>
+    <content><![CDATA[<h3 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h3><h4 id="进程的调度算法"><a href="#进程的调度算法" class="headerlink" title="进程的调度算法"></a>进程的调度算法</h4><p>👨‍💻<strong>面试官</strong> ：<strong>你知道操作系统中进程的调度算法有哪些吗?</strong></p>
+<p>🙋 <strong>我</strong> ：嗯嗯！这个我们大学的时候学过，是一个很重要的知识点！</p>
+<p>为了确定首先执行哪个进程以及最后执行哪个进程以实现最大 CPU 利用率，计算机科学家已经定义了一些算法，它们是：</p>
+<ul>
+<li><strong>先到先服务(FCFS)调度算法</strong> : 从就绪队列中选择一个最先进入该队列的进程为之分配资源，使它立即执行并一直执行到完成或发生某事件而被阻塞放弃占用 CPU 时再重新调度。</li>
+<li><strong>短作业优先(SJF)的调度算法</strong> : 从就绪队列中选出一个估计运行时间最短的进程为之分配资源，使它立即执行并一直执行到完成或发生某事件而被阻塞放弃占用 CPU 时再重新调度。</li>
+<li><strong>时间片轮转调度算法</strong> : 时间片轮转调度是一种最古老，最简单，最公平且使用最广的算法，又称 RR(Round robin)调度。每个进程被分配一个时间段，称作它的时间片，即该进程允许运行的时间。</li>
+<li><strong>多级反馈队列调度算法</strong> ：前面介绍的几种进程调度的算法都有一定的局限性。如<strong>短进程优先的调度算法，仅照顾了短进程而忽略了长进程</strong> 。多级反馈队列调度算法既能使高优先级的作业得到响应又能使短作业（进程）迅速完成。，因而它是目前<strong>被公认的一种较好的进程调度算法</strong>，UNIX 操作系统采取的便是这种调度算法。</li>
+<li><strong>优先级调度</strong> ： 为每个流程分配优先级，首先执行具有最高优先级的进程，依此类推。具有相同优先级的进程以 FCFS 方式执行。可以根据内存要求，时间要求或任何其他资源要求来确定优先级。</li>
+</ul>
+<h3 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h3><p>👨‍💻<strong>面试官</strong> ：<strong>你知道什么是死锁吗?</strong></p>
+<p>🙋 <strong>我</strong> ：死锁描述的是这样一种情况：多个进程&#x2F;线程同时被阻塞，它们中的一个或者全部都在等待某个资源被释放。由于进程&#x2F;线程被无限期地阻塞，因此程序不可能正常终止。</p>
+<h4 id="死锁的四个条件"><a href="#死锁的四个条件" class="headerlink" title="死锁的四个条件"></a>死锁的四个条件</h4><p>👨‍💻<strong>面试官</strong> ：<strong>产生死锁的四个必要条件是什么?</strong></p>
+<p>🙋 <strong>我</strong> ：如果系统中以下四个条件同时成立，那么就能引起死锁：</p>
+<ul>
+<li><strong>互斥</strong>：资源必须处于非共享模式，即一次只有一个进程可以使用。如果另一进程申请该资源，那么必须等待直到该资源被释放为止。</li>
+<li><strong>占有并等待</strong>：一个进程至少应该占有一个资源，并等待另一资源，而该资源被其他进程所占有。</li>
+<li><strong>非抢占</strong>：资源不能被抢占。只能在持有资源的进程完成任务后，该资源才会被释放。</li>
+<li><strong>循环等待</strong>：有一组等待进程 <code>&#123;P0, P1,..., Pn&#125;</code>， <code>P0</code> 等待的资源被 <code>P1</code> 占有，<code>P1</code> 等待的资源被 <code>P2</code> 占有，……，<code>Pn-1</code> 等待的资源被 <code>Pn</code> 占有，<code>Pn</code> 等待的资源被 <code>P0</code> 占有。</li>
+</ul>
+<p>注意，只有四个条件同时成立时，死锁才会出现。</p>
+<h4 id="解决死锁的方法"><a href="#解决死锁的方法" class="headerlink" title="解决死锁的方法"></a>解决死锁的方法</h4><p>解决死锁的方法可以从多个角度去分析，一般的情况下，有<strong>预防，避免，检测和解除四种</strong>。</p>
+<ul>
+<li><p><strong>预防</strong> 是采用某种策略，<strong>限制并发进程对资源的请求</strong>，从而使得死锁的必要条件在系统执行的任何时间上都不满足。</p>
+</li>
+<li><p><strong>避免</strong>则是系统在分配资源时，根据资源的使用情况<strong>提前做出预测</strong>，从而<strong>避免死锁的发生</strong></p>
+</li>
+<li><p><strong>检测</strong>是指系统设有<strong>专门的机构</strong>，当死锁发生时，该机构能够检测死锁的发生，并精确地确定与死锁有关的进程和资源。</p>
+</li>
+<li><p><strong>解除</strong> 是与检测相配套的一种措施，用于<strong>将进程从死锁状态下解脱出来</strong>。</p>
+</li>
+</ul>
+<h5 id="死锁的预防"><a href="#死锁的预防" class="headerlink" title="死锁的预防"></a>死锁的预防</h5><p>死锁四大必要条件上面都已经列出来了，很显然，只要破坏四个必要条件中的任何一个就能够预防死锁的发生。</p>
+<p>破坏第一个条件 <strong>互斥条件</strong>：使得资源是可以同时访问的，这是种简单的方法，磁盘就可以用这种方法管理，但是我们要知道，有很多资源 <strong>往往是不能同时访问的</strong> ，所以这种做法在大多数的场合是行不通的。</p>
+<p>破坏第三个条件 <strong>非抢占</strong> ：也就是说可以采用 <strong>剥夺式调度算法</strong>，但剥夺式调度方法目前一般仅适用于 <strong>主存资源</strong> 和 <strong>处理器资源</strong> 的分配，并不适用于所以的资源，会导致 <strong>资源利用率下降</strong>。</p>
+<p>所以一般比较实用的 <strong>预防死锁的方法</strong>，是通过考虑破坏第二个条件和第四个条件。</p>
+<p><strong>1、静态分配策略</strong></p>
+<p>静态分配策略可以破坏死锁产生的第二个条件（占有并等待）。所谓静态分配策略，就是指一个进程必须在执行前就申请到它所需要的全部资源，并且知道它所要的资源都得到满足之后才开始执行。进程要么占有所有的资源然后开始执行，要么不占有资源，不会出现占有一些资源等待一些资源的情况。</p>
+<p>静态分配策略逻辑简单，实现也很容易，但这种策略 <strong>严重地降低了资源利用率</strong>，因为在每个进程所占有的资源中，有些资源是在比较靠后的执行时间里采用的，甚至有些资源是在额外的情况下才是用的，这样就可能造成了一个进程占有了一些 <strong>几乎不用的资源而使其他需要该资源的进程产生等待</strong> 的情况。</p>
+<p><strong>2、层次分配策略</strong></p>
+<p>层次分配策略破坏了产生死锁的第四个条件(循环等待)。在层次分配策略下，所有的资源被分成了多个层次，一个进程得到某一次的一个资源后，它只能再申请较高一层的资源；当一个进程要释放某层的一个资源时，必须先释放所占用的较高层的资源，按这种策略，是不可能出现循环等待链的，因为那样的话，就出现了已经申请了较高层的资源，反而去申请了较低层的资源，不符合层次分配策略，证明略。</p>
+<h4 id="死锁的避免"><a href="#死锁的避免" class="headerlink" title="死锁的避免"></a>死锁的避免</h4><p>上面提到的 <strong>破坏</strong> 死锁产生的四个必要条件之一就可以成功 <strong>预防系统发生死锁</strong> ，但是会导致 <strong>低效的进程运行</strong> 和 <strong>资源使用率</strong> 。而死锁的避免相反，它的角度是允许系统中<strong>同时存在四个必要条件</strong> ，只要掌握并发进程中与每个进程有关的资源动态申请情况，做出 <strong>明智和合理的选择</strong> ，仍然可以避免死锁，因为四大条件仅仅是产生死锁的必要条件。</p>
+<p>我们将系统的状态分为 <strong>安全状态</strong> 和 <strong>不安全状态</strong> ，每当在未申请者分配资源前先测试系统状态，若把系统资源分配给申请者会产生死锁，则拒绝分配，否则接受申请，并为它分配资源。</p>
+<blockquote>
+<p>如果操作系统能够保证所有的进程在有限的时间内得到需要的全部资源，则称系统处于安全状态，否则说系统是不安全的。很显然，系统处于安全状态则不会发生死锁，系统若处于不安全状态则可能发生死锁。</p>
+</blockquote>
+<p>那么如何保证系统保持在安全状态呢？通过算法，其中最具有代表性的 <strong>避免死锁算法</strong> 就是 Dijkstra 的银行家算法，银行家算法用一句话表达就是：当一个进程申请使用资源的时候，<strong>银行家算法</strong> 通过先 <strong>试探</strong> 分配给该进程资源，然后通过 <strong>安全性算法</strong> 判断分配后系统是否处于安全状态，若不安全则试探分配作废，让该进程继续等待，若能够进入到安全的状态，则就 <strong>真的分配资源给该进程</strong>。</p>
+<p>银行家算法详情可见：<a href="https://blog.csdn.net/qq_33414271/article/details/80245715">《一句话+一张图说清楚——银行家算法》</a> 。</p>
+<p>操作系统教程树中讲述的银行家算法也比较清晰，可以一看.</p>
+<p>死锁的避免(银行家算法)改善解决了 <strong>资源使用率低的问题</strong> ，但是它要不断地检测每个进程对各类资源的占用和申请情况，以及做 <strong>安全性检查</strong> ，需要花费较多的时间。</p>
+<h4 id="死锁的检测"><a href="#死锁的检测" class="headerlink" title="死锁的检测"></a>死锁的检测</h4><p>对资源的分配加以限制可以 <strong>预防和避免</strong> 死锁的发生，但是都不利于各进程对系统资源的<strong>充分共享</strong>。解决死锁问题的另一条途径是 <strong>死锁检测和解除</strong> (这里突然联想到了乐观锁和悲观锁，感觉死锁的检测和解除就像是 <strong>乐观锁</strong> ，分配资源时不去提前管会不会发生死锁了，等到真的死锁出现了再来解决嘛，而 <strong>死锁的预防和避免</strong> 更像是悲观锁，总是觉得死锁会出现，所以在分配资源的时候就很谨慎)。</p>
+<p>这种方法对资源的分配不加以任何限制，也不采取死锁避免措施，但系统 <strong>定时地运行一个 “死锁检测”</strong> 的程序，判断系统内是否出现死锁，如果检测到系统发生了死锁，再采取措施去解除它。</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>Computer Basics</category>
+      </categories>
+      <tags>
+        <tag>Operating System</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>R</title>
+    <url>/2022/09/22/R/</url>
+    <content><![CDATA[<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul>
+<li>无序列表<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="operator">*</span>观点<span class="number">1</span></span><br><span class="line"><span class="operator">*</span>观点<span class="number">2</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol>
+<li>有序列表<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 观点<span class="number">1</span></span><br><span class="line"><span class="number">2.</span> <span class="operator">*</span>观点<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="operator">*</span><span class="operator">*</span>加粗<span class="operator">*</span><span class="operator">*</span></span><br><span class="line"><span class="operator">*</span>斜体<span class="operator">*</span></span><br><span class="line"><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span>加粗且斜体<span class="operator">*</span><span class="operator">*</span><span class="operator">*</span></span><br><span class="line"><span class="punctuation">[</span>链接<span class="punctuation">]</span><span class="punctuation">(</span>https<span class="operator">:</span><span class="operator">/</span><span class="operator">/</span>taihangli.github.io<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Programming</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python</title>
     <url>/2022/08/12/Python/</url>
     <content><![CDATA[<p><strong>6种内建序列</strong>: 列表(list), 元组(tuple), 字符串, Unicode字符串, buffer对象, xrange对象<br><strong>7种序列操作</strong>: 索引(indexing),分片(sliceing), 加(adding), 乘(multiplying), 检查某个元素是否属于这个序列, 计算序列长度(len), 找出最大和最小元素(max&#x2F;min)</p>
@@ -1227,60 +1251,27 @@
       </tags>
   </entry>
   <entry>
-    <title>R</title>
-    <url>/2022/09/22/R/</url>
-    <content><![CDATA[<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul>
-<li>无序列表<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="operator">*</span>观点<span class="number">1</span></span><br><span class="line"><span class="operator">*</span>观点<span class="number">2</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol>
-<li>有序列表<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 观点<span class="number">1</span></span><br><span class="line"><span class="number">2.</span> <span class="operator">*</span>观点<span class="number">2</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"><span class="operator">*</span><span class="operator">*</span>加粗<span class="operator">*</span><span class="operator">*</span></span><br><span class="line"><span class="operator">*</span>斜体<span class="operator">*</span></span><br><span class="line"><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span>加粗且斜体<span class="operator">*</span><span class="operator">*</span><span class="operator">*</span></span><br><span class="line"><span class="punctuation">[</span>链接<span class="punctuation">]</span><span class="punctuation">(</span>https<span class="operator">:</span><span class="operator">/</span><span class="operator">/</span>taihangli.github.io<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight r"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></li>
-</ol>
+    <title>My First Post</title>
+    <url>/2022/06/19/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://taihangli.github.io/">Tiger’ Home</a>! This is my very first post.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Post-a-new-blog"><a href="#Post-a-new-blog" class="headerlink" title="Post a new blog"></a>Post a new blog</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo d -g</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>Welcome to <a href="https://hexo.io/">Hexo</a>! Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 ]]></content>
       <categories>
-        <category>Programming</category>
+        <category>Hexo</category>
       </categories>
-      <tags>
-        <tag>R</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SQL</title>
-    <url>/2022/09/23/SQL/</url>
-    <content><![CDATA[<ul>
-<li>describe<br>用于查看特定表的详细设计信息</li>
-<li>show columns<br>查看数据库中表的列名</li>
-<li>OVER<br>OVER()函数不能单独使用，必须跟在排名函数（ ROW_NUMBER、DENSE_RANK、RANK、NTILE） 或5种聚合函数（SUM、MAX、MIN、AVG、COUNT）后边。<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">OVER</span>( [ <span class="keyword">PARTITION</span> <span class="keyword">BY</span> … ] [ <span class="keyword">ORDER</span> <span class="keyword">BY</span> … ] )</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h4 id="join和union的区别"><a href="#join和union的区别" class="headerlink" title="join和union的区别"></a>join和union的区别</h4><p>join 是两张表做交连后里面条件相同的部分记录产生一个记录集<br>union是产生的两个记录集(字段要一样的)并在一起，成为一个新的记录集</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Select</span> table1.<span class="operator">*</span> </span><br><span class="line"><span class="keyword">FROM</span> table1 </span><br><span class="line"><span class="keyword">JOIN</span> table2 </span><br><span class="line"><span class="keyword">ON</span> table1.id<span class="operator">=</span>table2.id</span><br></pre></td></tr></table></figure>
-<h4 id="四大排名函数"><a href="#四大排名函数" class="headerlink" title="四大排名函数"></a>四大排名函数</h4><ol>
-<li>ROW_NUMBER()<br>排名是序号 连续 不重复，即使遇到表中的两个一样的数值亦是如此<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">row_number</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth <span class="keyword">DESC</span>) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> </span><br></pre></td></tr></table></figure></li>
-<li>RANK()<br>把要求排序的值相同的归为一组且每组序号一样，排序序号不连续 1 1 3 4 4 6<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">rank</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth <span class="keyword">ASC</span>) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure></li>
-<li>DENSE_RANK()<br>排序是连续的，也会把相同的值分为一组且每组排序号一样<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">dense_rank</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth ) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure></li>
-<li>NTILE()<br>Ntile(group_num) 将所有记录分成group_num个组，每组序号一样<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">ntile</span>(<span class="number">2</span>) <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth ) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> </span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><blockquote>
-<p>IF</p>
-</blockquote>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> IF(sva<span class="operator">=</span><span class="number">1</span>,&quot;男&quot;,&quot;女&quot;) <span class="keyword">AS</span> s <span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> sva <span class="operator">!=</span> <span class="string">&#x27;&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>LIMIT</p>
-</blockquote>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">limit <span class="number">0</span>,<span class="number">1</span> <span class="comment">-- 表示第一条数据(计算是从0开始的)</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Computer Basics</category>
-      </categories>
-      <tags>
-        <tag>SQL</tag>
-      </tags>
   </entry>
   <entry>
     <title>Markdown</title>
@@ -1563,26 +1554,35 @@
       </categories>
   </entry>
   <entry>
-    <title>My First Post</title>
-    <url>/2022/06/19/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://taihangli.github.io/">Tiger’ Home</a>! This is my very first post.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Post-a-new-blog"><a href="#Post-a-new-blog" class="headerlink" title="Post a new blog"></a>Post a new blog</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo d -g</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-]]></content>
+    <title>SQL</title>
+    <url>/2022/09/23/SQL/</url>
+    <content><![CDATA[<ul>
+<li>describe<br>用于查看特定表的详细设计信息</li>
+<li>show columns<br>查看数据库中表的列名</li>
+<li>OVER<br>OVER()函数不能单独使用，必须跟在排名函数（ ROW_NUMBER、DENSE_RANK、RANK、NTILE） 或5种聚合函数（SUM、MAX、MIN、AVG、COUNT）后边。<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">OVER</span>( [ <span class="keyword">PARTITION</span> <span class="keyword">BY</span> … ] [ <span class="keyword">ORDER</span> <span class="keyword">BY</span> … ] )</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="join和union的区别"><a href="#join和union的区别" class="headerlink" title="join和union的区别"></a>join和union的区别</h4><p>join 是两张表做交连后里面条件相同的部分记录产生一个记录集<br>union是产生的两个记录集(字段要一样的)并在一起，成为一个新的记录集</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Select</span> table1.<span class="operator">*</span> </span><br><span class="line"><span class="keyword">FROM</span> table1 </span><br><span class="line"><span class="keyword">JOIN</span> table2 </span><br><span class="line"><span class="keyword">ON</span> table1.id<span class="operator">=</span>table2.id</span><br></pre></td></tr></table></figure>
+<h4 id="四大排名函数"><a href="#四大排名函数" class="headerlink" title="四大排名函数"></a>四大排名函数</h4><ol>
+<li>ROW_NUMBER()<br>排名是序号 连续 不重复，即使遇到表中的两个一样的数值亦是如此<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">row_number</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth <span class="keyword">DESC</span>) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> </span><br></pre></td></tr></table></figure></li>
+<li>RANK()<br>把要求排序的值相同的归为一组且每组序号一样，排序序号不连续 1 1 3 4 4 6<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">rank</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth <span class="keyword">ASC</span>) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure></li>
+<li>DENSE_RANK()<br>排序是连续的，也会把相同的值分为一组且每组排序号一样<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">dense_rank</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth ) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure></li>
+<li>NTILE()<br>Ntile(group_num) 将所有记录分成group_num个组，每组序号一样<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">ntile</span>(<span class="number">2</span>) <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth ) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> </span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><blockquote>
+<p>IF</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> IF(sva<span class="operator">=</span><span class="number">1</span>,&quot;男&quot;,&quot;女&quot;) <span class="keyword">AS</span> s <span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> sva <span class="operator">!=</span> <span class="string">&#x27;&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>LIMIT</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">limit <span class="number">0</span>,<span class="number">1</span> <span class="comment">-- 表示第一条数据(计算是从0开始的)</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>Computer Basics</category>
       </categories>
+      <tags>
+        <tag>SQL</tag>
+      </tags>
   </entry>
 </search>
