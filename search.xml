@@ -13,6 +13,18 @@
       </tags>
   </entry>
   <entry>
+    <title>Big Data</title>
+    <url>/2022/09/21/Big-Data/</url>
+    <content><![CDATA[<p><img src="/2022/09/21/Big-Data/tcp-shakes-hands-three-times.png"></p>
+]]></content>
+      <categories>
+        <category>Data Science</category>
+      </categories>
+      <tags>
+        <tag>Big Data</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Computer Network</title>
     <url>/2022/08/13/Computer-Network/</url>
     <content><![CDATA[<h2 id="OSI-七层模型"><a href="#OSI-七层模型" class="headerlink" title="OSI 七层模型"></a>OSI 七层模型</h2><p><strong>OSI 七层模型</strong> 是国际标准化组织提出一个网络分层模型，物理层(Physical)，数据链路层(Data Link)，网络层(Network)，传输层(Transport)，会话层(Session)，表示层(Presentation)，应用层(Application)：</p>
@@ -315,30 +327,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Data Structures</title>
-    <url>/2022/08/14/Data-Structures/</url>
-    <content><![CDATA[<p>数据结构（持续更新中）</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>Computer Basics</category>
-      </categories>
-      <tags>
-        <tag>Data Structures</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Big Data</title>
-    <url>/2022/09/21/Big-Data/</url>
-    <content><![CDATA[<p><img src="/2022/09/21/Big-Data/tcp-shakes-hands-three-times.png"></p>
-]]></content>
-      <categories>
-        <category>Data Science</category>
-      </categories>
-      <tags>
-        <tag>Big Data</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Data Analysis</title>
     <url>/2022/09/22/Data-Analysis/</url>
     <content><![CDATA[<h2 id="数据分析的作用"><a href="#数据分析的作用" class="headerlink" title="数据分析的作用"></a>数据分析的作用</h2><p>数据分析在各个领域都发挥着至关重要的作用，以下是一些关键作用：</p>
@@ -489,6 +477,18 @@
       </tags>
   </entry>
   <entry>
+    <title>Data Structures</title>
+    <url>/2022/08/14/Data-Structures/</url>
+    <content><![CDATA[<p>数据结构（持续更新中）</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>Computer Basics</category>
+      </categories>
+      <tags>
+        <tag>Data Structures</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Deep Learning</title>
     <url>/2022/08/16/Deep-Learning/</url>
     <content><![CDATA[<h4 id="the-rise-of-deep-learning"><a href="#the-rise-of-deep-learning" class="headerlink" title="the rise of deep learning"></a>the rise of deep learning</h4><ul>
@@ -574,19 +574,6 @@
       </categories>
       <tags>
         <tag>English Writing</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux</title>
-    <url>/2022/08/14/Linux/</url>
-    <content><![CDATA[<p>Linux八股（持续更新中）</p>
-<h4 id="使用变量"><a href="#使用变量" class="headerlink" title="使用变量"></a>使用变量</h4><p>使用变量的时，用英文符号”$”取变量值，对于较长的变量名，建议加上{ }花括号，帮助解释器识别变量的边界</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">name=&quot;test_name&quot;</span><br><span class="line">echo &quot;My name is $&#123;name&#125;and you&quot;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Computer Basics</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -976,6 +963,19 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux</title>
+    <url>/2022/08/14/Linux/</url>
+    <content><![CDATA[<p>Linux八股（持续更新中）</p>
+<h4 id="使用变量"><a href="#使用变量" class="headerlink" title="使用变量"></a>使用变量</h4><p>使用变量的时，用英文符号”$”取变量值，对于较长的变量名，建议加上{ }花括号，帮助解释器识别变量的边界</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">name=&quot;test_name&quot;</span><br><span class="line">echo &quot;My name is $&#123;name&#125;and you&quot;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Computer Basics</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Machine Learning</title>
     <url>/2022/08/12/Machine-Learning/</url>
     <content><![CDATA[<p>Machine learning is the field of study that gives computers the ability to learn without being explicitly programmed.</p>
@@ -1321,6 +1321,43 @@
       </tags>
   </entry>
   <entry>
+    <title>SQL</title>
+    <url>/2022/09/23/SQL/</url>
+    <content><![CDATA[<h4 id="时间操作"><a href="#时间操作" class="headerlink" title="时间操作"></a>时间操作</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 时间操作</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">YEAR</span>(<span class="string">&#x27;2022-01-01&#x27;</span>); <span class="comment">-- 提取年份</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">MONTH</span>(<span class="string">&#x27;2022-01-01&#x27;</span>); <span class="comment">-- 提取月份</span></span><br><span class="line"><span class="keyword">SELECT</span> DATE_ADD(<span class="string">&#x27;2022-01-01&#x27;</span>, <span class="type">INTERVAL</span> <span class="number">1</span> <span class="keyword">DAY</span>); <span class="comment">-- 日期加一天</span></span><br><span class="line"><span class="keyword">SELECT</span> DATE_SUB(<span class="string">&#x27;2022-01-01&#x27;</span>, <span class="type">INTERVAL</span> <span class="number">1</span> <span class="keyword">MONTH</span>); <span class="comment">-- 日期减一个月</span></span><br><span class="line"><span class="comment">-- 只到月份</span></span><br><span class="line"><span class="keyword">left</span>(trans_date, <span class="number">7</span>) <span class="string">&#x27;month&#x27;</span></span><br><span class="line">DATE_FORMAT(trans_date,<span class="string">&#x27;%Y-%m&#x27;</span>) <span class="keyword">as</span> <span class="keyword">month</span></span><br><span class="line"><span class="keyword">SELECT</span> DATE_FORMAT(<span class="string">&#x27;2022-01-01&#x27;</span>, <span class="string">&#x27;%Y-%m-%d&#x27;</span>); <span class="comment">-- 格式化日期</span></span><br></pre></td></tr></table></figure>
+<h4 id="窗口函数"><a href="#窗口函数" class="headerlink" title="窗口函数"></a>窗口函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 筛选出一个人在 2015 年投保额至少和任何一个人在 2015 年的投保额相同，就是按照 2015 年的投保额进行分组，并计算个数</span></span><br><span class="line"><span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">OVER</span>(<span class="keyword">PARTITION</span> <span class="keyword">BY</span> tiv_2015) <span class="keyword">AS</span> cnt_2015</span><br><span class="line"><span class="comment">-- 筛选不同的地点，就是按照经纬度进行分组，计算每个每个经纬度的个数</span></span><br><span class="line"><span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">over</span>(<span class="keyword">partition</span> <span class="keyword">by</span> lat, lon) count_lat_lon</span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">MAX</span>(age), <span class="built_in">MIN</span>(age) <span class="keyword">FROM</span> student;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>CASE WHEN<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CASE</span></span><br><span class="line">    <span class="keyword">WHEN</span> SCORE <span class="operator">=</span> <span class="string">&#x27;A&#x27;</span> <span class="keyword">THEN</span> <span class="string">&#x27;优&#x27;</span></span><br><span class="line">    <span class="keyword">WHEN</span> SCORE <span class="operator">=</span> <span class="string">&#x27;B&#x27;</span> <span class="keyword">THEN</span> <span class="string">&#x27;良&#x27;</span></span><br><span class="line">    <span class="keyword">WHEN</span> SCORE <span class="operator">=</span> <span class="string">&#x27;C&#x27;</span> <span class="keyword">THEN</span> <span class="string">&#x27;中&#x27;</span></span><br><span class="line">    <span class="keyword">ELSE</span> <span class="string">&#x27;不及格&#x27;</span> <span class="keyword">END</span></span><br><span class="line"> </span><br><span class="line"># 等同于</span><br><span class="line"><span class="keyword">CASE</span> score</span><br><span class="line">    <span class="keyword">WHEN</span> <span class="string">&#x27;A&#x27;</span> <span class="keyword">THEN</span> <span class="string">&#x27;优&#x27;</span></span><br><span class="line">    <span class="keyword">WHEN</span> <span class="string">&#x27;B&#x27;</span> <span class="keyword">THEN</span> <span class="string">&#x27;良&#x27;</span></span><br><span class="line">    <span class="keyword">WHEN</span> <span class="string">&#x27;C&#x27;</span> <span class="keyword">THEN</span> <span class="string">&#x27;中&#x27;</span></span><br><span class="line">    <span class="keyword">ELSE</span> <span class="string">&#x27;不及格&#x27;</span> <span class="keyword">END</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>describe<br>用于查看特定表的详细设计信息</li>
+<li>show columns<br>查看数据库中表的列名</li>
+<li>OVER<br>OVER()函数不能单独使用，必须跟在排名函数（ ROW_NUMBER、DENSE_RANK、RANK、NTILE） 或5种聚合函数（SUM、MAX、MIN、AVG、COUNT）后边。<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">OVER</span>( [ <span class="keyword">PARTITION</span> <span class="keyword">BY</span> … ] [ <span class="keyword">ORDER</span> <span class="keyword">BY</span> … ] )</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="join和union的区别"><a href="#join和union的区别" class="headerlink" title="join和union的区别"></a>join和union的区别</h4><p>join 是两张表做交连后里面条件相同的部分记录产生一个记录集<br>union是产生的两个记录集(字段要一样的)并在一起，成为一个新的记录集</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Select</span> table1.<span class="operator">*</span> </span><br><span class="line"><span class="keyword">FROM</span> table1 </span><br><span class="line"><span class="keyword">JOIN</span> table2 </span><br><span class="line"><span class="keyword">ON</span> table1.id<span class="operator">=</span>table2.id</span><br></pre></td></tr></table></figure>
+<h4 id="四大排名函数"><a href="#四大排名函数" class="headerlink" title="四大排名函数"></a>四大排名函数</h4><ol>
+<li>ROW_NUMBER()<br>排名是序号 连续 不重复，即使遇到表中的两个一样的数值亦是如此<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">row_number</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth <span class="keyword">DESC</span>) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> </span><br></pre></td></tr></table></figure></li>
+<li>RANK()<br>把要求排序的值相同的归为一组且每组序号一样，排序序号不连续 1 1 3 4 4 6<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">rank</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth <span class="keyword">ASC</span>) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure></li>
+<li>DENSE_RANK()<br>排序是连续的，也会把相同的值分为一组且每组排序号一样<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">dense_rank</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth ) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure></li>
+<li>NTILE()<br>Ntile(group_num) 将所有记录分成group_num个组，每组序号一样<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">ntile</span>(<span class="number">2</span>) <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth ) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> </span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><blockquote>
+<p>IF</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> IF(sva<span class="operator">=</span><span class="number">1</span>,&quot;男&quot;,&quot;女&quot;) <span class="keyword">AS</span> s <span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> sva <span class="operator">!=</span> <span class="string">&#x27;&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>LIMIT</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">limit <span class="number">0</span>,<span class="number">1</span> <span class="comment">-- 表示第一条数据(计算是从0开始的)</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Computer Basics</category>
+      </categories>
+      <tags>
+        <tag>SQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown</title>
     <url>/2022/08/12/markdown/</url>
     <content><![CDATA[<p>Markdown笔记（来自Joy）</p>
@@ -1599,43 +1636,6 @@
       <categories>
         <category>Markdown</category>
       </categories>
-  </entry>
-  <entry>
-    <title>SQL</title>
-    <url>/2022/09/23/SQL/</url>
-    <content><![CDATA[<h4 id="时间操作"><a href="#时间操作" class="headerlink" title="时间操作"></a>时间操作</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 时间操作</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">YEAR</span>(<span class="string">&#x27;2022-01-01&#x27;</span>); <span class="comment">-- 提取年份</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">MONTH</span>(<span class="string">&#x27;2022-01-01&#x27;</span>); <span class="comment">-- 提取月份</span></span><br><span class="line"><span class="keyword">SELECT</span> DATE_ADD(<span class="string">&#x27;2022-01-01&#x27;</span>, <span class="type">INTERVAL</span> <span class="number">1</span> <span class="keyword">DAY</span>); <span class="comment">-- 日期加一天</span></span><br><span class="line"><span class="keyword">SELECT</span> DATE_SUB(<span class="string">&#x27;2022-01-01&#x27;</span>, <span class="type">INTERVAL</span> <span class="number">1</span> <span class="keyword">MONTH</span>); <span class="comment">-- 日期减一个月</span></span><br><span class="line"><span class="comment">-- 只到月份</span></span><br><span class="line"><span class="keyword">left</span>(trans_date, <span class="number">7</span>) <span class="string">&#x27;month&#x27;</span></span><br><span class="line">DATE_FORMAT(trans_date,<span class="string">&#x27;%Y-%m&#x27;</span>) <span class="keyword">as</span> <span class="keyword">month</span></span><br><span class="line"><span class="keyword">SELECT</span> DATE_FORMAT(<span class="string">&#x27;2022-01-01&#x27;</span>, <span class="string">&#x27;%Y-%m-%d&#x27;</span>); <span class="comment">-- 格式化日期</span></span><br></pre></td></tr></table></figure>
-<h4 id="窗口函数"><a href="#窗口函数" class="headerlink" title="窗口函数"></a>窗口函数</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 筛选出一个人在 2015 年投保额至少和任何一个人在 2015 年的投保额相同，就是按照 2015 年的投保额进行分组，并计算个数</span></span><br><span class="line"><span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">OVER</span>(<span class="keyword">PARTITION</span> <span class="keyword">BY</span> tiv_2015) <span class="keyword">AS</span> cnt_2015</span><br><span class="line"><span class="comment">-- 筛选不同的地点，就是按照经纬度进行分组，计算每个每个经纬度的个数</span></span><br><span class="line"><span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">over</span>(<span class="keyword">partition</span> <span class="keyword">by</span> lat, lon) count_lat_lon</span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">MAX</span>(age), <span class="built_in">MIN</span>(age) <span class="keyword">FROM</span> student;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>CASE WHEN<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CASE</span></span><br><span class="line">	 <span class="keyword">WHEN</span> SCORE <span class="operator">=</span> <span class="string">&#x27;A&#x27;</span> <span class="keyword">THEN</span> <span class="string">&#x27;优&#x27;</span></span><br><span class="line">     <span class="keyword">WHEN</span> SCORE <span class="operator">=</span> <span class="string">&#x27;B&#x27;</span> <span class="keyword">THEN</span> <span class="string">&#x27;良&#x27;</span></span><br><span class="line">     <span class="keyword">WHEN</span> SCORE <span class="operator">=</span> <span class="string">&#x27;C&#x27;</span> <span class="keyword">THEN</span> <span class="string">&#x27;中&#x27;</span></span><br><span class="line">     <span class="keyword">ELSE</span> <span class="string">&#x27;不及格&#x27;</span> <span class="keyword">END</span></span><br><span class="line"> </span><br><span class="line"># 等同于</span><br><span class="line"><span class="keyword">CASE</span> score</span><br><span class="line">    <span class="keyword">WHEN</span> <span class="string">&#x27;A&#x27;</span> <span class="keyword">THEN</span> <span class="string">&#x27;优&#x27;</span></span><br><span class="line">    <span class="keyword">WHEN</span> <span class="string">&#x27;B&#x27;</span> <span class="keyword">THEN</span> <span class="string">&#x27;良&#x27;</span></span><br><span class="line">    <span class="keyword">WHEN</span> <span class="string">&#x27;C&#x27;</span> <span class="keyword">THEN</span> <span class="string">&#x27;中&#x27;</span></span><br><span class="line">    <span class="keyword">ELSE</span> <span class="string">&#x27;不及格&#x27;</span> <span class="keyword">END</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<ul>
-<li>describe<br>用于查看特定表的详细设计信息</li>
-<li>show columns<br>查看数据库中表的列名</li>
-<li>OVER<br>OVER()函数不能单独使用，必须跟在排名函数（ ROW_NUMBER、DENSE_RANK、RANK、NTILE） 或5种聚合函数（SUM、MAX、MIN、AVG、COUNT）后边。<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">OVER</span>( [ <span class="keyword">PARTITION</span> <span class="keyword">BY</span> … ] [ <span class="keyword">ORDER</span> <span class="keyword">BY</span> … ] )</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h4 id="join和union的区别"><a href="#join和union的区别" class="headerlink" title="join和union的区别"></a>join和union的区别</h4><p>join 是两张表做交连后里面条件相同的部分记录产生一个记录集<br>union是产生的两个记录集(字段要一样的)并在一起，成为一个新的记录集</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Select</span> table1.<span class="operator">*</span> </span><br><span class="line"><span class="keyword">FROM</span> table1 </span><br><span class="line"><span class="keyword">JOIN</span> table2 </span><br><span class="line"><span class="keyword">ON</span> table1.id<span class="operator">=</span>table2.id</span><br></pre></td></tr></table></figure>
-<h4 id="四大排名函数"><a href="#四大排名函数" class="headerlink" title="四大排名函数"></a>四大排名函数</h4><ol>
-<li>ROW_NUMBER()<br>排名是序号 连续 不重复，即使遇到表中的两个一样的数值亦是如此<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">row_number</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth <span class="keyword">DESC</span>) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> </span><br></pre></td></tr></table></figure></li>
-<li>RANK()<br>把要求排序的值相同的归为一组且每组序号一样，排序序号不连续 1 1 3 4 4 6<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">rank</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth <span class="keyword">ASC</span>) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure></li>
-<li>DENSE_RANK()<br>排序是连续的，也会把相同的值分为一组且每组排序号一样<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">dense_rank</span>() <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth ) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure></li>
-<li>NTILE()<br>Ntile(group_num) 将所有记录分成group_num个组，每组序号一样<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span>,<span class="built_in">ntile</span>(<span class="number">2</span>) <span class="keyword">OVER</span>(<span class="keyword">order</span> <span class="keyword">by</span> sth ) <span class="keyword">as</span> row_num</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">table</span> </span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><blockquote>
-<p>IF</p>
-</blockquote>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> IF(sva<span class="operator">=</span><span class="number">1</span>,&quot;男&quot;,&quot;女&quot;) <span class="keyword">AS</span> s <span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> sva <span class="operator">!=</span> <span class="string">&#x27;&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>LIMIT</p>
-</blockquote>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">limit <span class="number">0</span>,<span class="number">1</span> <span class="comment">-- 表示第一条数据(计算是从0开始的)</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Computer Basics</category>
-      </categories>
-      <tags>
-        <tag>SQL</tag>
-      </tags>
   </entry>
   <entry>
     <title>My First Post</title>
